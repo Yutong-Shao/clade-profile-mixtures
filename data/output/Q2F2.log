@@ -1,0 +1,49 @@
+IQ-TREE multicore version 2.3.6.1.mixlink for Windows 64-bit built Aug  5 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    LAPTOP-3S79O3C7 (AVX2, FMA3, 15 GB RAM)
+Command: C:\Windows\system32\iqtree2.exe -s example_alignment.nex -m GTR20+F2+G4 --mdef Q1F1.GTRPMIX.nex --init-exchange GTRPMIX --link-model -pre Q2F2
+Seed:    236219 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Aug 11 23:22:41 2024
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file example_alignment.nex ... Phylip format detected
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.0065522 secs
+WARNING: 13 sites contain only gaps or ambiguous characters.
+Alignment has 12 sequences with 5177 columns, 4136 distinct patterns
+1956 parsimony-informative, 1780 singleton sites, 1441 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0001998 secs
+   1  QSKP           25.46%    passed     27.03%
+   2  ODDO           10.33%    passed     26.77%
+   3  AAXJ           20.80%    passed      9.42%
+   4  AUGV           20.44%    passed     23.98%
+   5  Arath_TAIR10   41.28%    passed     24.22%
+   6  Musac_v1.0     23.55%    passed      9.84%
+   7  BPKH           17.40%    passed     95.32%
+   8  URDJ            9.81%    passed     37.76%
+   9  YFZK           22.77%    failed      2.31%
+  10  PIVW           24.01%    passed     98.45%
+  11  Chlre_v5.5     27.70%    failed      0.00%
+  12  JOJQ           23.26%    failed      0.00%
+****  TOTAL          22.23%  3 sequences failed composition chi2 test (p-value<5%; df=19)
+Checking for duplicate sequences: done in 0.0002519 secs
+Reading model definition file Q1F1.GTRPMIX.nex ... 87 models and 214 frequency vectors loaded
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.011 seconds
+
+NOTE: 61 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -69642.969
+Restart estimation at the boundary... 
+2. Current log-likelihood: -67389.578
+Restart estimation at the boundary... 
+3. Current log-likelihood: -67296.733
+Restart estimation at the boundary... 
+4. Current log-likelihood: -67255.009
+Restart estimation at the boundary... 

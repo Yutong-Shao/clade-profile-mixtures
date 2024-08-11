@@ -1,0 +1,155 @@
+IQ-TREE 2.3.6.1.mixlink built Aug  5 2024
+
+Input file name: example_alignment.nex
+Type of analysis: tree reconstruction
+Random seed number: 1
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 12 sequences with 5177 amino-acid sites
+Number of constant sites: 1441 (= 27.8347% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1441 (= 27.8347% of all sites)
+Number of parsimony informative sites: 1956
+Number of distinct site patterns: 4136
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR20+FO+G4
+
+WARNING: This model has 208 parameters that may be overfitting. Please use with caution!
+
+Substitution parameters (lower-diagonal) and state frequencies in PAML format (can be used as input for IQ-TREE): 
+
+ 0.000100
+ 0.000100 0.337097
+ 0.154829 0.019304 5.446513
+ 0.681703 0.955745 0.522236 0.163510
+ 0.318366 2.438519 0.759377 0.000100 0.186018
+ 0.549340 0.000100 0.432316 5.041220 0.000100 2.759364
+ 1.151999 0.552604 1.120807 0.908375 0.308563 0.122782 0.483516
+ 0.000100 1.479833 4.547347 0.270545 1.002930 6.366594 0.000100 0.183424
+ 0.023722 0.064657 0.384715 0.000100 0.000100 0.000100 0.000100 0.000100 0.000100
+ 0.039555 0.149756 0.001334 0.020645 0.260228 0.736121 0.066000 0.000100 0.559316 2.895621
+ 0.220410 4.708933 2.981678 0.000100 0.000100 2.553531 1.056834 0.284479 0.000100 0.072736 0.000100
+ 0.167502 0.351609 0.025540 0.000100 0.572750 0.570570 0.063655 0.000100 0.167018 4.249191 5.552118 0.889798
+ 0.000100 0.000100 0.000100 0.000307 0.904084 0.041186 0.000100 0.000100 0.103308 0.866187 1.748029 0.000100 0.597652
+ 0.799905 0.287205 0.000100 0.104582 0.027962 1.148735 0.121545 0.000100 0.365992 0.000100 0.350844 0.067036 0.000100 0.080209
+ 2.163457 0.577087 4.021074 0.649892 3.283063 0.333619 0.204927 0.864521 0.470999 0.019241 0.509363 0.254041 0.662538 0.430659 1.500660
+ 3.067698 0.630171 1.872593 0.174381 0.155594 0.235800 0.221084 0.000100 0.447151 1.807709 0.148960 1.337758 3.119034 0.000100 0.781393 6.415085
+ 0.060470 0.330361 0.000100 0.000100 0.590427 0.000100 0.031161 0.119257 0.457311 0.000100 0.458376 0.070124 0.000100 0.459448 0.000100 0.162402 0.000100
+ 0.034038 0.000100 0.595299 0.116560 2.733979 0.000100 0.000100 0.000100 5.749330 0.000100 0.000100 0.000100 0.000100 8.109855 0.000100 0.437470 0.000100 1.718274
+ 1.800810 0.124856 0.133723 0.276425 0.633462 0.065696 0.196977 0.127331 0.047584 11.556642 1.222371 0.097289 2.188048 0.247216 0.146738 0.045867 1.657132 0.000100 0.234116
+ 0.096680 0.053043 0.033447 0.054068 0.016729 0.037290 0.062957 0.073986 0.026216 0.043215 0.102204 0.053590 0.019591 0.037599 0.047258 0.092811 0.043555 0.010714 0.023843 0.071205
+
+State frequencies: (estimated with maximum likelihood)
+
+  pi(A) = 0.0967
+  pi(R) = 0.0530
+  pi(N) = 0.0334
+  pi(D) = 0.0541
+  pi(C) = 0.0167
+  pi(Q) = 0.0373
+  pi(E) = 0.0630
+  pi(G) = 0.0740
+  pi(H) = 0.0262
+  pi(I) = 0.0432
+  pi(L) = 0.1022
+  pi(K) = 0.0536
+  pi(M) = 0.0196
+  pi(F) = 0.0376
+  pi(P) = 0.0473
+  pi(S) = 0.0928
+  pi(T) = 0.0436
+  pi(W) = 0.0107
+  pi(Y) = 0.0238
+  pi(V) = 0.0712
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.5939
+
+ Category  Relative_rate  Proportion
+  1         0.0518         0.2500
+  2         0.3089         0.2500
+  3         0.8782         0.2500
+  4         2.7611         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -67341.6359 (s.e. 584.1475)
+Unconstrained log-likelihood (without tree): -41805.1004
+Number of free parameters (#branches + #model parameters): 230
+Akaike information criterion (AIC) score: 135143.2719
+Corrected Akaike information criterion (AICc) score: 135164.7559
+Bayesian information criterion (BIC) score: 136650.2275
+
+Total tree length (sum of branch lengths): 6.9860
+Sum of internal branch lengths: 1.2831 (18.3674% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'QSKP' is drawn at root
+
++--QSKP
+|
+|     +---ODDO
+|  +--|
+|  |  +----AAXJ
++--|
+|  |  +--AUGV
+|  +--|
+|     |     +---Musac_v1.0
+|     |  +--|
+|     |  |  +-----BPKH
+|     +--|
+|        |  +---URDJ
+|        +--|
+|           |  +----YFZK
+|           +--|
+|              |  +----------PIVW
+|              +--|
+|                 |    +---------------------------------------Chlre_v5.5
+|                 +----|
+|                      +----------JOJQ
+|
++--Arath_TAIR10
+
+Tree in newick format:
+
+(QSKP:0.0996187350,((ODDO:0.2564944282,AAXJ:0.3227778726):0.0386161145,(AUGV:0.1870701876,((Musac_v1.0:0.2319140261,BPKH:0.3528787494):0.1383189929,(URDJ:0.2766388345,(YFZK:0.2881893662,(PIVW:0.6332881154,(Chlre_v5.5:2.2387849985,JOJQ:0.6541417330):0.3211443397):0.2179106408):0.1943352595):0.0982850477):0.0220151867):0.0490729434):0.2034480148,Arath_TAIR10:0.1610546643);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t Q1F1.treefile -m "GTR20+FO{0.0966796,0.0530428,0.0334466,0.0540681,0.0167293,0.0372902,0.0629565,0.0739857,0.0262159,0.0432147,0.102204,0.0535899,0.0195913,0.037599,0.047258,0.0928111,0.0435555,0.0107139,0.0238428,0.0712051}+G4{0.593879}" --length 5177
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s example_alignment.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s example_alignment.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Aug 11 23:18:57 2024
+Total CPU time used: 20130.7 seconds (5h:35m:30s)
+Total wall-clock time used: 4378.77 seconds (1h:12m:58s)
+
