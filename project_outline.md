@@ -51,6 +51,8 @@ A summary of the data contained in this file is as follows:
 
 # 4. Describe a small subset of the data that I can test my code on
 
+> Here are some of my current thoughts. I have tried to select some species according to this idea and have compiled them into files for analysis. I also performed a trial run with Q.1kp+F1.
+
 ## (a) Method for Selecting 100 Taxa:
 
 1. In QMaker, the dataset from [Ran et al. (2018)](https://royalsocietypublishing.org/doi/10.1098/rspb.2018.1012) was used to estimate Q.plant. This dataset includes 38 species: 22 gymnosperms, 3 ferns, and 13 angiosperms. Initially, I considered all 38 species, but after screening, only 22 species were suitable for the current dataset (some species were not present in the 1KP dataset, and others had insufficient gene information collected).
@@ -72,7 +74,7 @@ Once the 100 taxa to be selected are roughly determined:
 There are a total of 410 genes.
 
 First, count the number of taxa included in each gene. For genes with very few taxa sequences (meaning most sequence information at this gene locus will be empty), I will delete them. 
-<span style="color: gray;"> (*I checked the number of species involved in each gene file, and most genes perform well, so not many will be deleted, just about 4-5 genes.)*</span>
+<span style="color: lightgray;"> (*I checked the number of species involved in each gene file, and most genes perform well, so not many will be deleted, just about 4-5 genes.)*</span>
 
 
 After screening, these gene sequences will be shuffled. The first 90% will be used for training, and the last 10% for testing.
@@ -107,7 +109,7 @@ iqtree2 -p genes/ --out-aln example_training.phy
 iqtree2 -s example_alignment.nex -mset LG,WAG,JTT -m MFP --link-model
 ```
 
-2. Based on the best rate distribution obtained above, estimate Q.1kp+F1: <span style="color: gray;"> *(About 1h to run this code on my own computer.)*</span>
+2. Based on the best rate distribution obtained above, estimate Q.1kp+F1: <span style="color: lightgray;"> *(About 1h to run this code on my own computer.)*</span>
 
 ```
 iqtree2 -s example_alignment.nex -m "GTR20+FO+<rate>" --link-exchange --init-exchange LG --link-model -pre Q1F1
