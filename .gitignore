@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+*.Rproj
+
+data/processed_data
+data/output
+data/process/process.R

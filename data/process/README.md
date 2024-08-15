@@ -2,14 +2,27 @@ Here is a short description of the `process` folder:
 
 ## Process
 
-`filter_species.py`: Code used to create `data/example_genes`, which will serve as the sequence files for estimating the Q.plant matrix.
+#### <span style="color: lightblue;">Includes custom functions and important intermediate files used in the project process.</span>
 
-`species2gene.py`: Code used to create `/data/process/total_species.csv`, which will be used for species selection.
+1. `species_classified.R`: Uses the "rgbif" package to provide taxonomic annotations for each species in the dataset.
 
-`total_species.csv`：
+    ```{r}
+    source("species_classified.R")
+    species_classified(input_path, output_path)
+    ```
 
-- Column 1 ("select"): `*` indicates that the species is selected as one of the 100 taxa, but currently, this file only updates the selection status for 22 species.
+2. `species_subsample.py`: Filters the annotated species list file. Randomly selects 100 species based on family and generates a subsample list. 
 
-- Column 4 ("COUNT_gene"): Represents the number of gene information entries included for this species in 1KP, which will be one of the main reference factors for my species selection. The table is sorted in descending order based on this value.
+    Run the script with:
 
-- Columns 5 and onwards: Each column corresponds to a gene alignment file, with 1 indicating the presence of information for the species in that gene alignment file, and 0 indicating its absence.
+    ```
+    python species_subsample.py <input_file> <output_file>
+    ```
+
+3. `sub2folder.py`: Based on the subsample list, extracts the corresponding species from the original gene folder, generating training and test gene folders each containing 100 species. 
+
+    Run the script with:
+
+    ```
+    python sub2folder.py <base_folder> <species_file> <output_folder>
+    ```
