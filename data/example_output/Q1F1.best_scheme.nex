@@ -1,0 +1,24 @@
+#nexus
+begin sets;
+  charset GENE_4471.nex = example_genes/GENE_4471.nex: ;
+  charset GENE_4519.nex = example_genes/GENE_4519.nex: ;
+  charset GENE_4527.nex = example_genes/GENE_4527.nex: ;
+  charset GENE_4603.nex = example_genes/GENE_4603.nex: ;
+  charset GENE_4691.nex = example_genes/GENE_4691.nex: ;
+  charset GENE_4724.nex = example_genes/GENE_4724.nex: ;
+  charset GENE_4744.nex = example_genes/GENE_4744.nex: ;
+  charset GENE_4757.nex = example_genes/GENE_4757.nex: ;
+  charset GENE_4793.nex = example_genes/GENE_4793.nex: ;
+  charset GENE_4796.nex = example_genes/GENE_4796.nex: ;
+  charpartition mymodels =
+    LG+I+G4: GENE_4471.nex,
+    LG+F+G4: GENE_4519.nex,
+    LG+G4: GENE_4527.nex,
+    JTT+G4: GENE_4603.nex,
+    LG+G4: GENE_4691.nex,
+    WAG+G4: GENE_4724.nex,
+    JTT+G4: GENE_4744.nex,
+    JTT+G4: GENE_4757.nex,
+    JTT+G4: GENE_4793.nex,
+    LG+G4: GENE_4796.nex;
+end;

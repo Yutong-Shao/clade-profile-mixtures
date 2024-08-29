@@ -1,0 +1,159 @@
+IQ-TREE 2.3.6.4.mixlink built Aug 16 2024
+
+Partition file name: Q1F1.best_model.nex
+User tree file name: Q1F1.treefile
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 78231
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 11 taxa with 10 partitions and 5177 total sites (8.8837% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	11	493	342	199	177	177	GENE_4471.nex
+   2	AA	10	817	658	250	262	262	GENE_4519.nex
+   3	AA	9	444	272	130	190	190	GENE_4527.nex
+   4	AA	10	836	757	330	117	117	GENE_4603.nex
+   5	AA	10	233	163	62	108	108	GENE_4691.nex
+   6	AA	10	279	212	87	100	100	GENE_4724.nex
+   7	AA	11	547	453	199	140	140	GENE_4744.nex
+   8	AA	8	239	145	46	121	121	GENE_4757.nex
+   9	AA	10	907	842	406	113	113	GENE_4793.nex
+  10	AA	10	382	293	126	144	144	GENE_4796.nex
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+SUBSTITUTION PROCESS
+--------------------
+
+Topology-unlinked partition model with joint substitution model and separate rates across sites
+
+  ID  Model         TreeLen  Parameters
+   1  GTR20+FO+I+G4  3.4158  GTR20+FO+I{0.231117}+G4{1.37705}
+   2  GTR20+FO+G4    6.2562  GTR20+FO+G4{0.599251}
+   3  GTR20+FO+G4    2.7329  GTR20+FO+G4{0.503033}
+   4  GTR20+FO+G4    10.5566  GTR20+FO+G4{0.957846}
+   5  GTR20+FO+G4    3.8827  GTR20+FO+G4{0.454442}
+   6  GTR20+FO+G4    4.9416  GTR20+FO+G4{0.539945}
+   7  GTR20+FO+G4    5.7920  GTR20+FO+G4{1.0101}
+   8  GTR20+FO+G4    2.3281  GTR20+FO+G4{0.445429}
+   9  GTR20+FO+G4    8.6613  GTR20+FO+G4{1.04145}
+  10  GTR20+FO+G4    5.3080  GTR20+FO+G4{0.442575}
+
+Linked model of substitution: GTR20+FO
+WARNING: This model has 208 parameters that may be overfitting. Please use with caution!
+
+Substitution parameters (lower-diagonal) and state frequencies in PAML format (can be used as input for IQ-TREE): 
+
+ 0.000100
+ 0.000100 0.462230
+ 0.145781 0.028041 4.851380
+ 1.492521 0.827678 0.550002 0.117044
+ 0.418897 2.685735 1.270237 0.000100 0.213450
+ 0.739214 0.000100 0.626886 5.440532 0.000100 3.334897
+ 1.458990 0.670171 1.206836 0.918868 0.270253 0.088142 0.507767
+ 0.000100 1.765718 4.289415 0.201885 0.861555 5.445096 0.000100 0.234855
+ 0.116731 0.075013 0.265190 0.090001 0.000100 0.000100 0.000100 0.000100 0.047799
+ 0.004194 0.161567 0.000100 0.000100 0.216483 0.713315 0.094211 0.026098 0.536078 3.053586
+ 0.335338 5.691157 2.678232 0.026763 0.000100 2.937069 1.214082 0.331173 0.000100 0.091530 0.000100
+ 0.522762 0.248243 0.088913 0.000100 0.672983 1.185948 0.030136 0.000100 0.191327 4.192679 5.907920 0.960857
+ 0.000100 0.000100 0.000100 0.000100 1.422328 0.044001 0.000100 0.000100 0.139817 0.806684 1.914368 0.000100 1.127630
+ 0.951836 0.424820 0.000100 0.117066 0.024200 1.183413 0.143424 0.000100 0.482687 0.000100 0.360478 0.040828 0.000100 0.078431
+ 3.198493 0.724473 4.057803 0.859561 3.095008 0.522161 0.249463 0.974493 0.680595 0.042679 0.600796 0.382052 0.735770 0.495648 1.637511
+ 3.117798 0.698415 1.997307 0.168737 0.704373 0.352004 0.207253 0.000100 0.346092 1.457615 0.123584 1.099559 2.449259 0.010334 0.809454 6.294683
+ 0.056198 0.481920 0.003529 0.000100 0.643823 0.049619 0.044826 0.172229 0.440921 0.000100 0.444543 0.095217 0.154023 1.660598 0.000100 0.102503 0.000100
+ 0.041084 0.025386 0.701266 0.143599 1.996952 0.000100 0.000100 0.000100 5.257610 0.000100 0.000100 0.000100 0.000100 7.688623 0.000100 0.471260 0.000100 2.599463
+ 2.126588 0.149010 0.264151 0.224905 0.861142 0.106576 0.224686 0.126380 0.045954 10.613290 1.287135 0.094082 2.121569 0.273591 0.143603 0.012665 1.855613 0.000100 0.234116
+ 0.090989 0.050940 0.034310 0.055206 0.017373 0.037509 0.063382 0.073969 0.026558 0.044785 0.104460 0.053485 0.019810 0.038265 0.046879 0.091054 0.044179 0.009486 0.025943 0.071420
+
+State frequencies: (estimated with maximum likelihood)
+
+  pi(A) = 0.0910
+  pi(R) = 0.0509
+  pi(N) = 0.0343
+  pi(D) = 0.0552
+  pi(C) = 0.0174
+  pi(Q) = 0.0375
+  pi(E) = 0.0634
+  pi(G) = 0.0740
+  pi(H) = 0.0266
+  pi(I) = 0.0448
+  pi(L) = 0.1045
+  pi(K) = 0.0535
+  pi(M) = 0.0198
+  pi(F) = 0.0383
+  pi(P) = 0.0469
+  pi(S) = 0.0911
+  pi(T) = 0.0442
+  pi(W) = 0.0095
+  pi(Y) = 0.0259
+  pi(V) = 0.0714
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -63873.1833 (s.e. 546.7044)
+Unconstrained log-likelihood (without tree): -30573.6209
+Number of free parameters (#branches + #model parameters): 376
+Akaike information criterion (AIC) score: 128498.3666
+Corrected Akaike information criterion (AICc) score: 128557.4300
+Bayesian information criterion (BIC) score: 130961.9115
+
+Total tree length (sum of branch lengths): 53.8751
+Sum of internal branch lengths: 7.9557 (14.7669% of tree length)
+
+Tree topologies are unlinked across partitions, thus no drawing will be displayed here
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t Qplant.F1.treefile
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Aug 16 16:59:45 2024
+Total CPU time used: 290.5 seconds (0h:4m:50s)
+Total wall-clock time used: 729.7 seconds (0h:12m:9s)
+

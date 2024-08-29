@@ -1,33 +1,34 @@
-# 加载必要的库
+# Load necessary libraries
 library(ggplot2)
 library(reshape2)
 library(ggrepel)
+library(ggforce)
 
-# 第一步：读取矩阵文件并生成对称矩阵
+# Step 1: Read matrix file and generate a symmetric matrix
 read_matrix_file <- function(file_path) {
   mat_df <- read.csv(file_path, header = FALSE, stringsAsFactors = FALSE)
 
-  # 提取行和列标签
+  # Extract row and column labels
   row_labels <- mat_df[-1, 1]
   col_labels <- mat_df[1, -1]
 
-  # 提取矩阵部分
+  # Extract the matrix part
   mat <- as.matrix(mat_df[-1, -1])
 
-  # 将字符型转换为数值型
+  # Convert character type to numeric
   mat <- apply(mat, 2, as.numeric)
 
-  # 生成对称矩阵
+  # Generate a symmetric matrix
   sym_mat <- mat + t(mat) - diag(diag(mat))
 
-  # 设置行和列名
+  # Set row and column names
   rownames(sym_mat) <- row_labels
   colnames(sym_mat) <- col_labels
 
   return(sym_mat)
 }
 
-# 第二步：遍历Q文件夹中的所有文件，生成对称矩阵列表
+# Step 2: Iterate over all files in the Q folder and generate a list of symmetric matrices
 read_matrices <- function(folder_path) {
   file_list <- list.files(folder_path, full.names = TRUE)
   matrix_list <- list()
@@ -40,7 +41,7 @@ read_matrices <- function(folder_path) {
   return(matrix_list)
 }
 
-# 第三步：将矩阵展平成向量
+# Step 3: Flatten the matrix into a vector
 flatten_matrix <- function(matrix_list) {
   flattened_list <- lapply(matrix_list, function(mat) {
     return(as.vector(mat))
@@ -50,49 +51,54 @@ flatten_matrix <- function(matrix_list) {
   return(data_matrix)
 }
 
-# 第四步：PCA分析
+# Step 4: PCA analysis
 perform_pca <- function(data_matrix) {
   pca_result <- prcomp(data_matrix, scale. = TRUE)
   return(pca_result)
 }
 
-# 第五步：PCA结果可视化
+# Step 5: PCA result visualization
 plot_pca <- function(pca_result, file_names) {
   pca_df <- as.data.frame(pca_result$x)
 
-  # 处理文件名，只保留基名
+  # Process file names, keeping only the basename
   pca_df$file <- gsub("^.*/|\\.csv$", "", file_names)
 
-  # 提取PCA解释的方差百分比
+  # Extract variance percentage explained by PCA
   variance_percent <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 2)
 
-  # 获取X和Y的范围
+  pca_df$color <- ifelse(pca_df$file %in% c("Q.plant", "Q.plantF1_1", "Q.plantF1_2", "Q.plantF1_3", "Q.plantF1_4"),
+                         "Q.plant", "other")
+
+  # Get the range of X and Y
   x_range <- range(pca_df$PC1)
   y_range <- range(pca_df$PC2)
 
-  # 扩展范围
+  # Expand the range
   x_expand <- x_range[2] - x_range[1]
   y_expand <- y_range[2] - y_range[1]
 
-  # 绘制PCA图
-  ggplot(pca_df, aes(x = PC1, y = PC2, label = file)) +
-    geom_point() +
-    geom_text_repel() +  # 使用ggrepel避免标注重叠
-    xlim(x_range[1] - x_expand/5, x_range[2] + x_expand/5) +  # 扩展X轴范围
-    ylim(y_range[1] - y_expand/5, y_range[2] + y_expand/5) +  # 扩展Y轴范围
+  # Plot the PCA
+  ggplot(pca_df, aes(x = PC1, y = PC2, label = file, color = color)) +
+    geom_ellipse(aes(x0 = -8, y0 = 6.8, a = 12, b = 7, angle = 1.2 * pi/4), color = "darkgreen", fill = scales::alpha("#A6C69F", 0.05), size = 0.6) +
+    geom_point(size = 2) +
+    geom_text_repel() +  # Use ggrepel to avoid label overlap
+    xlim(x_range[1] - x_expand/5, x_range[2] + x_expand/5) +  # Expand X-axis range
+    ylim(y_range[1] - y_expand/5, y_range[2] + y_expand/5) +  # Expand Y-axis range
     theme_minimal() +
-    labs(title = "PCA of Exchangability Matrices",
+    theme(legend.position = "none") +
+    scale_color_manual(values = c("black", "darkgreen")) +
+    labs(title = "PCA Plot of Exchangability Matrices",
          x = paste0("PC1 (", variance_percent[1], "%)"),
          y = paste0("PC2 (", variance_percent[2], "%)"))
 }
 
-# 主程序
+# Main program
 folder_path <- "Q"
 matrix_list <- read_matrices(folder_path)
 data_matrix <- flatten_matrix(matrix_list)
 pca_result <- perform_pca(data_matrix)
 
-# 获取文件名列表用于显示
+# Get the list of file names for display
 file_names <- list.files(folder_path, full.names = FALSE)
 plot_pca(pca_result, file_names)
-

@@ -1,0 +1,307 @@
+IQ-TREE multicore version 2.3.6.3.mixlink for Windows 64-bit built Aug 13 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    LAPTOP-3S79O3C7 (AVX2, FMA3, 15 GB RAM)
+Command: C:\Windows\system32\iqtree2.exe -seed 1 -T 4 -S example_genes -mset LG,WAG,JTT -cmax 4 -pre Q1F1
+Seed:    1 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Aug 15 18:16:33 2024
+Kernel:  AVX+FMA - 4 threads (8 CPU cores detected)
+
+Reading 10 alignment files in directory example_genes
+Reading alignment file example_genes/GENE_4471.nex ... Nexus format detected
+Alignment has 11 sequences with 493 columns, 342 distinct patterns
+199 parsimony-informative, 117 singleton sites, 177 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 7.19e-005 secs
+   1  ODDO            0.20%    passed     99.96%
+   2  AAXJ            1.22%    passed     99.96%
+   3  AUGV            1.01%    passed     99.99%
+   4  Arath_TAIR10    2.03%    passed     96.26%
+   5  Musac_v1.0      0.61%    passed     99.90%
+   6  BPKH            1.42%    passed    100.00%
+   7  URDJ            2.03%    passed     95.77%
+   8  YFZK           12.17%    passed     99.40%
+   9  PIVW            4.67%    passed     99.81%
+  10  Chlre_v5.5      3.25%    failed      0.05%
+  11  JOJQ            3.45%    passed     69.44%
+****  TOTAL           2.91%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4519.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 817 columns, 658 distinct patterns
+250 parsimony-informative, 305 singleton sites, 262 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.79e-005 secs
+   1  ODDO           28.15%    passed     94.85%
+   2  AAXJ            3.92%    passed     67.51%
+   3  AUGV           59.49%    passed     94.88%
+   4  Arath_TAIR10    2.33%    passed     57.14%
+   5  Musac_v1.0     22.03%    passed     93.19%
+   6  BPKH           27.66%    passed     89.01%
+   7  URDJ           25.09%    passed     84.87%
+   8  PIVW           37.21%    passed     37.23%
+   9  Chlre_v5.5     16.28%    failed      0.00%
+  10  JOJQ           17.63%    failed      0.00%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL          23.98%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4527.nex ... Nexus format detected
+Alignment has 9 sequences with 444 columns, 272 distinct patterns
+130 parsimony-informative, 124 singleton sites, 190 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.07e-005 secs
+   1  ODDO            1.58%    passed     99.99%
+   2  AUGV            1.35%    passed     99.97%
+   3  Arath_TAIR10    0.45%    passed     97.89%
+   4  BPKH            0.45%    passed     99.89%
+   5  URDJ            0.90%    passed     99.98%
+   6  YFZK            2.93%    passed    100.00%
+   7  PIVW            4.28%    passed     97.52%
+   8  Chlre_v5.5      2.03%    passed     20.11%
+   9  JOJQ            1.58%    passed     99.99%
+****  TOTAL           1.73%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4603.nex ... Nexus format detected
+WARNING: 5 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 836 columns, 757 distinct patterns
+330 parsimony-informative, 389 singleton sites, 117 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.58e-005 secs
+   1  ODDO          5.98%    passed     89.49%
+   2  AAXJ         44.98%    passed     84.64%
+   3  AUGV          4.55%    passed     97.58%
+   4  Musac_v1.0    7.18%    passed     76.80%
+   5  BPKH          7.30%    passed     63.14%
+   6  URDJ          5.62%    passed     99.13%
+   7  YFZK          4.19%    passed     93.42%
+   8  PIVW         11.48%    passed     99.53%
+   9  Chlre_v5.5   13.76%    failed      0.00%
+  10  JOJQ         48.09%    passed     24.90%
+****  TOTAL        15.31%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4691.nex ... Nexus format detected
+WARNING: 4 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 233 columns, 163 distinct patterns
+62 parsimony-informative, 63 singleton sites, 108 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.3e-005 secs
+   1  ODDO            6.87%    passed     95.71%
+   2  AAXJ            7.30%    passed     99.94%
+   3  AUGV           21.89%    passed     99.65%
+   4  Arath_TAIR10   21.89%    passed     99.66%
+   5  Musac_v1.0     22.32%    passed    100.00%
+   6  BPKH           15.02%    passed     99.61%
+   7  URDJ           17.17%    passed     99.94%
+   8  YFZK            9.87%    passed     99.77%
+   9  PIVW           21.03%    passed     96.60%
+  10  JOJQ           33.05%    passed     99.45%
+****  TOTAL          17.64%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4724.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 279 columns, 212 distinct patterns
+87 parsimony-informative, 92 singleton sites, 100 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.88e-005 secs
+   1  ODDO            7.53%    passed     98.36%
+   2  AAXJ            5.02%    passed     99.34%
+   3  AUGV           14.34%    passed     94.62%
+   4  Arath_TAIR10    8.96%    passed     94.30%
+   5  Musac_v1.0     12.90%    passed     99.93%
+   6  URDJ           17.20%    passed    100.00%
+   7  YFZK           16.49%    passed     99.96%
+   8  PIVW           16.85%    passed     99.69%
+   9  Chlre_v5.5     15.41%    passed     41.93%
+  10  JOJQ           16.49%    passed     61.71%
+****  TOTAL          13.12%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4744.nex ... Nexus format detected
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 11 sequences with 547 columns, 453 distinct patterns
+199 parsimony-informative, 208 singleton sites, 140 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.9e-005 secs
+   1  ODDO            5.12%    passed     94.04%
+   2  AAXJ            2.93%    passed     99.79%
+   3  AUGV            2.56%    passed     99.71%
+   4  Arath_TAIR10    2.19%    passed     89.19%
+   5  Musac_v1.0     10.97%    passed     99.95%
+   6  BPKH            7.13%    passed     99.60%
+   7  URDJ            2.19%    passed    100.00%
+   8  YFZK            3.29%    passed     97.48%
+   9  PIVW           59.05%    passed     96.80%
+  10  Chlre_v5.5     57.40%    failed      0.00%
+  11  JOJQ           51.37%    passed      9.31%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL          18.56%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4757.nex ... Nexus format detected
+WARNING: 12 sites contain only gaps or ambiguous characters.
+Alignment has 8 sequences with 239 columns, 145 distinct patterns
+46 parsimony-informative, 72 singleton sites, 121 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.14e-005 secs
+   1  ODDO         12.55%    passed     99.93%
+   2  AAXJ         11.72%    passed    100.00%
+   3  BPKH         11.30%    passed    100.00%
+   4  URDJ          9.21%    passed     99.86%
+   5  YFZK         15.06%    passed     99.99%
+   6  PIVW         15.90%    passed     99.99%
+   7  Chlre_v5.5   11.72%    passed     99.54%
+   8  JOJQ         16.74%    passed     98.97%
+****  TOTAL        13.02%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4793.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 907 columns, 842 distinct patterns
+406 parsimony-informative, 388 singleton sites, 113 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.51e-005 secs
+   1  ODDO         12.46%    passed     51.57%
+   2  AAXJ         11.36%    passed     85.34%
+   3  AUGV         16.65%    passed     71.32%
+   4  Musac_v1.0   12.90%    passed     71.24%
+   5  BPKH         12.79%    passed     94.80%
+   6  URDJ          9.70%    passed     92.28%
+   7  YFZK         11.80%    passed     17.42%
+   8  PIVW         31.42%    passed     73.60%
+   9  Chlre_v5.5   17.75%    failed      0.00%
+  10  JOJQ          6.95%    failed      0.02%
+****  TOTAL        14.38%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4796.nex ... Nexus format detected
+WARNING: 3 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 382 columns, 293 distinct patterns
+126 parsimony-informative, 112 singleton sites, 144 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.28e-005 secs
+   1  ODDO           10.21%    passed     82.32%
+   2  AAXJ           10.73%    passed     99.36%
+   3  AUGV            7.33%    passed    100.00%
+   4  Arath_TAIR10    9.42%    passed     98.12%
+   5  Musac_v1.0      7.33%    passed     99.49%
+   6  BPKH           28.53%    passed     98.42%
+   7  URDJ            8.38%    passed     99.61%
+   8  YFZK            6.28%    passed     98.98%
+   9  PIVW           15.45%    passed     98.08%
+  10  JOJQ           33.25%    passed     52.77%
+****  TOTAL          13.69%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1		11	493	199	177		GENE_4471.nex
+2		10	817	250	262		GENE_4519.nex
+3		9	444	130	190		GENE_4527.nex
+4		10	836	330	117		GENE_4603.nex
+5		10	233	62	108		GENE_4691.nex
+6		10	279	87	100		GENE_4724.nex
+7		11	547	199	140		GENE_4744.nex
+8		8	239	46	121		GENE_4757.nex
+9		10	907	406	113		GENE_4793.nex
+10		10	382	126	144		GENE_4796.nex
+Linked 11 total sequences
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.005 seconds, parsimony score: 11149 (based on 3705 sites)
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 0.0638111 secs using 97.95% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.140007 secs using 133.9% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.174888 secs using 125.1% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.18836 secs using 116.1% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.0288166 secs using 108.4% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.104126 secs using 165.1% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.009863 secs using 475.3% CPU
+EstOptimizing NNI: done in 0.0599752 secs using 260.5% CPU
+e Estimate model parameters (epsilon = model parameters (epsilon = 1.000)
+1.000)
+Optimizing NNI: done in 0.188262 secs using 149.4% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.027375 secs using 285.4% CPU
+Estimate model parameters (epsilon = 1.000)
+Log-likelihood: -64579.468
+Time for fast ML tree search: 0.811 seconds
+
+NOTE: ModelFinder requires 17 MB RAM!
+
+PartitionFinder's parameters:
+
+Percentage: 10.000
+Maximum pairs: 100
+
+Selecting individual models for 10 charsets using BIC...
+ No. Model        Score       TreeLen     Charset
+   1 JTT+G4       13165.316   5.237       GENE_4744.nex
+   2 LG+I+G4      12309.055   3.266       GENE_4471.nex
+   3 LG+F+G4      19419.156   5.523       GENE_4519.nex
+   4 JTT+G4       27492.422   7.554       GENE_4793.nex
+   5 LG+G4        8877.146    5.166       GENE_4796.nex
+   6 LG+G4        8990.997    2.533       GENE_4527.nex
+   7 JTT+G4       24424.507   9.109       GENE_4603.nex
+   8 WAG+G4       6565.206    4.216       GENE_4724.nex
+   9 LG+G4        4581.816    3.546       GENE_4691.nex
+  10 JTT+G4       3910.197    2.078       GENE_4757.nex	0h:0m:9s (0h:0m:0s left)
+Full partition model BIC score: 130200.303 (LnL: -64253.505  df:198)
+Partition information was printed to Q1F1.best_scheme.nex
+Partition information in Raxml format was printed to Q1F1.best_scheme
+
+All model information printed to Q1F1.model.gz
+CPU time for ModelFinder: 19.281 seconds (0h:0m:19s)
+Wall-clock time for ModelFinder: 10.511 seconds (0h:0m:10s)
+
+NOTE: 27 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Partition GENE_4519.nex / Model: LG+F+G4 / df: 37 / LogL: -9585.522
+Partition GENE_4793.nex / Model: JTT+G4 / df: 18 / LogL: -13684.919
+Partition GENE_4744.nex / Model: JTT+G4 / df: 20 / LogL: -6519.578
+Partition GENE_4796.nex / Model: LG+G4 / df: 18 / LogL: -4385.051
+Partition GENE_4527.nex / Model: LG+G4 / df: 16 / LogL: -4446.732
+Partition GENE_4691.nex / Model: LG+G4 / df: 18 / LogL: -2241.848
+Partition GENE_4757.nex / Model: JTT+G4 / df: 14 / LogL: -1916.763
+Partition GENE_4603.nex / Model: JTT+G4 / df: 18 / LogL: -12151.694
+Partition GENE_4724.nex / Model: WAG+G4 / df: 18 / LogL: -3231.919
+Partition GENE_4471.nex / Model: LG+I+G4 / df: 21 / LogL: -6089.268
+Optimal log-likelihood: -64253.295
+Wrote distance file to... 
+--------------------------------------------------------------------
+|                SEPARATE TREE SEARCH FOR PARTITIONS               |
+--------------------------------------------------------------------
+Partition GENE_4744.nex / Iterations: 102 / LogL: -6519.57 / Time: 0h:0m:25s
+Partition GENE_4519.nex / Iterations: 104 / LogL: -9584.18 / Time: 0h:0m:26s
+Partition GENE_4793.nex / Iterations: 102 / LogL: -13684.9 / Time: 0h:0m:33s
+Partition GENE_4603.nex / Iterations: 102 / LogL: -12149.6 / Time: 0h:0m:35s
+Partition GENE_4796.nex / Iterations: 102 / LogL: -4385.05 / Time: 0h:0m:39s
+Partition GENE_4471.nex / Iterations: 102 / LogL: -6089.26 / Time: 0h:0m:42s
+Partition GENE_4527.nex / Iterations: 102 / LogL: -4446.73 / Time: 0h:0m:43s
+Partition GENE_4724.nex / Iterations: 102 / LogL: -3231.92 / Time: 0h:0m:45s
+Partition GENE_4691.nex / Iterations: 102 / LogL: -2236.79 / Time: 0h:0m:46s
+Partition GENE_4757.nex / Iterations: 103 / LogL: -1913.11 / Time: 0h:0m:46s
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Partition GENE_4519.nex / Model: LG+F+G4 / df: 37 / LogL: -9584.185
+Partition GENE_4793.nex / Model: JTT+G4 / df: 18 / LogL: -13684.919
+Partition GENE_4744.nex / Model: JTT+G4 / df: 20 / LogL: -6519.568
+Partition GENE_4796.nex / Model: LG+G4 / df: 18 / LogL: -4385.050
+Partition GENE_4527.nex / Model: LG+G4 / df: 16 / LogL: -4446.732
+Partition GENE_4724.nex / Model: WAG+G4 / df: 18 / LogL: -3231.918
+Partition GENE_4603.nex / Model: JTT+G4 / df: 18 / LogL: -12149.562
+Partition GENE_4691.nex / Model: LG+G4 / df: 18 / LogL: -2236.784
+Partition GENE_4757.nex / Model: JTT+G4 / df: 14 / LogL: -1913.108
+Partition GENE_4471.nex / Model: LG+I+G4 / df: 21 / LogL: -6089.261
+Optimal log-likelihood: -64241.088
+Partition information was printed to Q1F1.best_model.nex
+BEST SCORE FOUND : -64241.088
+Total tree length: 48.167
+
+Total number of iterations: 0
+CPU time used for tree search: 79.375 sec (0h:1m:19s)
+Wall-clock time used for tree search: 42.613 sec (0h:0m:42s)
+Total CPU time used: 81.141 sec (0h:1m:21s)
+Total wall-clock time used: 46.560 sec (0h:0m:46s)
+
+Analysis results written to: 
+  IQ-TREE report:                Q1F1.iqtree
+  Maximum-likelihood tree:       Q1F1.treefile
+  Screen log file:               Q1F1.log
+
+Date and Time: Thu Aug 15 18:17:30 2024

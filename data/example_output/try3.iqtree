@@ -1,0 +1,144 @@
+IQ-TREE 2.3.6.4.mixlink built Aug 16 2024
+
+Partition file name: example_genes
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 472718
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 24 taxa with 13 partitions and 5805 total sites (4.01019% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	24	547	467	280	161	161	GENE_4744.nex
+   2	AA	23	239	157	87	105	105	GENE_4757.nex
+   3	AA	24	907	821	543	181	181	GENE_4793.nex
+   4	AA	23	311	245	152	101	101	GENE_5354.nex
+   5	AA	21	390	348	233	78	78	GENE_5355.nex
+   6	AA	23	142	106	35	86	86	GENE_5357.nex
+   7	AA	23	571	374	233	233	233	GENE_6176.nex
+   8	AA	21	490	453	286	118	118	GENE_6183.nex
+   9	AA	24	336	250	148	123	123	GENE_6216.nex
+  10	AA	20	289	263	144	87	87	GENE_6221.nex
+  11	AA	24	231	194	99	93	93	GENE_6303.nex
+  12	AA	24	824	687	428	240	240	GENE_6318.nex
+  13	AA	23	528	449	272	170	170	GENE_6320.nex
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: JTT+G4:GENE_4744.nex,JTT+I+G4:GENE_4757.nex,JTT+G4:GENE_4793.nex,JTT+G4:GENE_5354.nex,JTT+I+G4:GENE_5355.nex,JTT+R3:GENE_5357.nex,JTT+I+G4:GENE_6176.nex,JTT+I+G4:GENE_6183.nex,JTT+G4:GENE_6216.nex,JTT+G4:GENE_6221.nex,JTT+I+G4:GENE_6303.nex,JTT+I+G4:GENE_6318.nex,JTT+I+R3:GENE_6320.nex
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  JTT+G4            -9507.711   19107.422 + 6.18e-317   19116.070 + 4.36e-318   19305.427 + 6.95e-310
+   2  JTT+I+G4          -3270.586    6631.173 + 6.18e-317    6652.623 + 4.36e-318    6787.614 + 6.95e-310
+   3  JTT+G4           -20430.872   40953.743 + 6.18e-317   40958.771 + 4.36e-318   41175.010 + 6.95e-310
+   4  JTT+G4            -5145.114   10378.227 + 6.18e-317   10393.114 + 4.36e-318   10542.778 + 6.95e-310
+   5  JTT+I+G4          -8061.354   16204.707 + 6.18e-317   16214.604 + 4.36e-318   16367.319 + 6.95e-310
+   6  JTT+R3            -1412.285    2918.570 + 6.18e-317    2966.570 + 4.36e-318    3057.494 + 6.95e-310
+   7  JTT+I+G4          -8876.732   17843.463 + 6.18e-317   17851.349 + 4.36e-318   18039.096 + 6.95e-310
+   8  JTT+I+G4         -10110.691   20303.382 + 6.18e-317   20311.070 + 4.36e-318   20475.353 + 6.95e-310
+   9  JTT+G4            -5231.310   10554.621 + 6.18e-317   10569.583 + 4.36e-318   10730.208 + 6.95e-310
+  10  JTT+G4            -4569.946    9215.892 + 6.18e-317    9227.748 + 4.36e-318    9355.216 + 6.95e-310
+  11  JTT+I+G4          -3599.712    7293.424 + 6.18e-317    7318.079 + 4.36e-318    7455.217 + 6.95e-310
+  12  JTT+I+G4         -15093.778   30281.556 + 6.18e-317   30287.370 + 4.36e-318   30503.122 + 6.95e-310
+  13  JTT+I+R3          -9081.369   18258.739 + 6.18e-317   18268.559 + 4.36e-318   18463.655 + 6.95e-310
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Topology-unlinked partition model with separate substitution models and separate rates across sites
+
+  ID  Model         TreeLen  Parameters
+   1  JTT+G4         4.4886  JTT+G4{0.723703}
+   2  JTT+I+G4       3.6537  JTT+I{0.162285}+G4{0.523244}
+   3  JTT+G4         8.2926  JTT+G4{0.783105}
+   4  JTT+G4         4.5049  JTT+G4{0.561153}
+   5  JTT+I+G4       6.7366  JTT+I{0.137432}+G4{1.45696}
+   6  JTT+R3         1.7560  JTT+R3{0.707128,0.109614,0.278646,2.31298,0.0142262,19.5405}
+   7  JTT+I+G4       4.1907  JTT+I{0.273566}+G4{0.928176}
+   8  JTT+I+G4       9.7821  JTT+I{0.182163}+G4{1.12312}
+   9  JTT+G4         3.8620  JTT+G4{0.521262}
+  10  JTT+G4         4.0229  JTT+G4{0.702119}
+  11  JTT+I+G4       5.0388  JTT+I{0.309103}+G4{1.01804}
+  12  JTT+I+G4       5.8285  JTT+I{0.172304}+G4{1.02942}
+  13  JTT+I+R3       4.7774  JTT+I{0.158754}+R3{0.418832,0.23833,0.309873,1.37489,0.112541,4.21303}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -104307.4941 (s.e. 1074.6660)
+Unconstrained log-likelihood (without tree): -34075.4869
+Number of free parameters (#branches + #model parameters): 581
+Akaike information criterion (AIC) score: 209776.9881
+Corrected Akaike information criterion (AICc) score: 209906.4700
+Bayesian information criterion (BIC) score: 213650.2100
+
+Total tree length (sum of branch lengths): 66.9348
+Sum of internal branch lengths: 16.5529 (24.7299% of tree length)
+
+Tree topologies are unlinked across partitions, thus no drawing will be displayed here
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t try3.treefile
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon Aug 19 21:34:21 2024
+Total CPU time used: 188.9 seconds (0h:3m:8s)
+Total wall-clock time used: 589.5 seconds (0h:9m:49s)
+

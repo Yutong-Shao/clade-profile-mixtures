@@ -1,0 +1,24 @@
+#nexus
+begin sets;
+  charset GENE_4471.nex = example_genes/GENE_4471.nex: AA,;
+  charset GENE_4519.nex = example_genes/GENE_4519.nex: AA,;
+  charset GENE_4527.nex = example_genes/GENE_4527.nex: AA,;
+  charset GENE_4603.nex = example_genes/GENE_4603.nex: AA,;
+  charset GENE_4691.nex = example_genes/GENE_4691.nex: AA,;
+  charset GENE_4724.nex = example_genes/GENE_4724.nex: AA,;
+  charset GENE_4744.nex = example_genes/GENE_4744.nex: AA,;
+  charset GENE_4757.nex = example_genes/GENE_4757.nex: AA,;
+  charset GENE_4793.nex = example_genes/GENE_4793.nex: AA,;
+  charset GENE_4796.nex = example_genes/GENE_4796.nex: AA,;
+  charpartition mymodels =
+    MIX{GTR20,GTR20}+I{0.231117}+G4{1.37705}: GENE_4471.nex{3.58712},
+    MIX{GTR20,GTR20}+G4{0.599251}: GENE_4519.nex{6.79969},
+    MIX{GTR20,GTR20}+G4{0.503033}: GENE_4527.nex{2.92325},
+    MIX{GTR20,GTR20}+G4{0.957846}: GENE_4603.nex{11.4548},
+    MIX{GTR20,GTR20}+G4{0.454442}: GENE_4691.nex{4.15242},
+    MIX{GTR20,GTR20}+G4{0.539945}: GENE_4724.nex{5.28848},
+    MIX{GTR20,GTR20}+G4{1.0101}: GENE_4744.nex{6.14414},
+    MIX{GTR20,GTR20}+G4{0.445429}: GENE_4757.nex{2.40689},
+    MIX{GTR20,GTR20}+G4{1.04145}: GENE_4793.nex{9.38677},
+    MIX{GTR20,GTR20}+G4{0.442575}: GENE_4796.nex{5.58681};
+end;

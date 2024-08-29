@@ -1,0 +1,364 @@
+IQ-TREE multicore version 2.3.6.4.mixlink for Windows 64-bit built Aug 16 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    LAPTOP-3S79O3C7 (AVX2, FMA3, 15 GB RAM)
+Command: C:\Windows\system32\iqtree2.exe -S Q1F1.best_model.nex -te Q1F1.treefile --model-joint MIX{GTR20+F6} --init-exchange GTRPMIX -mdef Qplant.F5.GTRPMIX.nex -pre Qplant.F6
+Seed:    604744 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Aug 17 17:11:09 2024
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading partition model file Q1F1.best_model.nex ...
+
+Loading 10 partitions...
+Reading alignment file example_genes/GENE_4471.nex ... Nexus format detected
+Alignment has 11 sequences with 493 columns, 342 distinct patterns
+199 parsimony-informative, 117 singleton sites, 177 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0001595 secs
+   1  ODDO            0.20%    passed     99.96%
+   2  AAXJ            1.22%    passed     99.96%
+   3  AUGV            1.01%    passed     99.99%
+   4  Arath_TAIR10    2.03%    passed     96.26%
+   5  Musac_v1.0      0.61%    passed     99.90%
+   6  BPKH            1.42%    passed    100.00%
+   7  URDJ            2.03%    passed     95.77%
+   8  YFZK           12.17%    passed     99.40%
+   9  PIVW            4.67%    passed     99.81%
+  10  Chlre_v5.5      3.25%    failed      0.05%
+  11  JOJQ            3.45%    passed     69.44%
+****  TOTAL           2.91%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4519.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 817 columns, 658 distinct patterns
+250 parsimony-informative, 305 singleton sites, 262 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.16e-005 secs
+   1  ODDO           28.15%    passed     94.85%
+   2  AAXJ            3.92%    passed     67.51%
+   3  AUGV           59.49%    passed     94.88%
+   4  Arath_TAIR10    2.33%    passed     57.14%
+   5  Musac_v1.0     22.03%    passed     93.19%
+   6  BPKH           27.66%    passed     89.01%
+   7  URDJ           25.09%    passed     84.87%
+   8  PIVW           37.21%    passed     37.23%
+   9  Chlre_v5.5     16.28%    failed      0.00%
+  10  JOJQ           17.63%    failed      0.00%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL          23.98%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4527.nex ... Nexus format detected
+Alignment has 9 sequences with 444 columns, 272 distinct patterns
+130 parsimony-informative, 124 singleton sites, 190 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.61e-005 secs
+   1  ODDO            1.58%    passed     99.99%
+   2  AUGV            1.35%    passed     99.97%
+   3  Arath_TAIR10    0.45%    passed     97.89%
+   4  BPKH            0.45%    passed     99.89%
+   5  URDJ            0.90%    passed     99.98%
+   6  YFZK            2.93%    passed    100.00%
+   7  PIVW            4.28%    passed     97.52%
+   8  Chlre_v5.5      2.03%    passed     20.11%
+   9  JOJQ            1.58%    passed     99.99%
+****  TOTAL           1.73%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4603.nex ... Nexus format detected
+WARNING: 5 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 836 columns, 757 distinct patterns
+330 parsimony-informative, 389 singleton sites, 117 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.46e-005 secs
+   1  ODDO          5.98%    passed     89.49%
+   2  AAXJ         44.98%    passed     84.64%
+   3  AUGV          4.55%    passed     97.58%
+   4  Musac_v1.0    7.18%    passed     76.80%
+   5  BPKH          7.30%    passed     63.14%
+   6  URDJ          5.62%    passed     99.13%
+   7  YFZK          4.19%    passed     93.42%
+   8  PIVW         11.48%    passed     99.53%
+   9  Chlre_v5.5   13.76%    failed      0.00%
+  10  JOJQ         48.09%    passed     24.90%
+****  TOTAL        15.31%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4691.nex ... Nexus format detected
+WARNING: 4 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 233 columns, 163 distinct patterns
+62 parsimony-informative, 63 singleton sites, 108 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0001089 secs
+   1  ODDO            6.87%    passed     95.71%
+   2  AAXJ            7.30%    passed     99.94%
+   3  AUGV           21.89%    passed     99.65%
+   4  Arath_TAIR10   21.89%    passed     99.66%
+   5  Musac_v1.0     22.32%    passed    100.00%
+   6  BPKH           15.02%    passed     99.61%
+   7  URDJ           17.17%    passed     99.94%
+   8  YFZK            9.87%    passed     99.77%
+   9  PIVW           21.03%    passed     96.60%
+  10  JOJQ           33.05%    passed     99.45%
+****  TOTAL          17.64%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4724.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 279 columns, 212 distinct patterns
+87 parsimony-informative, 92 singleton sites, 100 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.55e-005 secs
+   1  ODDO            7.53%    passed     98.36%
+   2  AAXJ            5.02%    passed     99.34%
+   3  AUGV           14.34%    passed     94.62%
+   4  Arath_TAIR10    8.96%    passed     94.30%
+   5  Musac_v1.0     12.90%    passed     99.93%
+   6  URDJ           17.20%    passed    100.00%
+   7  YFZK           16.49%    passed     99.96%
+   8  PIVW           16.85%    passed     99.69%
+   9  Chlre_v5.5     15.41%    passed     41.93%
+  10  JOJQ           16.49%    passed     61.71%
+****  TOTAL          13.12%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4744.nex ... Nexus format detected
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 11 sequences with 547 columns, 453 distinct patterns
+199 parsimony-informative, 208 singleton sites, 140 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 7.35e-005 secs
+   1  ODDO            5.12%    passed     94.04%
+   2  AAXJ            2.93%    passed     99.79%
+   3  AUGV            2.56%    passed     99.71%
+   4  Arath_TAIR10    2.19%    passed     89.19%
+   5  Musac_v1.0     10.97%    passed     99.95%
+   6  BPKH            7.13%    passed     99.60%
+   7  URDJ            2.19%    passed    100.00%
+   8  YFZK            3.29%    passed     97.48%
+   9  PIVW           59.05%    passed     96.80%
+  10  Chlre_v5.5     57.40%    failed      0.00%
+  11  JOJQ           51.37%    passed      9.31%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL          18.56%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4757.nex ... Nexus format detected
+WARNING: 12 sites contain only gaps or ambiguous characters.
+Alignment has 8 sequences with 239 columns, 145 distinct patterns
+46 parsimony-informative, 72 singleton sites, 121 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.33e-005 secs
+   1  ODDO         12.55%    passed     99.93%
+   2  AAXJ         11.72%    passed    100.00%
+   3  BPKH         11.30%    passed    100.00%
+   4  URDJ          9.21%    passed     99.86%
+   5  YFZK         15.06%    passed     99.99%
+   6  PIVW         15.90%    passed     99.99%
+   7  Chlre_v5.5   11.72%    passed     99.54%
+   8  JOJQ         16.74%    passed     98.97%
+****  TOTAL        13.02%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4793.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 907 columns, 842 distinct patterns
+406 parsimony-informative, 388 singleton sites, 113 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.78e-005 secs
+   1  ODDO         12.46%    passed     51.57%
+   2  AAXJ         11.36%    passed     85.34%
+   3  AUGV         16.65%    passed     71.32%
+   4  Musac_v1.0   12.90%    passed     71.24%
+   5  BPKH         12.79%    passed     94.80%
+   6  URDJ          9.70%    passed     92.28%
+   7  YFZK         11.80%    passed     17.42%
+   8  PIVW         31.42%    passed     73.60%
+   9  Chlre_v5.5   17.75%    failed      0.00%
+  10  JOJQ          6.95%    failed      0.02%
+****  TOTAL        14.38%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4796.nex ... Nexus format detected
+WARNING: 3 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 382 columns, 293 distinct patterns
+126 parsimony-informative, 112 singleton sites, 144 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.46e-005 secs
+   1  ODDO           10.21%    passed     82.32%
+   2  AAXJ           10.73%    passed     99.36%
+   3  AUGV            7.33%    passed    100.00%
+   4  Arath_TAIR10    9.42%    passed     98.12%
+   5  Musac_v1.0      7.33%    passed     99.49%
+   6  BPKH           28.53%    passed     98.42%
+   7  URDJ            8.38%    passed     99.61%
+   8  YFZK            6.28%    passed     98.98%
+   9  PIVW           15.45%    passed     98.08%
+  10  JOJQ           33.25%    passed     52.77%
+****  TOTAL          13.69%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	AA	11	493	199	177	LG+I{0.231117}+G4{1.37705}	GENE_4471.nex
+2	AA	10	817	250	262	LG+F+G4{0.599251}	GENE_4519.nex
+3	AA	9	444	130	190	LG+G4{0.503033}	GENE_4527.nex
+4	AA	10	836	330	117	JTT+G4{0.957846}	GENE_4603.nex
+5	AA	10	233	62	108	LG+G4{0.454442}	GENE_4691.nex
+6	AA	10	279	87	100	WAG+G4{0.539945}	GENE_4724.nex
+7	AA	11	547	199	140	JTT+G4{1.0101}	GENE_4744.nex
+8	AA	8	239	46	121	JTT+G4{0.445429}	GENE_4757.nex
+9	AA	10	907	406	113	JTT+G4{1.04145}	GENE_4793.nex
+10	AA	10	382	126	144	LG+G4{0.442575}	GENE_4796.nex
+Linked 11 total sequences
+Reading model definition file Qplant.F5.GTRPMIX.nex ... 87 models and 214 frequency vectors loaded
+Reading input tree file Q1F1.treefile ...
+Linking MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} model across 10 partitions
+Mean state frequencies: 0.08136866 0.05113381 0.03561145 0.05959237 0.01912175 0.03624134 0.06076217 0.07250517 0.02506074 0.05032394 0.10393232 0.05599298 0.02065149 0.04170791 0.04476739 0.08701520 0.04494736 0.01154054 0.02643301 0.07129038
+
+NOTE: 163 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -13592.092
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -12083.313
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -9584.695
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -6475.275
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 19 / LogL: -6050.926
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4350.003
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -4429.854
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -3216.046
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -2216.509
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -1899.735
+1. Log-likelihood: -63898.447
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (308 free parameters)
+Restart estimation at the boundary... 
+1. Log-likelihood: -63832.037
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -13582.821
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -12068.901
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -9554.075
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -6475.005
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 19 / LogL: -6037.757
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4350.699
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -4421.683
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -3216.676
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -2219.992
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -1903.704
+2. Log-likelihood: -63831.314
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (308 free parameters)
+Restart estimation at the boundary... 
+2. Log-likelihood: -63756.409
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -13564.244
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -12072.097
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -9553.074
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -6457.402
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 19 / LogL: -6019.502
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4345.365
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -4418.569
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -3212.477
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -2212.235
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -1895.288
+3. Log-likelihood: -63750.253
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (308 free parameters)
+Restart estimation at the boundary... 
+3. Log-likelihood: -63636.181
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -13557.049
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -12057.791
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -9519.893
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -6466.495
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 19 / LogL: -5993.572
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4334.731
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -4399.748
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -3203.384
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -2207.085
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -1893.073
+4. Log-likelihood: -63632.820
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (308 free parameters)
+Restart estimation at the boundary... 
+4. Log-likelihood: -63572.454
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -13533.258
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -12054.127
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -9507.949
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -6465.677
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 19 / LogL: -5987.294
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4329.633
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -4395.435
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -3198.394
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -2211.379
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -1888.045
+5. Log-likelihood: -63571.191
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (308 free parameters)
+Restart estimation at the boundary... 
+5. Log-likelihood: -63544.815
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -13536.883
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -12040.157
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -9508.185
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -6464.137
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 19 / LogL: -5986.708
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4326.445
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -4387.632
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -3194.776
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -2211.638
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -1888.011
+6. Log-likelihood: -63544.573
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (308 free parameters)
+Restart estimation at the boundary... 
+6. Log-likelihood: -63526.310
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -13528.283
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -12041.149
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -9504.623
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -6462.037
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 19 / LogL: -5986.917
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4324.601
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -4388.097
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -3194.565
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -2207.957
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -1888.023
+7. Log-likelihood: -63526.253
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (308 free parameters)
+Restart estimation at the boundary... 
+7. Log-likelihood: -63520.122
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -13527.664
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -12038.441
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -9502.293
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -6461.413
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 19 / LogL: -5986.686
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4323.324
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -4387.589
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -3194.540
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -2210.095
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -1888.027
+8. Log-likelihood: -63520.072
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (308 free parameters)
+Restart estimation at the boundary... 
+8. Log-likelihood: -63516.848
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -13526.615
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -12039.871
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -9502.028
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -6460.914
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 19 / LogL: -5986.386
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4323.133
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -4386.846
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -3194.394
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -2208.721
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -1887.933
+9. Log-likelihood: -63516.841
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (308 free parameters)
+Restart estimation at the boundary... 
+9. Log-likelihood: -63515.590
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -13525.972
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -12039.490
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -9501.593
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -6461.259
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 19 / LogL: -5986.485
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4322.981
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -4386.833
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -3194.184
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -2208.677
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -1888.114
+10. Log-likelihood: -63515.586
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (308 free parameters)
+Restart estimation at the boundary... 
+10. Log-likelihood: -63513.074
+Optimal log-likelihood: -63513.074
+Mixture weights: 0.169 0.168 0.155 0.167 0.175 0.167
+Wrote distance file to... 
+Partition information was printed to Qplant.F6.best_model.nex
+BEST SCORE FOUND : -63513.074
+Total tree length: 63.561
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.001 sec (0h:0m:0s)
+Total CPU time used: 5129.859 sec (1h:25m:29s)
+Total wall-clock time used: 16996.028 sec (4h:43m:16s)
+
+Analysis results written to: 
+  IQ-TREE report:                Qplant.F6.iqtree
+  Maximum-likelihood tree:       Qplant.F6.treefile
+  Screen log file:               Qplant.F6.log
+  GTRPMIX nex file:              Qplant.F6.GTRPMIX.nex
+
+Date and Time: Sat Aug 17 21:54:26 2024

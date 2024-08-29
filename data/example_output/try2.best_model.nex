@@ -1,0 +1,44 @@
+#nexus
+begin sets;
+  charset GENE_4793.nex = example_genes/GENE_4793.nex: ;
+  charset GENE_4796.nex = example_genes/GENE_4796.nex: ;
+  charset GENE_5260.nex = example_genes/GENE_5260.nex: ;
+  charset GENE_5264.nex = example_genes/GENE_5264.nex: ;
+  charset GENE_5271.nex = example_genes/GENE_5271.nex: ;
+  charset GENE_5273.nex = example_genes/GENE_5273.nex: ;
+  charset GENE_5280.nex = example_genes/GENE_5280.nex: ;
+  charset GENE_5318.nex = example_genes/GENE_5318.nex: ;
+  charset GENE_5326.nex = example_genes/GENE_5326.nex: ;
+  charset GENE_5328.nex = example_genes/GENE_5328.nex: ;
+  charset GENE_5333.nex = example_genes/GENE_5333.nex: ;
+  charset GENE_5339.nex = example_genes/GENE_5339.nex: ;
+  charset GENE_5343.nex = example_genes/GENE_5343.nex: ;
+  charset GENE_5347.nex = example_genes/GENE_5347.nex: ;
+  charset GENE_5348.nex = example_genes/GENE_5348.nex: ;
+  charset GENE_5351.nex = example_genes/GENE_5351.nex: ;
+  charset GENE_5353.nex = example_genes/GENE_5353.nex: ;
+  charset GENE_5354.nex = example_genes/GENE_5354.nex: ;
+  charset GENE_5355.nex = example_genes/GENE_5355.nex: ;
+  charset GENE_5357.nex = example_genes/GENE_5357.nex: ;
+  charpartition mymodels =
+    JTT+G4{1.00052}: GENE_4793.nex{9.78326},
+    JTT+I{0.216169}+G4{0.870486}: GENE_4796.nex{6.21165},
+    JTT+G4{1.00235}: GENE_5260.nex{7.93492},
+    JTT+G4{0.526792}: GENE_5264.nex{5.02518},
+    JTT+I{0.197874}+G4{1.34871}: GENE_5271.nex{6.62128},
+    JTT+G4{0.61414}: GENE_5273.nex{6.74186},
+    LG+G4{0.417181}: GENE_5280.nex{3.84348},
+    JTT+G4{0.261942}: GENE_5318.nex{7.89219},
+    JTT+G4{0.69077}: GENE_5326.nex{4.7001},
+    JTT+G4{0.776675}: GENE_5328.nex{9.4821},
+    JTT+I{0.0473819}+G4{1.36544}: GENE_5333.nex{8.82452},
+    JTT+G4{1.10607}: GENE_5339.nex{7.92307},
+    LG+G4{0.396324}: GENE_5343.nex{4.78331},
+    LG+G4{0.630733}: GENE_5347.nex{6.41174},
+    JTT+G4{1.40715}: GENE_5348.nex{6.19692},
+    JTT+G4{0.882087}: GENE_5351.nex{14.487},
+    JTT+G4{0.998882}: GENE_5353.nex{7.26576},
+    JTT+G4{0.610567}: GENE_5354.nex{8.54463},
+    JTT+I{0.155846}+G4{1.37929}: GENE_5355.nex{6.82929},
+    JTT+I{0.271885}+R2{0.637269,0.73722,0.0908464,5.83615}: GENE_5357.nex{2.40055};
+end;

@@ -1,0 +1,140 @@
+IQ-TREE 2.3.6.4.mixlink built Aug 16 2024
+
+Partition file name: Q1F1.best_model.nex
+User tree file name: Q1F1.treefile
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 97538
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 11 taxa with 10 partitions and 5177 total sites (8.8837% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	11	493	342	199	177	177	GENE_4471.nex
+   2	AA	10	817	658	250	262	262	GENE_4519.nex
+   3	AA	9	444	272	130	190	190	GENE_4527.nex
+   4	AA	10	836	757	330	117	117	GENE_4603.nex
+   5	AA	10	233	163	62	108	108	GENE_4691.nex
+   6	AA	10	279	212	87	100	100	GENE_4724.nex
+   7	AA	11	547	453	199	140	140	GENE_4744.nex
+   8	AA	8	239	145	46	121	121	GENE_4757.nex
+   9	AA	10	907	842	406	113	113	GENE_4793.nex
+  10	AA	10	382	293	126	144	144	GENE_4796.nex
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+SUBSTITUTION PROCESS
+--------------------
+
+Topology-unlinked partition model with joint substitution model and separate rates across sites
+
+  ID  Model         TreeLen  Parameters
+   1  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 3.6591  MIX{GTR20,GTR20,GTR20,GTR20}+I{0.231117}+G4{1.37705}
+   2  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 7.2357  MIX{GTR20,GTR20,GTR20,GTR20}+G4{0.599251}
+   3  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 2.9981  MIX{GTR20,GTR20,GTR20,GTR20}+G4{0.503033}
+   4  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 11.9746  MIX{GTR20,GTR20,GTR20,GTR20}+G4{0.957846}
+   5  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 4.3455  MIX{GTR20,GTR20,GTR20,GTR20}+G4{0.454442}
+   6  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 5.3957  MIX{GTR20,GTR20,GTR20,GTR20}+G4{0.539945}
+   7  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 6.4802  MIX{GTR20,GTR20,GTR20,GTR20}+G4{1.0101}
+   8  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 2.5462  MIX{GTR20,GTR20,GTR20,GTR20}+G4{0.445429}
+   9  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 9.9249  MIX{GTR20,GTR20,GTR20,GTR20}+G4{1.04145}
+  10  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 5.8918  MIX{GTR20,GTR20,GTR20,GTR20}+G4{0.442575}
+
+Linked model of substitution: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}
+
+  No  Component      Rate    Weight   Parameters
+   1  GTR20         1.0000   0.2462   GTR20+FO{0.0750844,0.0498573,0.022275,0.0690164,0.0301604,0.0204666,0.00740124,0.0563608,0.000190378,0.138714,0.171243,0.0471392,0.0284387,0.0169531,0.0217422,0.0394125,0.0370724,0.0119705,0.0207808,0.135721}
+   2  GTR20         1.0000   0.2532   GTR20+FO{0.0875259,0.0814659,0.0503852,0.0272808,0.0265183,0.0637486,0.0458491,0.103211,0.0455511,0.0243457,0.0445635,0.0675886,0.0217247,0.037134,0.0232645,0.105883,0.0497492,0.0119737,0.0326566,0.0495806}
+   3  GTR20         1.0000   0.2498   GTR20+FO{0.123465,0.0431354,0.0184182,0.0647664,0.00941364,0.0360041,0.0950604,0.0260568,0.032645,0.0175506,0.14137,0.018433,0.017703,0.0651051,0.018891,0.120321,0.0355932,0.00720437,0.0428244,0.0660402}
+   4  GTR20         1.0000   0.2508   GTR20+FO{0.0840377,0.0305739,0.0408393,0.0650042,0.00564295,0.0291985,0.0880534,0.0971233,0.0166364,0.0201273,0.0752181,0.0744412,0.0182417,0.0173594,0.124656,0.0861796,0.0501723,0.0126867,8.93795e-005,0.063719}
+
+Linked substitution parameters (lower-diagonal):
+
+ 0.000100
+ 0.000100 0.379629
+ 0.112883 0.028414 4.539038
+ 0.902338 0.654159 0.418376 0.110492
+ 0.370898 2.278487 0.970428 0.000100 0.136552
+ 0.616997 0.003959 0.600583 4.977767 0.000100 2.767847
+ 1.254524 0.572315 0.998561 0.824783 0.229810 0.085943 0.452951
+ 0.000100 1.357101 4.119328 0.192417 0.801535 5.492239 0.000100 0.260001
+ 0.043901 0.099698 0.209727 0.026399 0.000100 0.001353 0.005080 0.000100 0.042964
+ 0.029602 0.206001 0.003955 0.000100 0.195844 0.627525 0.051383 0.012191 0.477853 2.590459
+ 0.260567 4.852620 2.603416 0.000749 0.000100 2.611315 1.153161 0.288138 0.000100 0.083783 0.000100
+ 0.146328 0.170647 0.009536 0.000100 0.482026 0.796520 0.060997 0.000100 0.108171 4.080641 5.210652 0.951190
+ 0.000100 0.000100 0.000100 0.000100 1.284944 0.043446 0.000100 0.000100 0.059406 1.007308 1.713871 0.000100 0.645485
+ 0.821664 0.364038 0.000100 0.083115 0.035952 1.047718 0.068421 0.000100 0.430642 0.001820 0.305993 0.000529 0.000100 0.114390
+ 2.351364 0.592701 3.784411 0.705860 2.980327 0.448878 0.222036 0.890265 0.500054 0.074739 0.459080 0.295551 0.668472 0.446687 1.432089
+ 3.051108 0.651054 1.921533 0.140269 0.366976 0.262864 0.199196 0.000100 0.347833 1.516652 0.101076 0.993746 2.650072 0.028332 0.730397 5.749772
+ 0.047655 0.345606 0.000385 0.000100 0.476602 0.000100 0.046897 0.137005 0.407599 0.000100 0.378704 0.096535 0.000100 0.916343 0.000100 0.080621 0.000100
+ 0.021771 0.012661 0.738089 0.140454 2.288620 0.000100 0.000100 0.000100 4.974444 0.000100 0.000100 0.000100 0.000100 7.091495 0.000100 0.406967 0.000100 2.080494
+ 1.884070 0.158784 0.233821 0.142644 0.613479 0.097849 0.242033 0.167121 0.023103 10.079402 1.213054 0.095763 2.122326 0.229238 0.093589 0.024966 1.698746 0.000100 0.214500
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -63646.1024 (s.e. 544.1183)
+Unconstrained log-likelihood (without tree): -30573.6209
+Number of free parameters (#branches + #model parameters): 436
+Akaike information criterion (AIC) score: 128164.2049
+Corrected Akaike information criterion (AICc) score: 128244.5981
+Bayesian information criterion (BIC) score: 131020.8686
+
+Total tree length (sum of branch lengths): 60.4518
+Sum of internal branch lengths: 8.7661 (14.5010% of tree length)
+
+Tree topologies are unlinked across partitions, thus no drawing will be displayed here
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t Qplant.F4.treefile
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Aug 17 03:53:03 2024
+Total CPU time used: 6690 seconds (1h:51m:30s)
+Total wall-clock time used: 9464 seconds (2h:37m:43s)
+

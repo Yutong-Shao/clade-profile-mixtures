@@ -1,0 +1,28 @@
+#nexus
+begin sets;
+  charset GENE_4793.nex = example_genes/GENE_4793.nex: ;
+  charset GENE_5354.nex = example_genes/GENE_5354.nex: ;
+  charset GENE_5355.nex = example_genes/GENE_5355.nex: ;
+  charset GENE_6221.nex = example_genes/GENE_6221.nex: ;
+  charset GENE_7371.nex = example_genes/GENE_7371.nex: ;
+  charset GENE_7572.nex = example_genes/GENE_7572.nex: ;
+  charset GENE_7577.nex = example_genes/GENE_7577.nex: ;
+  charset GENE_7583.nex = example_genes/GENE_7583.nex: ;
+  charset GENE_7601.nex = example_genes/GENE_7601.nex: ;
+  charset GENE_7602.nex = example_genes/GENE_7602.nex: ;
+  charset GENE_7628.nex = example_genes/GENE_7628.nex: ;
+  charset GENE_7631.nex = example_genes/GENE_7631.nex: ;
+  charpartition mymodels =
+    JTT+G4: GENE_4793.nex,
+    JTT+G4: GENE_5354.nex,
+    JTT+G4: GENE_5355.nex,
+    JTT+R2: GENE_6221.nex,
+    JTT+G4: GENE_7371.nex,
+    JTT+G4: GENE_7572.nex,
+    JTT+G4: GENE_7577.nex,
+    JTT+G4: GENE_7583.nex,
+    JTT+G4: GENE_7601.nex,
+    JTT+G4: GENE_7602.nex,
+    JTT+F+G4: GENE_7628.nex,
+    LG+G4: GENE_7631.nex;
+end;

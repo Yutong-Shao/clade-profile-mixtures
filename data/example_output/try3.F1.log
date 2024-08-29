@@ -1,0 +1,609 @@
+IQ-TREE multicore version 2.3.6.4.mixlink for Windows 64-bit built Aug 16 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    LAPTOP-3S79O3C7 (AVX2, FMA3, 15 GB RAM)
+Command: C:\Windows\system32\iqtree2.exe -S try3.best_model.nex -te try3.treefile --model-joint MIX{GTR20+F1} --init-exchange LG -pre try3.F1
+Seed:    46138 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Aug 19 21:38:04 2024
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading partition model file try3.best_model.nex ...
+
+Loading 13 partitions...
+Reading alignment file example_genes/GENE_4744.nex ... Nexus format detected
+WARNING: 4 sites contain only gaps or ambiguous characters.
+Alignment has 24 sequences with 547 columns, 467 distinct patterns
+280 parsimony-informative, 106 singleton sites, 161 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0003174 secs
+   1  JDQB   22.12%    passed     94.70%
+   2  JTRM    3.66%    passed     99.65%
+   3  HJMP    5.12%    passed     99.99%
+   4  BJSW    3.29%    passed     99.99%
+   5  AWQB   17.00%    passed     95.87%
+   6  SUAK    8.23%    passed     99.52%
+   7  VZCI    3.66%    passed     99.99%
+   8  TJLC    4.20%    passed    100.00%
+   9  JTQQ    2.19%    passed     99.99%
+  10  MQIV    3.47%    passed     99.99%
+  11  LELS    7.50%    passed     98.12%
+  12  XVJB    2.01%    passed     99.97%
+  13  OOSO    6.95%    passed     99.99%
+  14  WKCY    2.01%    passed     99.93%
+  15  XIRK    1.83%    passed     88.96%
+  16  GHLP   45.16%    passed     89.49%
+  17  PKOX   39.12%    passed     57.38%
+  18  EILE    2.01%    passed    100.00%
+  19  HLJG    4.20%    passed    100.00%
+  20  WRPP    4.75%    passed     99.94%
+  21  WBIB   11.52%    passed     99.95%
+  22  BYQM    2.74%    passed     98.54%
+  23  XGFU   39.67%    passed     88.80%
+  24  IRAF    2.19%    passed    100.00%
+****  TOTAL   10.19%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4757.nex ... Nexus format detected
+WARNING: 9 sites contain only gaps or ambiguous characters.
+Alignment has 23 sequences with 239 columns, 157 distinct patterns
+87 parsimony-informative, 47 singleton sites, 105 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 6.14e-005 secs
+   1  JDQB   13.81%    passed    100.00%
+   2  JTRM    5.44%    passed    100.00%
+   3  BJSW    8.37%    passed    100.00%
+   4  AWQB   12.13%    passed     99.98%
+   5  SUAK    6.69%    passed     99.98%
+   6  VZCI   12.97%    passed    100.00%
+   7  TJLC    3.77%    passed     99.99%
+   8  JTQQ   10.46%    passed     99.98%
+   9  MQIV    5.86%    passed     99.78%
+  10  LELS   10.04%    passed    100.00%
+  11  XVJB    8.37%    passed    100.00%
+  12  OOSO   11.30%    passed    100.00%
+  13  WKCY    6.28%    passed     99.93%
+  14  XIRK   17.57%    passed    100.00%
+  15  GHLP    7.11%    passed    100.00%
+  16  PKOX   21.76%    passed     83.66%
+  17  EILE   10.88%    passed    100.00%
+  18  HLJG    6.28%    passed    100.00%
+  19  WRPP    9.62%    passed    100.00%
+  20  WBIB   16.74%    passed     99.99%
+  21  BYQM   12.97%    passed    100.00%
+  22  XGFU   12.13%    passed     99.15%
+  23  IRAF   13.81%    passed    100.00%
+****  TOTAL   10.62%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4793.nex ... Nexus format detected
+WARNING: 8 sites contain only gaps or ambiguous characters.
+Alignment has 24 sequences with 907 columns, 821 distinct patterns
+543 parsimony-informative, 183 singleton sites, 181 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 8.36e-005 secs
+   1  JDQB   43.55%    passed     17.82%
+   2  JTRM   19.51%    passed     98.82%
+   3  HJMP   13.56%    passed     99.00%
+   4  BJSW   11.80%    passed     96.76%
+   5  AWQB    8.16%    passed     92.73%
+   6  SUAK   13.67%    passed     98.95%
+   7  VZCI   12.13%    passed     98.65%
+   8  TJLC   16.21%    passed     99.84%
+   9  JTQQ   12.46%    passed     99.99%
+  10  MQIV   11.91%    passed     98.30%
+  11  LELS   12.79%    passed     96.84%
+  12  XVJB   16.21%    passed     99.98%
+  13  OOSO   57.55%    passed     95.91%
+  14  WKCY   12.57%    passed     99.62%
+  15  XIRK    6.62%    passed     99.95%
+  16  GHLP   16.21%    passed     99.92%
+  17  PKOX    8.27%    passed     55.75%
+  18  EILE   11.03%    passed    100.00%
+  19  HLJG   11.47%    passed     97.15%
+  20  WRPP   59.76%    passed     93.97%
+  21  WBIB   18.74%    passed     95.28%
+  22  BYQM   12.57%    passed     99.86%
+  23  XGFU   39.25%    passed     95.16%
+  24  IRAF   47.30%    passed     81.07%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL   20.55%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_5354.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 23 sequences with 311 columns, 245 distinct patterns
+152 parsimony-informative, 58 singleton sites, 100 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.39e-005 secs
+   1  JDQB    9.00%    passed     97.62%
+   2  JTRM    7.40%    passed     99.04%
+   3  HJMP    7.72%    passed     99.65%
+   4  BJSW    9.00%    passed     97.89%
+   5  AWQB    4.18%    passed     99.26%
+   6  SUAK    6.11%    passed     97.70%
+   7  VZCI    2.25%    passed     98.15%
+   8  TJLC    4.82%    passed     99.96%
+   9  JTQQ    5.79%    passed     98.81%
+  10  MQIV    7.07%    passed     99.98%
+  11  LELS    8.36%    passed     99.25%
+  12  XVJB    6.11%    passed     99.86%
+  13  OOSO    4.82%    passed     96.52%
+  14  WKCY    6.11%    passed     99.94%
+  15  XIRK    9.00%    passed     88.38%
+  16  GHLP   28.94%    passed     82.57%
+  17  PKOX   14.79%    passed     85.52%
+  18  EILE    7.72%    passed     99.99%
+  19  HLJG   11.90%    passed     99.96%
+  20  WRPP    6.75%    passed     99.97%
+  21  WBIB    8.68%    passed     99.99%
+  22  BYQM    7.72%    passed     99.95%
+  23  XGFU   46.95%    passed     92.59%
+****  TOTAL   10.05%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_5355.nex ... Nexus format detected
+Alignment has 21 sequences with 390 columns, 348 distinct patterns
+233 parsimony-informative, 79 singleton sites, 78 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 6.75e-005 secs
+   1  JDQB    5.13%    passed     93.91%
+   2  JTRM   10.77%    passed     93.72%
+   3  HJMP   61.54%    passed     69.25%
+   4  BJSW    9.74%    passed     72.10%
+   5  AWQB    4.87%    passed     87.15%
+   6  SUAK    7.44%    passed     92.96%
+   7  VZCI    9.49%    passed     99.71%
+   8  TJLC   66.15%    passed     49.15%
+   9  JTQQ    6.92%    passed     99.26%
+  10  MQIV   13.08%    passed     99.64%
+  11  LELS   20.00%    passed     62.03%
+  12  XVJB   35.64%    passed      9.60%
+  13  OOSO   10.77%    passed     90.89%
+  14  WKCY    8.97%    passed     99.73%
+  15  XIRK    5.13%    passed     98.13%
+  16  GHLP   10.77%    passed     98.88%
+  17  PKOX    4.87%    passed     88.72%
+  18  HLJG   51.03%    passed     91.99%
+  19  WRPP   10.51%    passed     95.87%
+  20  WBIB   11.28%    passed     98.43%
+  21  BYQM    8.46%    passed     97.93%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL   17.74%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_5357.nex ... Nexus format detected
+Alignment has 23 sequences with 142 columns, 106 distinct patterns
+35 parsimony-informative, 21 singleton sites, 86 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.54e-005 secs
+   1  JDQB    1.41%    passed     99.98%
+   2  JTRM    0.70%    passed    100.00%
+   3  HJMP    2.11%    passed    100.00%
+   4  BJSW    0.70%    passed    100.00%
+   5  AWQB    4.93%    passed     99.98%
+   6  SUAK    0.70%    passed    100.00%
+   7  TJLC    0.70%    passed    100.00%
+   8  JTQQ    0.70%    passed    100.00%
+   9  MQIV    0.70%    passed    100.00%
+  10  LELS    7.75%    passed     99.61%
+  11  XVJB   24.65%    passed     99.54%
+  12  OOSO    1.41%    passed    100.00%
+  13  WKCY    1.41%    passed     99.98%
+  14  XIRK    0.70%    passed    100.00%
+  15  GHLP   57.75%    passed     75.24%
+  16  PKOX    4.93%    passed     99.96%
+  17  EILE   17.61%    passed     99.98%
+  18  HLJG    0.70%    passed    100.00%
+  19  WRPP    0.70%    passed    100.00%
+  20  WBIB    1.41%    passed     99.97%
+  21  BYQM    1.41%    passed    100.00%
+  22  XGFU    0.70%    passed    100.00%
+  23  IRAF    0.70%    passed    100.00%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL    5.85%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_6176.nex ... Nexus format detected
+WARNING: 6 sites contain only gaps or ambiguous characters.
+Alignment has 23 sequences with 571 columns, 374 distinct patterns
+233 parsimony-informative, 105 singleton sites, 233 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.83e-005 secs
+   1  JDQB   11.56%    passed     99.97%
+   2  HJMP    6.30%    passed    100.00%
+   3  BJSW    3.33%    passed     99.99%
+   4  AWQB   12.61%    passed     99.96%
+   5  SUAK    4.73%    passed    100.00%
+   6  VZCI    8.06%    passed    100.00%
+   7  TJLC    3.68%    passed    100.00%
+   8  JTQQ    4.55%    passed    100.00%
+   9  MQIV    7.53%    passed     99.99%
+  10  LELS    7.88%    passed     99.08%
+  11  XVJB    4.38%    passed    100.00%
+  12  OOSO    7.88%    passed     99.84%
+  13  WKCY    6.83%    passed     99.99%
+  14  XIRK   12.08%    passed    100.00%
+  15  GHLP   10.68%    passed    100.00%
+  16  PKOX   11.73%    passed     97.36%
+  17  EILE    3.50%    passed    100.00%
+  18  HLJG    8.41%    passed    100.00%
+  19  WRPP    3.15%    passed    100.00%
+  20  WBIB    9.28%    passed    100.00%
+  21  BYQM    8.58%    passed    100.00%
+  22  XGFU    3.50%    passed    100.00%
+  23  IRAF    7.53%    passed    100.00%
+****  TOTAL    7.29%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_6183.nex ... Nexus format detected
+Alignment has 21 sequences with 490 columns, 453 distinct patterns
+286 parsimony-informative, 86 singleton sites, 118 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0001404 secs
+   1  JDQB   35.51%    passed     97.39%
+   2  JTRM   14.49%    passed     82.97%
+   3  HJMP   32.65%    passed     80.08%
+   4  BJSW    9.39%    passed     99.75%
+   5  AWQB    4.49%    passed     99.95%
+   6  SUAK   51.02%    passed     76.43%
+   7  VZCI   42.24%    passed     64.02%
+   8  JTQQ   53.27%    passed     11.67%
+   9  MQIV   12.65%    passed     92.45%
+  10  LELS   26.53%    passed     72.05%
+  11  WKCY   14.08%    passed     98.94%
+  12  XIRK    4.29%    passed     99.99%
+  13  GHLP    9.39%    passed     97.05%
+  14  PKOX   10.20%    passed     76.80%
+  15  EILE   33.06%    passed     98.94%
+  16  HLJG    8.16%    passed     96.07%
+  17  WRPP    7.14%    passed     99.95%
+  18  WBIB   51.84%    passed     99.72%
+  19  BYQM   21.63%    passed     95.71%
+  20  XGFU   38.37%    passed     73.86%
+  21  IRAF    6.53%    passed     95.99%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL   23.19%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_6216.nex ... Nexus format detected
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 24 sequences with 336 columns, 250 distinct patterns
+148 parsimony-informative, 65 singleton sites, 122 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.13e-005 secs
+   1  JDQB    5.65%    passed     99.99%
+   2  JTRM    2.08%    passed     97.57%
+   3  HJMP    2.38%    passed     99.98%
+   4  BJSW    3.57%    passed    100.00%
+   5  AWQB    4.76%    passed     99.91%
+   6  SUAK    2.08%    passed     99.99%
+   7  VZCI    4.17%    passed     99.82%
+   8  TJLC    3.57%    passed    100.00%
+   9  JTQQ    2.38%    passed    100.00%
+  10  MQIV    3.57%    passed     99.96%
+  11  LELS    5.06%    passed    100.00%
+  12  XVJB    2.08%    passed     99.89%
+  13  OOSO    4.76%    passed     99.90%
+  14  WKCY    2.68%    passed     99.99%
+  15  XIRK    4.46%    passed     98.97%
+  16  GHLP    5.65%    passed     99.98%
+  17  PKOX    5.65%    passed     99.92%
+  18  EILE    5.36%    passed     99.99%
+  19  HLJG   58.63%    passed     80.67%
+  20  WRPP    2.08%    passed    100.00%
+  21  WBIB    4.46%    passed     99.87%
+  22  BYQM    4.46%    passed     99.98%
+  23  XGFU    2.08%    passed    100.00%
+  24  IRAF   12.50%    passed    100.00%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL    6.42%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_6221.nex ... Nexus format detected
+WARNING: 3 sites contain only gaps or ambiguous characters.
+Alignment has 20 sequences with 289 columns, 263 distinct patterns
+144 parsimony-informative, 58 singleton sites, 87 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 9.01e-005 secs
+   1  JDQB    2.42%    passed     79.87%
+   2  JTRM    2.42%    passed     99.98%
+   3  HJMP    1.73%    passed     99.98%
+   4  BJSW    3.46%    passed     99.18%
+   5  AWQB   14.19%    passed     82.69%
+   6  VZCI   55.36%    passed     96.13%
+   7  TJLC    2.42%    passed     99.99%
+   8  JTQQ    2.42%    passed     99.99%
+   9  MQIV    2.77%    passed    100.00%
+  10  LELS    8.65%    passed    100.00%
+  11  OOSO   54.67%    passed     97.71%
+  12  WKCY    1.38%    passed     98.54%
+  13  XIRK   63.32%    passed     32.48%
+  14  GHLP    2.77%    passed     98.04%
+  15  EILE    1.38%    passed    100.00%
+  16  HLJG   23.53%    passed     95.75%
+  17  WRPP   35.64%    passed     99.48%
+  18  WBIB   37.37%    passed     68.50%
+  19  XGFU    2.42%    passed    100.00%
+  20  IRAF    9.34%    passed     99.51%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL   16.38%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_6303.nex ... Nexus format detected
+Alignment has 24 sequences with 231 columns, 194 distinct patterns
+99 parsimony-informative, 39 singleton sites, 93 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.23e-005 secs
+   1  JDQB    8.23%    passed    100.00%
+   2  JTRM    8.23%    passed    100.00%
+   3  HJMP    5.19%    passed     99.82%
+   4  BJSW    6.06%    passed     99.96%
+   5  AWQB    9.96%    passed     99.99%
+   6  SUAK    4.76%    passed     99.99%
+   7  VZCI   14.72%    passed     99.68%
+   8  TJLC    3.90%    passed    100.00%
+   9  JTQQ    6.49%    passed     99.73%
+  10  MQIV    6.06%    passed    100.00%
+  11  LELS   10.39%    passed     99.89%
+  12  XVJB   34.63%    passed     99.26%
+  13  OOSO   48.48%    passed     87.80%
+  14  WKCY   12.99%    passed     99.52%
+  15  XIRK    9.96%    passed    100.00%
+  16  GHLP    6.06%    passed     99.93%
+  17  PKOX   20.35%    passed     99.17%
+  18  EILE    6.49%    passed    100.00%
+  19  HLJG   37.23%    passed     99.59%
+  20  WRPP    7.36%    passed     99.73%
+  21  WBIB    9.09%    passed    100.00%
+  22  BYQM    9.52%    passed     99.89%
+  23  XGFU    4.76%    passed     99.94%
+  24  IRAF    6.06%    passed     99.33%
+****  TOTAL   12.37%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_6318.nex ... Nexus format detected
+WARNING: 3 sites contain only gaps or ambiguous characters.
+Alignment has 24 sequences with 824 columns, 687 distinct patterns
+428 parsimony-informative, 156 singleton sites, 239 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0001231 secs
+   1  JDQB   19.17%    passed     99.90%
+   2  JTRM    2.31%    passed     99.96%
+   3  HJMP   50.61%    passed     95.03%
+   4  BJSW    2.79%    passed     99.86%
+   5  AWQB   19.05%    passed     93.20%
+   6  SUAK   41.14%    passed     71.14%
+   7  VZCI   19.42%    passed     97.82%
+   8  TJLC    1.82%    passed     99.49%
+   9  JTQQ   14.68%    passed     99.97%
+  10  MQIV    3.40%    passed     99.77%
+  11  LELS   19.42%    passed     98.94%
+  12  XVJB    2.31%    passed     99.44%
+  13  OOSO   64.20%    passed     67.90%
+  14  WKCY    2.06%    passed     97.46%
+  15  XIRK   19.05%    passed     98.60%
+  16  GHLP    5.83%    passed     99.94%
+  17  PKOX   20.63%    passed     86.19%
+  18  EILE   41.26%    passed     99.97%
+  19  HLJG   18.93%    passed     99.99%
+  20  WRPP   53.52%    passed     83.54%
+  21  WBIB   20.51%    passed     99.75%
+  22  BYQM   20.27%    passed     99.91%
+  23  XGFU    7.16%    passed     99.21%
+  24  IRAF    7.40%    passed     99.98%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL   19.87%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_6320.nex ... Nexus format detected
+WARNING: 4 sites contain only gaps or ambiguous characters.
+Alignment has 23 sequences with 528 columns, 449 distinct patterns
+272 parsimony-informative, 86 singleton sites, 170 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 7.12e-005 secs
+   1  JDQB    8.33%    passed     94.23%
+   2  JTRM   14.20%    passed     99.92%
+   3  HJMP   36.36%    passed     97.05%
+   4  BJSW    2.84%    passed     99.86%
+   5  AWQB   62.12%    passed     35.64%
+   6  SUAK    5.68%    passed    100.00%
+   7  VZCI    2.08%    passed    100.00%
+   8  TJLC   10.98%    passed     99.96%
+   9  JTQQ    3.41%    passed     97.59%
+  10  MQIV    2.84%    passed     99.38%
+  11  LELS    2.65%    passed     99.91%
+  12  OOSO   19.13%    passed     84.68%
+  13  WKCY    3.98%    passed     99.98%
+  14  XIRK    9.28%    passed     78.64%
+  15  GHLP   17.80%    passed     99.90%
+  16  PKOX   10.61%    passed     12.98%
+  17  EILE    3.98%    passed     99.98%
+  18  HLJG   23.86%    passed     97.59%
+  19  WRPP    3.41%    passed     99.97%
+  20  WBIB   45.83%    passed     96.07%
+  21  BYQM    9.47%    passed     99.98%
+  22  XGFU    2.27%    passed     99.68%
+  23  IRAF    3.22%    passed     99.94%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL   13.23%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	AA	24	547	280	161	JTT+G4{0.723703}	GENE_4744.nex
+2	AA	23	239	87	105	JTT+I{0.162285}+G4{0.523244}	GENE_4757.nex
+3	AA	24	907	543	181	JTT+G4{0.783105}	GENE_4793.nex
+4	AA	23	311	152	101	JTT+G4{0.561153}	GENE_5354.nex
+5	AA	21	390	233	78	JTT+I{0.137432}+G4{1.45696}	GENE_5355.nex
+6	AA	23	142	35	86	JTT+R3{0.707128,0.109614,0.278646,2.31298,0.0142262,19.5405}	GENE_5357.nex
+7	AA	23	571	233	233	JTT+I{0.273566}+G4{0.928176}	GENE_6176.nex
+8	AA	21	490	286	118	JTT+I{0.182163}+G4{1.12312}	GENE_6183.nex
+9	AA	24	336	148	123	JTT+G4{0.521262}	GENE_6216.nex
+10	AA	20	289	144	87	JTT+G4{0.702119}	GENE_6221.nex
+11	AA	24	231	99	93	JTT+I{0.309103}+G4{1.01804}	GENE_6303.nex
+12	AA	24	824	428	240	JTT+I{0.172304}+G4{1.02942}	GENE_6318.nex
+13	AA	23	528	272	170	JTT+I{0.158754}+R3{0.418832,0.23833,0.309873,1.37489,0.112541,4.21303}	GENE_6320.nex
+Linked 24 total sequences
+Reading input tree file try3.treefile ...
+WARNING: Normalizing category proportions so that sum of them equals to 1
+Linking GTR20+FO model across 13 partitions
+Mean state frequencies: 0.06609503 0.05363255 0.03920416 0.05604606 0.01902723 0.03773850 0.05946885 0.06964069 0.02696109 0.05610749 0.10335082 0.05530006 0.02015939 0.04863001 0.04446122 0.08603499 0.04436468 0.01442840 0.03005916 0.06928963
+
+NOTE: 70 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+Partition GENE_4793.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -20571.090
+Partition GENE_6318.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -15171.650
+Partition GENE_4744.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -9643.891
+Partition GENE_6320.nex / Model: GTR20+FO+I+R3 / df: 43 / LogL: -9120.005
+Partition GENE_6183.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -10179.250
+Partition GENE_6176.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -8928.401
+Partition GENE_5355.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -8071.212
+Partition GENE_6216.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -5238.012
+Partition GENE_5354.nex / Model: GTR20+FO+G4 / df: 43 / LogL: -5188.832
+Partition GENE_6221.nex / Model: GTR20+FO+G4 / df: 37 / LogL: -4603.181
+Partition GENE_6303.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -3572.927
+Partition GENE_4757.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -3297.656
+Partition GENE_5357.nex / Model: GTR20+FO+R3 / df: 43 / LogL: -1412.669
+1. Log-likelihood: -104998.777
+Optimizing linked GTR20+FO parameters across all partitions (208 free parameters)
+1. Log-likelihood: -104006.979
+Partition GENE_4793.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -20360.747
+Partition GENE_6318.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -15008.125
+Partition GENE_4744.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -9477.362
+Partition GENE_6320.nex / Model: GTR20+FO+I+R3 / df: 43 / LogL: -9060.795
+Partition GENE_6183.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -10076.725
+Partition GENE_6176.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -8862.411
+Partition GENE_5355.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -8017.106
+Partition GENE_6216.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -5201.022
+Partition GENE_5354.nex / Model: GTR20+FO+G4 / df: 43 / LogL: -5149.289
+Partition GENE_6221.nex / Model: GTR20+FO+G4 / df: 37 / LogL: -4544.000
+Partition GENE_6303.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -3574.358
+Partition GENE_4757.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -3261.657
+Partition GENE_5357.nex / Model: GTR20+FO+R3 / df: 43 / LogL: -1398.216
+2. Log-likelihood: -103991.813
+Optimizing linked GTR20+FO parameters across all partitions (208 free parameters)
+2. Log-likelihood: -103518.181
+Partition GENE_4793.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -20270.851
+Partition GENE_6318.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -14935.631
+Partition GENE_4744.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -9402.441
+Partition GENE_6320.nex / Model: GTR20+FO+I+R3 / df: 43 / LogL: -9011.118
+Partition GENE_6183.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -10046.963
+Partition GENE_6176.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -8818.535
+Partition GENE_5355.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -7996.219
+Partition GENE_6216.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -5172.450
+Partition GENE_5354.nex / Model: GTR20+FO+G4 / df: 43 / LogL: -5131.328
+Partition GENE_6221.nex / Model: GTR20+FO+G4 / df: 37 / LogL: -4528.218
+Partition GENE_6303.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -3558.757
+Partition GENE_4757.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -3245.671
+Partition GENE_5357.nex / Model: GTR20+FO+R3 / df: 43 / LogL: -1392.025
+3. Log-likelihood: -103510.207
+Optimizing linked GTR20+FO parameters across all partitions (208 free parameters)
+3. Log-likelihood: -103411.541
+Partition GENE_4793.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -20263.009
+Partition GENE_6318.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -14921.462
+Partition GENE_4744.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -9394.337
+Partition GENE_6320.nex / Model: GTR20+FO+I+R3 / df: 43 / LogL: -8999.877
+Partition GENE_6183.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -10039.961
+Partition GENE_6176.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -8810.942
+Partition GENE_5355.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -7980.272
+Partition GENE_6216.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -5172.423
+Partition GENE_5354.nex / Model: GTR20+FO+G4 / df: 43 / LogL: -5123.397
+Partition GENE_6221.nex / Model: GTR20+FO+G4 / df: 37 / LogL: -4519.262
+Partition GENE_6303.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -3553.748
+Partition GENE_4757.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -3241.914
+Partition GENE_5357.nex / Model: GTR20+FO+R3 / df: 43 / LogL: -1390.004
+4. Log-likelihood: -103410.607
+Optimizing linked GTR20+FO parameters across all partitions (208 free parameters)
+4. Log-likelihood: -103384.208
+Partition GENE_4793.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -20259.766
+Partition GENE_6318.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -14923.583
+Partition GENE_4744.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -9393.525
+Partition GENE_6320.nex / Model: GTR20+FO+I+R3 / df: 43 / LogL: -8995.227
+Partition GENE_6183.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -10035.358
+Partition GENE_6176.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -8805.908
+Partition GENE_5355.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -7981.740
+Partition GENE_6216.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -5169.278
+Partition GENE_5354.nex / Model: GTR20+FO+G4 / df: 43 / LogL: -5118.481
+Partition GENE_6221.nex / Model: GTR20+FO+G4 / df: 37 / LogL: -4518.630
+Partition GENE_6303.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -3552.711
+Partition GENE_4757.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -3239.257
+Partition GENE_5357.nex / Model: GTR20+FO+R3 / df: 43 / LogL: -1390.526
+5. Log-likelihood: -103383.991
+Optimizing linked GTR20+FO parameters across all partitions (208 free parameters)
+5. Log-likelihood: -103372.019
+Partition GENE_4793.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -20256.684
+Partition GENE_6318.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -14920.633
+Partition GENE_4744.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -9393.009
+Partition GENE_6320.nex / Model: GTR20+FO+I+R3 / df: 43 / LogL: -8994.599
+Partition GENE_6183.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -10034.720
+Partition GENE_6176.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -8805.423
+Partition GENE_5355.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -7980.282
+Partition GENE_6216.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -5168.147
+Partition GENE_5354.nex / Model: GTR20+FO+G4 / df: 43 / LogL: -5117.771
+Partition GENE_6221.nex / Model: GTR20+FO+G4 / df: 37 / LogL: -4519.101
+Partition GENE_6303.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -3551.849
+Partition GENE_4757.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -3239.406
+Partition GENE_5357.nex / Model: GTR20+FO+R3 / df: 43 / LogL: -1390.338
+6. Log-likelihood: -103371.963
+Optimizing linked GTR20+FO parameters across all partitions (208 free parameters)
+6. Log-likelihood: -103365.674
+Partition GENE_4793.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -20255.052
+Partition GENE_6318.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -14919.397
+Partition GENE_4744.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -9392.259
+Partition GENE_6320.nex / Model: GTR20+FO+I+R3 / df: 43 / LogL: -8993.534
+Partition GENE_6183.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -10031.801
+Partition GENE_6176.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -8805.488
+Partition GENE_5355.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -7980.756
+Partition GENE_6216.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -5169.409
+Partition GENE_5354.nex / Model: GTR20+FO+G4 / df: 43 / LogL: -5117.449
+Partition GENE_6221.nex / Model: GTR20+FO+G4 / df: 37 / LogL: -4518.783
+Partition GENE_6303.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -3552.196
+Partition GENE_4757.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -3239.338
+Partition GENE_5357.nex / Model: GTR20+FO+R3 / df: 43 / LogL: -1390.204
+7. Log-likelihood: -103365.667
+Optimizing linked GTR20+FO parameters across all partitions (208 free parameters)
+7. Log-likelihood: -103360.023
+Partition GENE_4793.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -20253.987
+Partition GENE_6318.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -14918.617
+Partition GENE_4744.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -9390.552
+Partition GENE_6320.nex / Model: GTR20+FO+I+R3 / df: 43 / LogL: -8993.604
+Partition GENE_6183.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -10034.893
+Partition GENE_6176.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -8803.569
+Partition GENE_5355.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -7979.717
+Partition GENE_6216.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -5168.140
+Partition GENE_5354.nex / Model: GTR20+FO+G4 / df: 43 / LogL: -5117.070
+Partition GENE_6221.nex / Model: GTR20+FO+G4 / df: 37 / LogL: -4518.861
+Partition GENE_6303.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -3552.585
+Partition GENE_4757.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -3238.459
+Partition GENE_5357.nex / Model: GTR20+FO+R3 / df: 43 / LogL: -1389.949
+8. Log-likelihood: -103360.001
+Optimizing linked GTR20+FO parameters across all partitions (208 free parameters)
+8. Log-likelihood: -103354.245
+Partition GENE_4793.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -20252.720
+Partition GENE_6318.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -14917.064
+Partition GENE_4744.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -9389.976
+Partition GENE_6320.nex / Model: GTR20+FO+I+R3 / df: 43 / LogL: -8992.896
+Partition GENE_6183.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -10033.169
+Partition GENE_6176.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -8803.710
+Partition GENE_5355.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -7979.705
+Partition GENE_6216.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -5169.089
+Partition GENE_5354.nex / Model: GTR20+FO+G4 / df: 43 / LogL: -5116.847
+Partition GENE_6221.nex / Model: GTR20+FO+G4 / df: 37 / LogL: -4518.432
+Partition GENE_6303.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -3552.145
+Partition GENE_4757.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -3238.613
+Partition GENE_5357.nex / Model: GTR20+FO+R3 / df: 43 / LogL: -1389.866
+9. Log-likelihood: -103354.232
+Optimizing linked GTR20+FO parameters across all partitions (208 free parameters)
+9. Log-likelihood: -103351.290
+Partition GENE_4793.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -20253.302
+Partition GENE_6318.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -14915.725
+Partition GENE_4744.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -9390.881
+Partition GENE_6320.nex / Model: GTR20+FO+I+R3 / df: 43 / LogL: -8993.374
+Partition GENE_6183.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -10032.584
+Partition GENE_6176.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -8802.680
+Partition GENE_5355.nex / Model: GTR20+FO+I+G4 / df: 39 / LogL: -7979.476
+Partition GENE_6216.nex / Model: GTR20+FO+G4 / df: 45 / LogL: -5168.173
+Partition GENE_5354.nex / Model: GTR20+FO+G4 / df: 43 / LogL: -5116.318
+Partition GENE_6221.nex / Model: GTR20+FO+G4 / df: 37 / LogL: -4518.722
+Partition GENE_6303.nex / Model: GTR20+FO+I+G4 / df: 45 / LogL: -3551.742
+Partition GENE_4757.nex / Model: GTR20+FO+I+G4 / df: 43 / LogL: -3238.192
+Partition GENE_5357.nex / Model: GTR20+FO+R3 / df: 43 / LogL: -1390.103
+10. Log-likelihood: -103351.273
+Optimizing linked GTR20+FO parameters across all partitions (208 free parameters)
+10. Log-likelihood: -103347.876
+Optimal log-likelihood: -103347.876
+Wrote distance file to... 
+Partition information was printed to try3.F1.best_model.nex
+BEST SCORE FOUND : -103347.876
+Total tree length: 75.202
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.001 sec (0h:0m:0s)
+Total CPU time used: 1006.562 sec (0h:16m:46s)
+Total wall-clock time used: 3152.494 sec (0h:52m:32s)
+
+Analysis results written to: 
+  IQ-TREE report:                try3.F1.iqtree
+  Maximum-likelihood tree:       try3.F1.treefile
+  Screen log file:               try3.F1.log
+  GTRPMIX nex file:              try3.F1.GTRPMIX.nex
+
+Date and Time: Mon Aug 19 22:30:37 2024

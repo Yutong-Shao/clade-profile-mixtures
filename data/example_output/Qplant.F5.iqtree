@@ -1,0 +1,141 @@
+IQ-TREE 2.3.6.4.mixlink built Aug 16 2024
+
+Partition file name: Q1F1.best_model.nex
+User tree file name: Q1F1.treefile
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 308148
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 11 taxa with 10 partitions and 5177 total sites (8.8837% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	11	493	342	199	177	177	GENE_4471.nex
+   2	AA	10	817	658	250	262	262	GENE_4519.nex
+   3	AA	9	444	272	130	190	190	GENE_4527.nex
+   4	AA	10	836	757	330	117	117	GENE_4603.nex
+   5	AA	10	233	163	62	108	108	GENE_4691.nex
+   6	AA	10	279	212	87	100	100	GENE_4724.nex
+   7	AA	11	547	453	199	140	140	GENE_4744.nex
+   8	AA	8	239	145	46	121	121	GENE_4757.nex
+   9	AA	10	907	842	406	113	113	GENE_4793.nex
+  10	AA	10	382	293	126	144	144	GENE_4796.nex
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+SUBSTITUTION PROCESS
+--------------------
+
+Topology-unlinked partition model with joint substitution model and separate rates across sites
+
+  ID  Model         TreeLen  Parameters
+   1  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 3.8099  MIX{GTR20,GTR20,GTR20,GTR20,GTR20}+I{0.231117}+G4{1.37705}
+   2  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 7.6793  MIX{GTR20,GTR20,GTR20,GTR20,GTR20}+G4{0.599251}
+   3  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 3.0813  MIX{GTR20,GTR20,GTR20,GTR20,GTR20}+G4{0.503033}
+   4  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 12.5051  MIX{GTR20,GTR20,GTR20,GTR20,GTR20}+G4{0.957846}
+   5  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 4.4088  MIX{GTR20,GTR20,GTR20,GTR20,GTR20}+G4{0.454442}
+   6  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 5.5664  MIX{GTR20,GTR20,GTR20,GTR20,GTR20}+G4{0.539945}
+   7  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 6.7584  MIX{GTR20,GTR20,GTR20,GTR20,GTR20}+G4{1.0101}
+   8  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 2.5416  MIX{GTR20,GTR20,GTR20,GTR20,GTR20}+G4{0.445429}
+   9  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 10.4242  MIX{GTR20,GTR20,GTR20,GTR20,GTR20}+G4{1.04145}
+  10  MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 6.1960  MIX{GTR20,GTR20,GTR20,GTR20,GTR20}+G4{0.442575}
+
+Linked model of substitution: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}
+
+  No  Component      Rate    Weight   Parameters
+   1  GTR20         1.0000   0.2039   GTR20+FO{0.143881,0.0346053,0.0182868,0.0613595,0.00473967,0.0334946,0.110895,0.0252871,0.0260651,0.0173215,0.150758,0.0180763,0.0178026,0.0638737,0.0252902,0.1206,0.029897,0.00539726,0.0343858,0.0579829}
+   2  GTR20         1.0000   0.2049   GTR20+FO{0.0607215,0.0928216,0.0386315,0.0273039,0.0215929,0.0633809,0.0492109,0.0982969,0.0364318,0.0274266,0.0781391,0.0737106,0.0213992,0.0435333,0.0166337,0.131398,0.0508906,0.0206413,0.00137305,0.0464628}
+   3  GTR20         1.0000   0.2097   GTR20+FO{0.104394,0.0324212,0.0446892,0.0442816,0.00543919,0.0321524,0.0861442,0.118019,0.0156122,0.020909,0.0668286,0.0887116,0.0247464,6.57858e-005,0.116537,0.084656,0.0490226,0.00754791,0.0109229,0.0468989}
+   4  GTR20         1.0000   0.1823   GTR20+FO{0.0670671,0.0624311,0.00647171,0.00992869,0.0210759,0.0187415,0.0193588,0.0221193,0.000275171,0.161579,0.221618,0.0514548,0.0253512,0.0261882,0.0222543,0.00784342,0.0344464,0.0120673,0.0135581,0.19617}
+   5  GTR20         1.0000   0.1992   GTR20+FO{0.0898421,0.0426153,0.0490051,0.124841,0.0387457,0.0321599,0.037151,0.0876047,0.0438731,0.0305962,0.030216,0.029778,0.00965078,0.0545939,0.0476735,0.0859888,0.0566263,0.0057372,0.0549875,0.0483145}
+
+Linked substitution parameters (lower-diagonal):
+
+ 0.000183
+ 0.000100 0.373779
+ 0.090828 0.028710 4.525948
+ 0.859838 0.670938 0.398556 0.083736
+ 0.322687 2.228083 0.924150 0.000100 0.154488
+ 0.500440 0.009585 0.551182 4.915247 0.000100 2.704122
+ 1.143801 0.531915 1.014446 0.817943 0.237181 0.050181 0.422865
+ 0.000100 1.301632 4.099403 0.138113 0.792143 5.564263 0.000100 0.186514
+ 0.152619 0.029540 0.273150 0.109305 0.000100 0.000895 0.014875 0.005184 0.094154
+ 0.000100 0.135599 0.020409 0.011552 0.218528 0.644890 0.061083 0.038957 0.541650 2.498090
+ 0.289760 4.731998 2.613877 0.027900 0.000100 2.517395 1.027688 0.227783 0.000100 0.063699 0.000100
+ 0.140747 0.157126 0.028598 0.000100 0.465832 0.743230 0.015581 0.000100 0.137056 4.066023 5.122902 0.947646
+ 0.000100 0.000100 0.000100 0.000100 1.252443 0.022823 0.000100 0.000100 0.050820 0.822705 1.597166 0.000100 0.621991
+ 0.724118 0.358657 0.000100 0.101186 0.022585 1.015440 0.120827 0.000100 0.415945 0.000298 0.353300 0.007566 0.000100 0.098968
+ 2.315283 0.581107 3.739544 0.673961 2.976992 0.430484 0.140185 0.803546 0.490131 0.089764 0.575373 0.299705 0.665502 0.344285 1.368609
+ 3.024055 0.647985 1.925488 0.144046 0.337236 0.252664 0.170315 0.000100 0.352165 1.499546 0.112346 0.994600 2.702598 0.010150 0.717122 5.707802
+ 0.047487 0.334358 0.001099 0.000100 0.461706 0.000100 0.037888 0.113230 0.373913 0.000100 0.371537 0.063764 0.000100 0.740526 0.000100 0.072496 0.000100
+ 0.024048 0.046224 0.684633 0.080338 2.334621 0.000100 0.000100 0.000100 4.992596 0.000100 0.009248 0.000100 0.000153 7.111475 0.000100 0.384861 0.000100 1.956425
+ 1.828941 0.122983 0.297431 0.250906 0.636270 0.141083 0.188920 0.140466 0.076173 10.126089 1.109652 0.089460 2.118185 0.219249 0.181769 0.057414 1.687796 0.000100 0.212810
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -63556.5242 (s.e. 542.8473)
+Unconstrained log-likelihood (without tree): -30573.6209
+Number of free parameters (#branches + #model parameters): 456
+Akaike information criterion (AIC) score: 128025.0485
+Corrected Akaike information criterion (AICc) score: 128113.3502
+Bayesian information criterion (BIC) score: 131012.7518
+
+Total tree length (sum of branch lengths): 62.9709
+Sum of internal branch lengths: 8.9028 (14.1379% of tree length)
+
+Tree topologies are unlinked across partitions, thus no drawing will be displayed here
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t Qplant.F5.treefile
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Aug 17 14:55:14 2024
+Total CPU time used: 8649 seconds (2h:24m:9s)
+Total wall-clock time used: 1.778e+004 seconds (4h:56m:23s)
+
