@@ -5,4 +5,12 @@
 
 data/processed_data
 data/output
-data/process/process.R
+process/process.R
+process/Q
+process/ComplexHeatmap.Rmd
+process/ComplexHeatmap.html
+data/example_genes
+data/example_outputs
+1st version
+2nd version
+server_output1
