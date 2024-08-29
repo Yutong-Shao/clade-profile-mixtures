@@ -9,7 +9,6 @@ process/process.R
 process/Q
 process/ComplexHeatmap.Rmd
 process/ComplexHeatmap.html
-data/example_genes
 data/example_outputs
 1st version
 2nd version
