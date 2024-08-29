@@ -90,3 +90,4 @@ tree <- as.phylo(hc)
 ggtree(tree) +
   geom_tiplab(size = 3, align = TRUE) +
   theme_tree2()
+

@@ -49,6 +49,7 @@ amino_acids <- c("A", "R", "N", "D", "C", "Q", "E", "G", "H", "I", "L", "K", "M"
 colnames(profile_matrix) <- amino_acids
 
 library(ggplot2)
+library(ggrepel)
 
 # Extract weights and scale them down to 50%
 weights <- as.numeric(sub(".*\\((.*)\\)", "\\1", rownames(profile_matrix)))
@@ -72,7 +73,7 @@ pca_data <- data.frame(pca_result$x, Weight = weights, Label = labels, Group = g
 # Plot the PCA
 ggplot(pca_data, aes(x = PC1, y = PC2, label = Label, color = Group)) +
   geom_point(aes(size = Weight), alpha = 0.7) +
-  geom_text(vjust = 1.5, hjust = 0.5, size = 3, show.legend = FALSE) +
+  geom_text_repel() +
   scale_size_continuous(range = c(1, 5)) +
   theme_minimal() +
   labs(title = "PCA Plot of Frequency Vectors",
