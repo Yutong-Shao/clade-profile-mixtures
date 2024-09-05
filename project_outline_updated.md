@@ -149,7 +149,7 @@ iqtree -rf tree_set1 tree_set2
 
 > [!Note]\
 > **Question :**\
-> The tested new models were only randomly selected from part of the 1KP dataset, so the original gene trees from the paper may not be directly available for comparison. Since the gene trees in the original paper were constructed using RAxML, should I:\
-> 1. Use RAxML to construct the gene trees for the filtered subsamples?\
+> The tested new models were only randomly selected from part of the 1KP dataset, so the original gene trees from the paper may not be directly available for comparison. Since the gene trees in the original paper were constructed using RAxML, should I:
+> 1. Use RAxML to construct the gene trees for the filtered subsamples?
 > 2. Use iqtree's ModelFinder to simulate the original paper and construct the gene trees?
 
