@@ -107,6 +107,15 @@ Subsequently, I estimated Q.plantF1 through Q.plantF8 generation by generation, 
 
 ![Image](process/data_analysis/PCA_Q_F1_8.png)
 
+### **2.2 Future Research: Pearson Correlation Coefficient** [Added on September 5]
+
+**For the new models obtained, such as Q.plantF1, Q.plantF10, Q.plantF20, etc., calculate their Pearson correlation coefficients with Q.plant from the original QMaker paper. This helps to validate the similarity or differences between them. (Alternatively, the percentage of positions where coefficients are larger or smaller can be compared, which can also be represented in a bubble plot.)**
+
+**The results would be presented in the form of tables or heatmaps.**
+
+### **2.3 Future Research: The Bubble Plot** [Added on September 5]
+
+**Use bubble plots to examine the relative differences in amino acid exchangeability coefficients between different models.**
 
 ## 3. Analyze the Q matrix
 
@@ -115,3 +124,32 @@ Using the test data, compare the performance of the estimated Q.plantFX with Q.p
 - Observe the numerical differences in their log-likelihoods, AIC, and BIC.
 
 - Alternatively, use the BIC criterion to count the number of times they are selected as the best model when constructing trees.
+
+### **Future Research:** [Added on September 5]
+
+**(a) Test whether the new models fit better to the data**
+
+**Test the goodness of fit for the new models using the following command:**
+
+```
+iqtree -S test_genes -m MF -mset JTT,WAG,LG,Q.plant,Q.plantF1,Q.plantF10,Q.plantF20
+```
+
+**Count how many times different models are selected as the best model at each gene locus in the test dataset.**
+
+**(b) Test whether the new models influence the topologies**
+
+**For each gene locus, when the new model is selected as the best model, use it to infer the gene tree and compare it to the gene trees from the original 1KP paper.**
+
+**The comparison method: nRF**
+
+```
+iqtree -rf tree_set1 tree_set2
+```
+
+> [!Note]\
+> **Question :**\
+> The tested new models were only randomly selected from part of the 1KP dataset, so the original gene trees from the paper may not be directly available for comparison. Since the gene trees in the original paper were constructed using RAxML, should I:\
+> 1. Use RAxML to construct the gene trees for the filtered subsamples?\
+> 2. Use iqtree's ModelFinder to simulate the original paper and construct the gene trees?
+
