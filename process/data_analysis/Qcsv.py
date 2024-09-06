@@ -4,9 +4,9 @@ import numpy as np
 import sys
 
 def convert_matrices_to_csv(folder_path):
-    # Define the list of amino acids excluding 'A'
+    # Define the list of amino acids
     amino_acids = [
-        'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I',
+        'A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I',
         'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V'
     ]
     
@@ -57,7 +57,9 @@ def convert_matrices_to_csv(folder_path):
                     index += 1
 
             # Create a DataFrame
-            df = pd.DataFrame(matrix, columns=amino_acids, index=amino_acids)
+            # Row names: second to twentieth amino acids ('R' to 'V')
+            # Column names: first 19 amino acids ('A' to 'Y')
+            df = pd.DataFrame(matrix, columns=amino_acids[:19], index=amino_acids[1:])
             
             # Generate the CSV file path within the 'Q' folder
             csv_filename = f"{filename}.csv"
@@ -75,4 +77,3 @@ if __name__ == "__main__":
     else:
         folder_path = sys.argv[1]
         convert_matrices_to_csv(folder_path)
-

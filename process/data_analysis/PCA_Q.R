@@ -67,7 +67,7 @@ plot_pca <- function(pca_result, file_names) {
   # Extract variance percentage explained by PCA
   variance_percent <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 2)
 
-  pca_df$color <- ifelse(pca_df$file %in% c("Q.plant", "Q.plantF1_1", "Q.plantF1_2", "Q.plantF1_3", "Q.plantF1_4"),
+  pca_df$color <- ifelse(pca_df$file %in% c("Q.plant", "Q.plantF1", "Q.plantF8", "Q.plantF1_3", "Q.plantF1_4"),
                          "Q.plant", "other")
 
   # Get the range of X and Y
@@ -80,13 +80,16 @@ plot_pca <- function(pca_result, file_names) {
 
   # Plot the PCA
   ggplot(pca_df, aes(x = PC1, y = PC2, label = file, color = color)) +
-    geom_ellipse(aes(x0 = -8, y0 = 6.8, a = 12, b = 7, angle = 1.2 * pi/4), color = "darkgreen", fill = scales::alpha("#A6C69F", 0.05), size = 0.6) +
+    #geom_ellipse(aes(x0 = -8, y0 = 6.8, a = 12, b = 7, angle = 1.2 * pi/4), color = "darkgreen", fill = scales::alpha("#A6C69F", 0.05), size = 0.6) +
     geom_point(size = 2) +
     geom_text_repel() +  # Use ggrepel to avoid label overlap
     xlim(x_range[1] - x_expand/5, x_range[2] + x_expand/5) +  # Expand X-axis range
     ylim(y_range[1] - y_expand/5, y_range[2] + y_expand/5) +  # Expand Y-axis range
     theme_minimal() +
-    theme(legend.position = "none") +
+    theme(legend.position = "none",
+          plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
+          legend.title = element_text(size = 10),
+          legend.text = element_text(size = 9)) +
     scale_color_manual(values = c("black", "darkgreen")) +
     labs(title = "PCA Plot of Exchangability Matrices",
          x = paste0("PC1 (", variance_percent[1], "%)"),

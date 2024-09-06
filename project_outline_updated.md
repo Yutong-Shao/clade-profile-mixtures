@@ -107,15 +107,40 @@ Subsequently, I estimated Q.plantF1 through Q.plantF8 generation by generation, 
 
 ![Image](process/data_analysis/PCA_Q_F1_8.png)
 
+**Idea:**
+
+**If we consider every profile mixture model from F1 to F8 in the comparison, we might observe that the overall improvement of the Q matrix at each step is not significant (this can also be confirmed in the Pearson correlation figure in section 2.2). However, if we only consider F1 and F8, as shown in the figure below, we can see that the matrix might have some degree of improvement.**
+
+**(Imagine using a larger dataset to train the model and comparing F1 with F10, F20, etc. I would expect to see more improvement in the Q matrix in such cases.)**
+
+![Image](process/data_analysis/PCA_Q_F1_8(2).png)
+
 ### **2.2 Future Research: Pearson Correlation Coefficient** [Added on September 5]
 
 **For the new models obtained, such as Q.plantF1, Q.plantF10, Q.plantF20, etc., calculate their Pearson correlation coefficients with Q.plant from the original QMaker paper. This helps to validate the similarity or differences between them. (Alternatively, the percentage of positions where coefficients are larger or smaller can be compared, which can also be represented in a bubble plot.)**
 
 **The results would be presented in the form of tables or heatmaps.**
 
+**(a) Example of the heatmap:**
+
+**As shown in the figure below, it displays the results of Pearson correlation calculations between Q.plantF1-F8, Q.LG, and Q.plant.**
+
+![Image](process/data_analysis/Correlation_Q.png)
+
+**(b) Example of the table:**
+
+| Matrix Comparison      | Pearson           | 1/3 (Greater 2x) | 2/3 (Greater 5x) | -1/3 (Less 2x) | -2/3 (Less 5x) |
+|------------------------|-------------------|------------------|------------------|----------------|----------------|
+| **Q.plant vs Q.plantF1**| 0.9489            |       34.07%     |       24.65%     |      13.57%     |      2.21%     |
+| **Q.plant vs Q.plantF8**| 0.9563            |       40.72%     |       26.03%     |      9.69%     |      2.21%     |
+
+**The content of this table can be used to supplement the explanation in the bubble plot in section 2.3.**
+
 ### **2.3 Future Research: The Bubble Plot** [Added on September 5]
 
 **Use bubble plots to examine the relative differences in amino acid exchangeability coefficients between different models.**
+
+![Image](process/data_analysis/Bubble_plot_Q.png)
 
 ## 3. Analyze the Q matrix
 
@@ -144,12 +169,19 @@ iqtree -S test_genes -m MF -mset JTT,WAG,LG,Q.plant,Q.plantF1,Q.plantF10,Q.plant
 **The comparison method: nRF**
 
 ```
+# Construct gene tree
+iqtree -s example.phy -m Q.plantF20
+```
+
+```
+# Calculate RF
 iqtree -rf tree_set1 tree_set2
 ```
+
+**And then, nRF equals to RF divided by 2(n−3), where n is the number of taxa.**
 
 > [!Note]\
 > **Question :**\
 > The tested new models were only randomly selected from part of the 1KP dataset, so the original gene trees from the paper may not be directly available for comparison. Since the gene trees in the original paper were constructed using RAxML, should I:
 > 1. Use RAxML to construct the gene trees for the filtered subsamples?
 > 2. Use iqtree's ModelFinder to simulate the original paper and construct the gene trees?
-

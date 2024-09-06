@@ -58,6 +58,7 @@ library(ggtree)
 library(ape)
 library(ComplexHeatmap)
 library(circlize)
+library(viridis)
 
 # Define KL divergence function
 kl_dist <- function(p, q) {
@@ -81,8 +82,7 @@ for(i in 1:nrow(profile_matrix)) {
 # Perform clustering using the calculated KL divergence matrix
 hc <- hclust(as.dist(kl_matrix), method = "complete")
 
-col_fun <- colorRamp2(c(min(profile_matrix), median(profile_matrix), max(profile_matrix)),
-                      c("#8FB4BE", "white", "#D93F49"))
+#col_fun <- colorRamp2(c(min(profile_matrix), median(profile_matrix), max(profile_matrix)),c("#8FB4BE", "white", "#D93F49"))
 
 # Create the heatmap
 Heatmap(profile_matrix,
@@ -99,5 +99,5 @@ Heatmap(profile_matrix,
         column_names_rot = 0,
         column_names_side = "bottom",  # Place the column labels at the bottom
         column_names_centered = TRUE,  # Center the column labels
-        col = col_fun
+        col = viridis(4)
 )
