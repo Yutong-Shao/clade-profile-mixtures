@@ -1,0 +1,189 @@
+IQ-TREE 2.3.6.5.ml built Sep 11 2024
+
+Partition file name: example_output/Q1F1.best_model.nex
+User tree file name: example_output/Q1F1.treefile
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 989755
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 15 taxa with 25 partitions and 10978 total sites (32.1224% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	12	493	413	200	155	155	GENE_4471.nex
+   2	AA	8	817	633	173	256	256	GENE_4519.nex
+   3	AA	13	444	358	188	152	152	GENE_4527.nex
+   4	AA	8	836	779	182	133	133	GENE_4603.nex
+   5	AA	13	233	209	108	34	34	GENE_4691.nex
+   6	AA	12	279	225	122	87	87	GENE_4724.nex
+   7	AA	8	547	445	128	179	179	GENE_4744.nex
+   8	AA	13	239	172	78	91	91	GENE_4757.nex
+   9	AA	10	907	866	328	127	127	GENE_4793.nex
+  10	AA	13	382	352	196	70	70	GENE_4796.nex
+  11	AA	10	342	318	137	68	68	GENE_5328.nex
+  12	AA	4	1258	803	31	407	407	GENE_5333.nex
+  13	AA	15	452	404	236	102	102	GENE_5335.nex
+  14	AA	13	637	620	361	72	72	GENE_5339.nex
+  15	AA	14	274	233	103	99	99	GENE_5343.nex
+  16	AA	12	306	272	150	92	92	GENE_6978.nex
+  17	AA	12	304	274	123	88	88	GENE_6979.nex
+  18	AA	11	256	251	133	32	32	GENE_6983.nex
+  19	AA	6	325	297	45	77	77	GENE_6989.nex
+  20	AA	11	169	138	42	63	63	GENE_6992.nex
+  21	AA	13	346	319	154	72	72	GENE_6995.nex
+  22	AA	12	296	261	139	65	65	GENE_7013.nex
+  23	AA	13	401	387	193	70	70	GENE_7021.nex
+  24	AA	9	188	140	44	83	83	GENE_7024.nex
+  25	AA	11	247	242	145	29	29	GENE_7025.nex
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+SUBSTITUTION PROCESS
+--------------------
+
+Topology-unlinked partition model with joint substitution model and separate rates across sites
+
+  ID  Model         TreeLen  Parameters
+   1  GTR20+FO+G4    4.7695  GTR20+FO+G4{0.685196}
+   2  GTR20+FO+G4    5.4128  GTR20+FO+G4{0.644451}
+   3  GTR20+FO+G4    3.8471  GTR20+FO+G4{0.605526}
+   4  GTR20+FO+G4    10.9691  GTR20+FO+G4{1.00094}
+   5  GTR20+FO+R2    6.5948  GTR20+FO+R2{0.760474,0.417947,0.239526,2.84797}
+   6  GTR20+FO+I+G4  5.2350  GTR20+FO+I{0.211599}+G4{1.578}
+   7  GTR20+FO+G4    3.8692  GTR20+FO+G4{1.30665}
+   8  GTR20+FO+G4    3.9104  GTR20+FO+G4{0.50561}
+   9  GTR20+FO+G4    8.9508  GTR20+FO+G4{1.09741}
+  10  GTR20+FO+G4    11.0783  GTR20+FO+G4{0.679883}
+  11  GTR20+FO+G4    8.2144  GTR20+FO+G4{0.782644}
+  12  GTR20+FO+G4    4.0695  GTR20+FO+G4{1.39413}
+  13  GTR20+FO+G4    4.3229  GTR20+FO+G4{0.981831}
+  14  GTR20+FO+G4    9.3680  GTR20+FO+G4{1.3353}
+  15  GTR20+FO+G4    5.4782  GTR20+FO+G4{0.45899}
+  16  GTR20+FO+G4    4.4034  GTR20+FO+G4{0.827221}
+  17  GTR20+FO+G4    4.0933  GTR20+FO+G4{0.691958}
+  18  GTR20+FO+G4    11.5536  GTR20+FO+G4{1.04602}
+  19  GTR20+FO+G4    5.2891  GTR20+FO+G4{1.3369}
+  20  GTR20+FO+G4    1.8430  GTR20+FO+G4{1.01208}
+  21  GTR20+FO+I+G4  11.1673  GTR20+FO+I{0.123413}+G4{1.06648}
+  22  GTR20+FO+G4    6.5614  GTR20+FO+G4{1.01142}
+  23  GTR20+FO+G4    11.2694  GTR20+FO+G4{0.941017}
+  24  GTR20+FO+G4    5.8319  GTR20+FO+G4{1.95688}
+  25  GTR20+FO+R2    8.0826  GTR20+FO+R2{0.290918,0.212934,0.709082,1.32291}
+
+Linked model of substitution: GTR20+FO
+WARNING: This model has 208 parameters that may be overfitting. Please use with caution!
+
+Substitution parameters (lower-diagonal) and state frequencies in PAML format (can be used as input for IQ-TREE): 
+
+ 0.215510
+ 0.007280 0.351273
+ 0.243465 0.064040 5.242893
+ 1.876625 0.710842 0.279940 0.098530
+ 0.896404 2.814422 1.284619 0.057191 0.185100
+ 0.951351 0.119838 0.497423 4.691327 0.000100 4.191580
+ 1.394449 0.461585 1.264357 0.795993 0.512425 0.512654 0.632845
+ 0.136524 2.295366 4.223921 0.792546 0.958711 4.582671 0.000375 0.103052
+ 0.000100 0.164034 0.303253 0.079608 0.042252 0.000100 0.000100 0.000100 0.015359
+ 0.156125 0.160549 0.068232 0.000100 0.638826 0.688761 0.051016 0.045515 0.375001 3.423790
+ 0.418847 5.747845 2.841379 0.129609 0.002843 3.159527 1.331165 0.407755 0.077530 0.105439 0.000100
+ 0.851537 0.654631 0.392602 0.024372 0.691764 1.281139 0.179228 0.359532 0.000100 4.393489 5.721110 1.177761
+ 0.034099 0.040595 0.000100 0.000100 1.222946 0.000100 0.000100 0.022641 0.733088 0.916294 2.064615 0.000100 1.407880
+ 0.991474 0.239523 0.108437 0.300797 0.000100 0.939081 0.252267 0.084529 0.686496 0.000100 0.296267 0.164624 0.119425 0.035861
+ 3.391075 0.569660 3.756394 0.996431 2.798272 0.684892 0.268846 1.374440 0.585641 0.009416 0.322926 0.672011 0.419126 0.581192 1.346334
+ 2.820315 0.543242 2.395529 0.222399 0.961056 0.544499 0.400073 0.159816 0.396830 1.469022 0.147167 1.226957 2.169320 0.145401 0.514007 6.236612
+ 0.093585 0.431179 0.025975 0.000100 0.689049 0.150662 0.000100 0.114780 0.332826 0.055371 0.145036 0.000100 0.515895 1.906050 0.050910 0.267098 0.000100
+ 0.075836 0.000100 0.624073 0.112352 1.400417 0.000100 0.000100 0.011667 5.105429 0.020243 0.098790 0.034236 0.259560 7.569310 0.048780 0.400037 0.000100 2.460912
+ 2.149335 0.052135 0.005953 0.098998 1.616230 0.233624 0.348692 0.072790 0.269188 10.550475 1.770355 0.094688 1.846817 0.225716 0.150256 0.070487 1.981897 0.053821 0.234116
+ 0.096394 0.063093 0.031825 0.059402 0.016130 0.036470 0.069524 0.069043 0.024675 0.041229 0.100349 0.052363 0.019284 0.034319 0.047998 0.079710 0.046739 0.012093 0.025270 0.074091
+
+State frequencies: (estimated with maximum likelihood)
+
+  pi(A) = 0.0964
+  pi(R) = 0.0631
+  pi(N) = 0.0318
+  pi(D) = 0.0594
+  pi(C) = 0.0161
+  pi(Q) = 0.0365
+  pi(E) = 0.0695
+  pi(G) = 0.0690
+  pi(H) = 0.0247
+  pi(I) = 0.0412
+  pi(L) = 0.1003
+  pi(K) = 0.0524
+  pi(M) = 0.0193
+  pi(F) = 0.0343
+  pi(P) = 0.0480
+  pi(S) = 0.0797
+  pi(T) = 0.0467
+  pi(W) = 0.0121
+  pi(Y) = 0.0253
+  pi(V) = 0.0741
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -130718.6829 (s.e. 762.5640)
+Unconstrained log-likelihood (without tree): -65300.3932
+Number of free parameters (#branches + #model parameters): 685
+Akaike information criterion (AIC) score: 262807.3657
+Corrected Akaike information criterion (AICc) score: 262898.6813
+Bayesian information criterion (BIC) score: 267810.3650
+
+Total tree length (sum of branch lengths): 166.1849
+Sum of internal branch lengths: 45.8511 (27.5904% of tree length)
+
+Tree topologies are unlinked across partitions, thus no drawing will be displayed here
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t example_output/Q.plantF1.treefile
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Sep 14 09:33:27 2024
+Total CPU time used: 1.613e+04 seconds (4h:28m:52s)
+Total wall-clock time used: 645.6 seconds (0h:10m:45s)
+

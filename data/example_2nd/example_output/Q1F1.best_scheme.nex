@@ -1,0 +1,54 @@
+#nexus
+begin sets;
+  charset GENE_4471.nex = example_genes/GENE_4471.nex: ;
+  charset GENE_4519.nex = example_genes/GENE_4519.nex: ;
+  charset GENE_4527.nex = example_genes/GENE_4527.nex: ;
+  charset GENE_4603.nex = example_genes/GENE_4603.nex: ;
+  charset GENE_4691.nex = example_genes/GENE_4691.nex: ;
+  charset GENE_4724.nex = example_genes/GENE_4724.nex: ;
+  charset GENE_4744.nex = example_genes/GENE_4744.nex: ;
+  charset GENE_4757.nex = example_genes/GENE_4757.nex: ;
+  charset GENE_4793.nex = example_genes/GENE_4793.nex: ;
+  charset GENE_4796.nex = example_genes/GENE_4796.nex: ;
+  charset GENE_5328.nex = example_genes/GENE_5328.nex: ;
+  charset GENE_5333.nex = example_genes/GENE_5333.nex: ;
+  charset GENE_5335.nex = example_genes/GENE_5335.nex: ;
+  charset GENE_5339.nex = example_genes/GENE_5339.nex: ;
+  charset GENE_5343.nex = example_genes/GENE_5343.nex: ;
+  charset GENE_6978.nex = example_genes/GENE_6978.nex: ;
+  charset GENE_6979.nex = example_genes/GENE_6979.nex: ;
+  charset GENE_6983.nex = example_genes/GENE_6983.nex: ;
+  charset GENE_6989.nex = example_genes/GENE_6989.nex: ;
+  charset GENE_6992.nex = example_genes/GENE_6992.nex: ;
+  charset GENE_6995.nex = example_genes/GENE_6995.nex: ;
+  charset GENE_7013.nex = example_genes/GENE_7013.nex: ;
+  charset GENE_7021.nex = example_genes/GENE_7021.nex: ;
+  charset GENE_7024.nex = example_genes/GENE_7024.nex: ;
+  charset GENE_7025.nex = example_genes/GENE_7025.nex: ;
+  charpartition mymodels =
+    LG+G4: GENE_4471.nex,
+    LG+G4: GENE_4519.nex,
+    LG+G4: GENE_4527.nex,
+    JTT+G4: GENE_4603.nex,
+    WAG+R2: GENE_4691.nex,
+    WAG+I+G4: GENE_4724.nex,
+    JTT+G4: GENE_4744.nex,
+    LG+G4: GENE_4757.nex,
+    JTT+G4: GENE_4793.nex,
+    LG+G4: GENE_4796.nex,
+    JTT+F+G4: GENE_5328.nex,
+    LG+F+G4: GENE_5333.nex,
+    LG+G4: GENE_5335.nex,
+    LG+G4: GENE_5339.nex,
+    LG+G4: GENE_5343.nex,
+    LG+G4: GENE_6978.nex,
+    LG+G4: GENE_6979.nex,
+    JTT+G4: GENE_6983.nex,
+    WAG+G4: GENE_6989.nex,
+    LG+G4: GENE_6992.nex,
+    JTT+I+G4: GENE_6995.nex,
+    LG+G4: GENE_7013.nex,
+    LG+G4: GENE_7021.nex,
+    WAG+G4: GENE_7024.nex,
+    JTT+R2: GENE_7025.nex;
+end;

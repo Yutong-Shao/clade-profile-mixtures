@@ -1,0 +1,54 @@
+#nexus
+begin sets;
+  charset GENE_4471.nex = example_genes/GENE_4471.nex: AA,;
+  charset GENE_4519.nex = example_genes/GENE_4519.nex: AA,;
+  charset GENE_4527.nex = example_genes/GENE_4527.nex: AA,;
+  charset GENE_4603.nex = example_genes/GENE_4603.nex: AA,;
+  charset GENE_4691.nex = example_genes/GENE_4691.nex: AA,;
+  charset GENE_4724.nex = example_genes/GENE_4724.nex: AA,;
+  charset GENE_4744.nex = example_genes/GENE_4744.nex: AA,;
+  charset GENE_4757.nex = example_genes/GENE_4757.nex: AA,;
+  charset GENE_4793.nex = example_genes/GENE_4793.nex: AA,;
+  charset GENE_4796.nex = example_genes/GENE_4796.nex: AA,;
+  charset GENE_5328.nex = example_genes/GENE_5328.nex: AA,;
+  charset GENE_5333.nex = example_genes/GENE_5333.nex: AA,;
+  charset GENE_5335.nex = example_genes/GENE_5335.nex: AA,;
+  charset GENE_5339.nex = example_genes/GENE_5339.nex: AA,;
+  charset GENE_5343.nex = example_genes/GENE_5343.nex: AA,;
+  charset GENE_6978.nex = example_genes/GENE_6978.nex: AA,;
+  charset GENE_6979.nex = example_genes/GENE_6979.nex: AA,;
+  charset GENE_6983.nex = example_genes/GENE_6983.nex: AA,;
+  charset GENE_6989.nex = example_genes/GENE_6989.nex: AA,;
+  charset GENE_6992.nex = example_genes/GENE_6992.nex: AA,;
+  charset GENE_6995.nex = example_genes/GENE_6995.nex: AA,;
+  charset GENE_7013.nex = example_genes/GENE_7013.nex: AA,;
+  charset GENE_7021.nex = example_genes/GENE_7021.nex: AA,;
+  charset GENE_7024.nex = example_genes/GENE_7024.nex: AA,;
+  charset GENE_7025.nex = example_genes/GENE_7025.nex: AA,;
+  charpartition mymodels =
+    GTR20+FO+G4{0.685196}: GENE_4471.nex{4.76953},
+    GTR20+FO+G4{0.644451}: GENE_4519.nex{5.41278},
+    GTR20+FO+G4{0.605526}: GENE_4527.nex{3.8471},
+    GTR20+FO+G4{1.00094}: GENE_4603.nex{10.9691},
+    GTR20+FO+R2{0.760474,0.417947,0.239526,2.84797}: GENE_4691.nex{6.59476},
+    GTR20+FO+I{0.211599}+G4{1.578}: GENE_4724.nex{5.23496},
+    GTR20+FO+G4{1.30665}: GENE_4744.nex{3.86917},
+    GTR20+FO+G4{0.50561}: GENE_4757.nex{3.91036},
+    GTR20+FO+G4{1.09741}: GENE_4793.nex{8.95076},
+    GTR20+FO+G4{0.679883}: GENE_4796.nex{11.0783},
+    GTR20+FO+G4{0.782644}: GENE_5328.nex{8.21438},
+    GTR20+FO+G4{1.39413}: GENE_5333.nex{4.06954},
+    GTR20+FO+G4{0.981831}: GENE_5335.nex{4.32295},
+    GTR20+FO+G4{1.3353}: GENE_5339.nex{9.36803},
+    GTR20+FO+G4{0.45899}: GENE_5343.nex{5.47823},
+    GTR20+FO+G4{0.827221}: GENE_6978.nex{4.40341},
+    GTR20+FO+G4{0.691958}: GENE_6979.nex{4.09333},
+    GTR20+FO+G4{1.04602}: GENE_6983.nex{11.5536},
+    GTR20+FO+G4{1.3369}: GENE_6989.nex{5.28914},
+    GTR20+FO+G4{1.01208}: GENE_6992.nex{1.84299},
+    GTR20+FO+I{0.123413}+G4{1.06648}: GENE_6995.nex{11.1673},
+    GTR20+FO+G4{1.01142}: GENE_7013.nex{6.56135},
+    GTR20+FO+G4{0.941017}: GENE_7021.nex{11.2694},
+    GTR20+FO+G4{1.95688}: GENE_7024.nex{5.83187},
+    GTR20+FO+R2{0.290918,0.212934,0.709082,1.32291}: GENE_7025.nex{8.08258};
+end;
