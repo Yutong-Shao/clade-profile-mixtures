@@ -1,0 +1,742 @@
+#nexus
+begin sets;
+  charset GENE_4471.nex = sub1/train/GENE_4471.nex: ;
+  charset GENE_4519.nex = sub1/train/GENE_4519.nex: ;
+  charset GENE_4527.nex = sub1/train/GENE_4527.nex: ;
+  charset GENE_4603.nex = sub1/train/GENE_4603.nex: ;
+  charset GENE_4691.nex = sub1/train/GENE_4691.nex: ;
+  charset GENE_4724.nex = sub1/train/GENE_4724.nex: ;
+  charset GENE_4744.nex = sub1/train/GENE_4744.nex: ;
+  charset GENE_4757.nex = sub1/train/GENE_4757.nex: ;
+  charset GENE_4793.nex = sub1/train/GENE_4793.nex: ;
+  charset GENE_4796.nex = sub1/train/GENE_4796.nex: ;
+  charset GENE_4806.nex = sub1/train/GENE_4806.nex: ;
+  charset GENE_4815.nex = sub1/train/GENE_4815.nex: ;
+  charset GENE_4848.nex = sub1/train/GENE_4848.nex: ;
+  charset GENE_4889.nex = sub1/train/GENE_4889.nex: ;
+  charset GENE_4890.nex = sub1/train/GENE_4890.nex: ;
+  charset GENE_4893.nex = sub1/train/GENE_4893.nex: ;
+  charset GENE_4904.nex = sub1/train/GENE_4904.nex: ;
+  charset GENE_4936.nex = sub1/train/GENE_4936.nex: ;
+  charset GENE_4942.nex = sub1/train/GENE_4942.nex: ;
+  charset GENE_4950.nex = sub1/train/GENE_4950.nex: ;
+  charset GENE_4951.nex = sub1/train/GENE_4951.nex: ;
+  charset GENE_4954.nex = sub1/train/GENE_4954.nex: ;
+  charset GENE_4976.nex = sub1/train/GENE_4976.nex: ;
+  charset GENE_4989.nex = sub1/train/GENE_4989.nex: ;
+  charset GENE_4992.nex = sub1/train/GENE_4992.nex: ;
+  charset GENE_5018.nex = sub1/train/GENE_5018.nex: ;
+  charset GENE_5032.nex = sub1/train/GENE_5032.nex: ;
+  charset GENE_5034.nex = sub1/train/GENE_5034.nex: ;
+  charset GENE_5038.nex = sub1/train/GENE_5038.nex: ;
+  charset GENE_5064.nex = sub1/train/GENE_5064.nex: ;
+  charset GENE_5090.nex = sub1/train/GENE_5090.nex: ;
+  charset GENE_5104.nex = sub1/train/GENE_5104.nex: ;
+  charset GENE_5111.nex = sub1/train/GENE_5111.nex: ;
+  charset GENE_5116.nex = sub1/train/GENE_5116.nex: ;
+  charset GENE_5123.nex = sub1/train/GENE_5123.nex: ;
+  charset GENE_5131.nex = sub1/train/GENE_5131.nex: ;
+  charset GENE_5138.nex = sub1/train/GENE_5138.nex: ;
+  charset GENE_5162.nex = sub1/train/GENE_5162.nex: ;
+  charset GENE_5163.nex = sub1/train/GENE_5163.nex: ;
+  charset GENE_5168.nex = sub1/train/GENE_5168.nex: ;
+  charset GENE_5188.nex = sub1/train/GENE_5188.nex: ;
+  charset GENE_5200.nex = sub1/train/GENE_5200.nex: ;
+  charset GENE_5206.nex = sub1/train/GENE_5206.nex: ;
+  charset GENE_5220.nex = sub1/train/GENE_5220.nex: ;
+  charset GENE_5257.nex = sub1/train/GENE_5257.nex: ;
+  charset GENE_5271.nex = sub1/train/GENE_5271.nex: ;
+  charset GENE_5273.nex = sub1/train/GENE_5273.nex: ;
+  charset GENE_5280.nex = sub1/train/GENE_5280.nex: ;
+  charset GENE_5296.nex = sub1/train/GENE_5296.nex: ;
+  charset GENE_5299.nex = sub1/train/GENE_5299.nex: ;
+  charset GENE_5304.nex = sub1/train/GENE_5304.nex: ;
+  charset GENE_5318.nex = sub1/train/GENE_5318.nex: ;
+  charset GENE_5326.nex = sub1/train/GENE_5326.nex: ;
+  charset GENE_5333.nex = sub1/train/GENE_5333.nex: ;
+  charset GENE_5335.nex = sub1/train/GENE_5335.nex: ;
+  charset GENE_5339.nex = sub1/train/GENE_5339.nex: ;
+  charset GENE_5347.nex = sub1/train/GENE_5347.nex: ;
+  charset GENE_5348.nex = sub1/train/GENE_5348.nex: ;
+  charset GENE_5351.nex = sub1/train/GENE_5351.nex: ;
+  charset GENE_5353.nex = sub1/train/GENE_5353.nex: ;
+  charset GENE_5354.nex = sub1/train/GENE_5354.nex: ;
+  charset GENE_5355.nex = sub1/train/GENE_5355.nex: ;
+  charset GENE_5357.nex = sub1/train/GENE_5357.nex: ;
+  charset GENE_5398.nex = sub1/train/GENE_5398.nex: ;
+  charset GENE_5406.nex = sub1/train/GENE_5406.nex: ;
+  charset GENE_5421.nex = sub1/train/GENE_5421.nex: ;
+  charset GENE_5422.nex = sub1/train/GENE_5422.nex: ;
+  charset GENE_5426.nex = sub1/train/GENE_5426.nex: ;
+  charset GENE_5427.nex = sub1/train/GENE_5427.nex: ;
+  charset GENE_5430.nex = sub1/train/GENE_5430.nex: ;
+  charset GENE_5434.nex = sub1/train/GENE_5434.nex: ;
+  charset GENE_5449.nex = sub1/train/GENE_5449.nex: ;
+  charset GENE_5454.nex = sub1/train/GENE_5454.nex: ;
+  charset GENE_5460.nex = sub1/train/GENE_5460.nex: ;
+  charset GENE_5463.nex = sub1/train/GENE_5463.nex: ;
+  charset GENE_5469.nex = sub1/train/GENE_5469.nex: ;
+  charset GENE_5477.nex = sub1/train/GENE_5477.nex: ;
+  charset GENE_5502.nex = sub1/train/GENE_5502.nex: ;
+  charset GENE_5513.nex = sub1/train/GENE_5513.nex: ;
+  charset GENE_5528.nex = sub1/train/GENE_5528.nex: ;
+  charset GENE_5531.nex = sub1/train/GENE_5531.nex: ;
+  charset GENE_5551.nex = sub1/train/GENE_5551.nex: ;
+  charset GENE_5554.nex = sub1/train/GENE_5554.nex: ;
+  charset GENE_5562.nex = sub1/train/GENE_5562.nex: ;
+  charset GENE_5594.nex = sub1/train/GENE_5594.nex: ;
+  charset GENE_5596.nex = sub1/train/GENE_5596.nex: ;
+  charset GENE_5599.nex = sub1/train/GENE_5599.nex: ;
+  charset GENE_5614.nex = sub1/train/GENE_5614.nex: ;
+  charset GENE_5620.nex = sub1/train/GENE_5620.nex: ;
+  charset GENE_5634.nex = sub1/train/GENE_5634.nex: ;
+  charset GENE_5639.nex = sub1/train/GENE_5639.nex: ;
+  charset GENE_5642.nex = sub1/train/GENE_5642.nex: ;
+  charset GENE_5644.nex = sub1/train/GENE_5644.nex: ;
+  charset GENE_5656.nex = sub1/train/GENE_5656.nex: ;
+  charset GENE_5660.nex = sub1/train/GENE_5660.nex: ;
+  charset GENE_5664.nex = sub1/train/GENE_5664.nex: ;
+  charset GENE_5670.nex = sub1/train/GENE_5670.nex: ;
+  charset GENE_5699.nex = sub1/train/GENE_5699.nex: ;
+  charset GENE_5702.nex = sub1/train/GENE_5702.nex: ;
+  charset GENE_5703.nex = sub1/train/GENE_5703.nex: ;
+  charset GENE_5716.nex = sub1/train/GENE_5716.nex: ;
+  charset GENE_5721.nex = sub1/train/GENE_5721.nex: ;
+  charset GENE_5733.nex = sub1/train/GENE_5733.nex: ;
+  charset GENE_5753.nex = sub1/train/GENE_5753.nex: ;
+  charset GENE_5761.nex = sub1/train/GENE_5761.nex: ;
+  charset GENE_5770.nex = sub1/train/GENE_5770.nex: ;
+  charset GENE_5791.nex = sub1/train/GENE_5791.nex: ;
+  charset GENE_5802.nex = sub1/train/GENE_5802.nex: ;
+  charset GENE_5812.nex = sub1/train/GENE_5812.nex: ;
+  charset GENE_5815.nex = sub1/train/GENE_5815.nex: ;
+  charset GENE_5816.nex = sub1/train/GENE_5816.nex: ;
+  charset GENE_5818.nex = sub1/train/GENE_5818.nex: ;
+  charset GENE_5821.nex = sub1/train/GENE_5821.nex: ;
+  charset GENE_5822.nex = sub1/train/GENE_5822.nex: ;
+  charset GENE_5840.nex = sub1/train/GENE_5840.nex: ;
+  charset GENE_5841.nex = sub1/train/GENE_5841.nex: ;
+  charset GENE_5842.nex = sub1/train/GENE_5842.nex: ;
+  charset GENE_5843.nex = sub1/train/GENE_5843.nex: ;
+  charset GENE_5849.nex = sub1/train/GENE_5849.nex: ;
+  charset GENE_5853.nex = sub1/train/GENE_5853.nex: ;
+  charset GENE_5857.nex = sub1/train/GENE_5857.nex: ;
+  charset GENE_5858.nex = sub1/train/GENE_5858.nex: ;
+  charset GENE_5863.nex = sub1/train/GENE_5863.nex: ;
+  charset GENE_5865.nex = sub1/train/GENE_5865.nex: ;
+  charset GENE_5866.nex = sub1/train/GENE_5866.nex: ;
+  charset GENE_5870.nex = sub1/train/GENE_5870.nex: ;
+  charset GENE_5892.nex = sub1/train/GENE_5892.nex: ;
+  charset GENE_5893.nex = sub1/train/GENE_5893.nex: ;
+  charset GENE_5894.nex = sub1/train/GENE_5894.nex: ;
+  charset GENE_5899.nex = sub1/train/GENE_5899.nex: ;
+  charset GENE_5910.nex = sub1/train/GENE_5910.nex: ;
+  charset GENE_5913.nex = sub1/train/GENE_5913.nex: ;
+  charset GENE_5915.nex = sub1/train/GENE_5915.nex: ;
+  charset GENE_5916.nex = sub1/train/GENE_5916.nex: ;
+  charset GENE_5919.nex = sub1/train/GENE_5919.nex: ;
+  charset GENE_5921.nex = sub1/train/GENE_5921.nex: ;
+  charset GENE_5922.nex = sub1/train/GENE_5922.nex: ;
+  charset GENE_5926.nex = sub1/train/GENE_5926.nex: ;
+  charset GENE_5933.nex = sub1/train/GENE_5933.nex: ;
+  charset GENE_5936.nex = sub1/train/GENE_5936.nex: ;
+  charset GENE_5940.nex = sub1/train/GENE_5940.nex: ;
+  charset GENE_5941.nex = sub1/train/GENE_5941.nex: ;
+  charset GENE_5942.nex = sub1/train/GENE_5942.nex: ;
+  charset GENE_5943.nex = sub1/train/GENE_5943.nex: ;
+  charset GENE_5945.nex = sub1/train/GENE_5945.nex: ;
+  charset GENE_5949.nex = sub1/train/GENE_5949.nex: ;
+  charset GENE_5958.nex = sub1/train/GENE_5958.nex: ;
+  charset GENE_5960.nex = sub1/train/GENE_5960.nex: ;
+  charset GENE_5968.nex = sub1/train/GENE_5968.nex: ;
+  charset GENE_5974.nex = sub1/train/GENE_5974.nex: ;
+  charset GENE_5977.nex = sub1/train/GENE_5977.nex: ;
+  charset GENE_5980.nex = sub1/train/GENE_5980.nex: ;
+  charset GENE_5981.nex = sub1/train/GENE_5981.nex: ;
+  charset GENE_5990.nex = sub1/train/GENE_5990.nex: ;
+  charset GENE_5992.nex = sub1/train/GENE_5992.nex: ;
+  charset GENE_6000.nex = sub1/train/GENE_6000.nex: ;
+  charset GENE_6003.nex = sub1/train/GENE_6003.nex: ;
+  charset GENE_6004.nex = sub1/train/GENE_6004.nex: ;
+  charset GENE_6016.nex = sub1/train/GENE_6016.nex: ;
+  charset GENE_6026.nex = sub1/train/GENE_6026.nex: ;
+  charset GENE_6029.nex = sub1/train/GENE_6029.nex: ;
+  charset GENE_6034.nex = sub1/train/GENE_6034.nex: ;
+  charset GENE_6035.nex = sub1/train/GENE_6035.nex: ;
+  charset GENE_6036.nex = sub1/train/GENE_6036.nex: ;
+  charset GENE_6038.nex = sub1/train/GENE_6038.nex: ;
+  charset GENE_6041.nex = sub1/train/GENE_6041.nex: ;
+  charset GENE_6048.nex = sub1/train/GENE_6048.nex: ;
+  charset GENE_6050.nex = sub1/train/GENE_6050.nex: ;
+  charset GENE_6051.nex = sub1/train/GENE_6051.nex: ;
+  charset GENE_6056.nex = sub1/train/GENE_6056.nex: ;
+  charset GENE_6064.nex = sub1/train/GENE_6064.nex: ;
+  charset GENE_6065.nex = sub1/train/GENE_6065.nex: ;
+  charset GENE_6068.nex = sub1/train/GENE_6068.nex: ;
+  charset GENE_6072.nex = sub1/train/GENE_6072.nex: ;
+  charset GENE_6110.nex = sub1/train/GENE_6110.nex: ;
+  charset GENE_6114.nex = sub1/train/GENE_6114.nex: ;
+  charset GENE_6119.nex = sub1/train/GENE_6119.nex: ;
+  charset GENE_6128.nex = sub1/train/GENE_6128.nex: ;
+  charset GENE_6130.nex = sub1/train/GENE_6130.nex: ;
+  charset GENE_6139.nex = sub1/train/GENE_6139.nex: ;
+  charset GENE_6148.nex = sub1/train/GENE_6148.nex: ;
+  charset GENE_6150.nex = sub1/train/GENE_6150.nex: ;
+  charset GENE_6164.nex = sub1/train/GENE_6164.nex: ;
+  charset GENE_6175.nex = sub1/train/GENE_6175.nex: ;
+  charset GENE_6176.nex = sub1/train/GENE_6176.nex: ;
+  charset GENE_6183.nex = sub1/train/GENE_6183.nex: ;
+  charset GENE_6198.nex = sub1/train/GENE_6198.nex: ;
+  charset GENE_6221.nex = sub1/train/GENE_6221.nex: ;
+  charset GENE_6226.nex = sub1/train/GENE_6226.nex: ;
+  charset GENE_6237.nex = sub1/train/GENE_6237.nex: ;
+  charset GENE_6238.nex = sub1/train/GENE_6238.nex: ;
+  charset GENE_6258.nex = sub1/train/GENE_6258.nex: ;
+  charset GENE_6264.nex = sub1/train/GENE_6264.nex: ;
+  charset GENE_6265.nex = sub1/train/GENE_6265.nex: ;
+  charset GENE_6270.nex = sub1/train/GENE_6270.nex: ;
+  charset GENE_6274.nex = sub1/train/GENE_6274.nex: ;
+  charset GENE_6282.nex = sub1/train/GENE_6282.nex: ;
+  charset GENE_6284.nex = sub1/train/GENE_6284.nex: ;
+  charset GENE_6295.nex = sub1/train/GENE_6295.nex: ;
+  charset GENE_6298.nex = sub1/train/GENE_6298.nex: ;
+  charset GENE_6299.nex = sub1/train/GENE_6299.nex: ;
+  charset GENE_6303.nex = sub1/train/GENE_6303.nex: ;
+  charset GENE_6318.nex = sub1/train/GENE_6318.nex: ;
+  charset GENE_6320.nex = sub1/train/GENE_6320.nex: ;
+  charset GENE_6363.nex = sub1/train/GENE_6363.nex: ;
+  charset GENE_6366.nex = sub1/train/GENE_6366.nex: ;
+  charset GENE_6373.nex = sub1/train/GENE_6373.nex: ;
+  charset GENE_6378.nex = sub1/train/GENE_6378.nex: ;
+  charset GENE_6379.nex = sub1/train/GENE_6379.nex: ;
+  charset GENE_6383.nex = sub1/train/GENE_6383.nex: ;
+  charset GENE_6384.nex = sub1/train/GENE_6384.nex: ;
+  charset GENE_6387.nex = sub1/train/GENE_6387.nex: ;
+  charset GENE_6389.nex = sub1/train/GENE_6389.nex: ;
+  charset GENE_6393.nex = sub1/train/GENE_6393.nex: ;
+  charset GENE_6398.nex = sub1/train/GENE_6398.nex: ;
+  charset GENE_6401.nex = sub1/train/GENE_6401.nex: ;
+  charset GENE_6405.nex = sub1/train/GENE_6405.nex: ;
+  charset GENE_6406.nex = sub1/train/GENE_6406.nex: ;
+  charset GENE_6407.nex = sub1/train/GENE_6407.nex: ;
+  charset GENE_6412.nex = sub1/train/GENE_6412.nex: ;
+  charset GENE_6420.nex = sub1/train/GENE_6420.nex: ;
+  charset GENE_6430.nex = sub1/train/GENE_6430.nex: ;
+  charset GENE_6432.nex = sub1/train/GENE_6432.nex: ;
+  charset GENE_6435.nex = sub1/train/GENE_6435.nex: ;
+  charset GENE_6439.nex = sub1/train/GENE_6439.nex: ;
+  charset GENE_6445.nex = sub1/train/GENE_6445.nex: ;
+  charset GENE_6447.nex = sub1/train/GENE_6447.nex: ;
+  charset GENE_6448.nex = sub1/train/GENE_6448.nex: ;
+  charset GENE_6449.nex = sub1/train/GENE_6449.nex: ;
+  charset GENE_6450.nex = sub1/train/GENE_6450.nex: ;
+  charset GENE_6451.nex = sub1/train/GENE_6451.nex: ;
+  charset GENE_6454.nex = sub1/train/GENE_6454.nex: ;
+  charset GENE_6458.nex = sub1/train/GENE_6458.nex: ;
+  charset GENE_6460.nex = sub1/train/GENE_6460.nex: ;
+  charset GENE_6462.nex = sub1/train/GENE_6462.nex: ;
+  charset GENE_6466.nex = sub1/train/GENE_6466.nex: ;
+  charset GENE_6469.nex = sub1/train/GENE_6469.nex: ;
+  charset GENE_6481.nex = sub1/train/GENE_6481.nex: ;
+  charset GENE_6483.nex = sub1/train/GENE_6483.nex: ;
+  charset GENE_6487.nex = sub1/train/GENE_6487.nex: ;
+  charset GENE_6488.nex = sub1/train/GENE_6488.nex: ;
+  charset GENE_6492.nex = sub1/train/GENE_6492.nex: ;
+  charset GENE_6494.nex = sub1/train/GENE_6494.nex: ;
+  charset GENE_6496.nex = sub1/train/GENE_6496.nex: ;
+  charset GENE_6498.nex = sub1/train/GENE_6498.nex: ;
+  charset GENE_6499.nex = sub1/train/GENE_6499.nex: ;
+  charset GENE_6500.nex = sub1/train/GENE_6500.nex: ;
+  charset GENE_6506.nex = sub1/train/GENE_6506.nex: ;
+  charset GENE_6507.nex = sub1/train/GENE_6507.nex: ;
+  charset GENE_6508.nex = sub1/train/GENE_6508.nex: ;
+  charset GENE_6514.nex = sub1/train/GENE_6514.nex: ;
+  charset GENE_6526.nex = sub1/train/GENE_6526.nex: ;
+  charset GENE_6527.nex = sub1/train/GENE_6527.nex: ;
+  charset GENE_6528.nex = sub1/train/GENE_6528.nex: ;
+  charset GENE_6531.nex = sub1/train/GENE_6531.nex: ;
+  charset GENE_6532.nex = sub1/train/GENE_6532.nex: ;
+  charset GENE_6533.nex = sub1/train/GENE_6533.nex: ;
+  charset GENE_6538.nex = sub1/train/GENE_6538.nex: ;
+  charset GENE_6540.nex = sub1/train/GENE_6540.nex: ;
+  charset GENE_6544.nex = sub1/train/GENE_6544.nex: ;
+  charset GENE_6548.nex = sub1/train/GENE_6548.nex: ;
+  charset GENE_6552.nex = sub1/train/GENE_6552.nex: ;
+  charset GENE_6557.nex = sub1/train/GENE_6557.nex: ;
+  charset GENE_6563.nex = sub1/train/GENE_6563.nex: ;
+  charset GENE_6565.nex = sub1/train/GENE_6565.nex: ;
+  charset GENE_6570.nex = sub1/train/GENE_6570.nex: ;
+  charset GENE_6572.nex = sub1/train/GENE_6572.nex: ;
+  charset GENE_6601.nex = sub1/train/GENE_6601.nex: ;
+  charset GENE_6620.nex = sub1/train/GENE_6620.nex: ;
+  charset GENE_6628.nex = sub1/train/GENE_6628.nex: ;
+  charset GENE_6631.nex = sub1/train/GENE_6631.nex: ;
+  charset GENE_6636.nex = sub1/train/GENE_6636.nex: ;
+  charset GENE_6639.nex = sub1/train/GENE_6639.nex: ;
+  charset GENE_6649.nex = sub1/train/GENE_6649.nex: ;
+  charset GENE_6652.nex = sub1/train/GENE_6652.nex: ;
+  charset GENE_6660.nex = sub1/train/GENE_6660.nex: ;
+  charset GENE_6667.nex = sub1/train/GENE_6667.nex: ;
+  charset GENE_6678.nex = sub1/train/GENE_6678.nex: ;
+  charset GENE_6679.nex = sub1/train/GENE_6679.nex: ;
+  charset GENE_6682.nex = sub1/train/GENE_6682.nex: ;
+  charset GENE_6685.nex = sub1/train/GENE_6685.nex: ;
+  charset GENE_6689.nex = sub1/train/GENE_6689.nex: ;
+  charset GENE_6705.nex = sub1/train/GENE_6705.nex: ;
+  charset GENE_6713.nex = sub1/train/GENE_6713.nex: ;
+  charset GENE_6717.nex = sub1/train/GENE_6717.nex: ;
+  charset GENE_6732.nex = sub1/train/GENE_6732.nex: ;
+  charset GENE_6733.nex = sub1/train/GENE_6733.nex: ;
+  charset GENE_6738.nex = sub1/train/GENE_6738.nex: ;
+  charset GENE_6746.nex = sub1/train/GENE_6746.nex: ;
+  charset GENE_6779.nex = sub1/train/GENE_6779.nex: ;
+  charset GENE_6780.nex = sub1/train/GENE_6780.nex: ;
+  charset GENE_6782.nex = sub1/train/GENE_6782.nex: ;
+  charset GENE_6785.nex = sub1/train/GENE_6785.nex: ;
+  charset GENE_6787.nex = sub1/train/GENE_6787.nex: ;
+  charset GENE_6791.nex = sub1/train/GENE_6791.nex: ;
+  charset GENE_6792.nex = sub1/train/GENE_6792.nex: ;
+  charset GENE_6797.nex = sub1/train/GENE_6797.nex: ;
+  charset GENE_6809.nex = sub1/train/GENE_6809.nex: ;
+  charset GENE_6825.nex = sub1/train/GENE_6825.nex: ;
+  charset GENE_6833.nex = sub1/train/GENE_6833.nex: ;
+  charset GENE_6848.nex = sub1/train/GENE_6848.nex: ;
+  charset GENE_6854.nex = sub1/train/GENE_6854.nex: ;
+  charset GENE_6859.nex = sub1/train/GENE_6859.nex: ;
+  charset GENE_6860.nex = sub1/train/GENE_6860.nex: ;
+  charset GENE_6863.nex = sub1/train/GENE_6863.nex: ;
+  charset GENE_6864.nex = sub1/train/GENE_6864.nex: ;
+  charset GENE_6865.nex = sub1/train/GENE_6865.nex: ;
+  charset GENE_6870.nex = sub1/train/GENE_6870.nex: ;
+  charset GENE_6876.nex = sub1/train/GENE_6876.nex: ;
+  charset GENE_6882.nex = sub1/train/GENE_6882.nex: ;
+  charset GENE_6883.nex = sub1/train/GENE_6883.nex: ;
+  charset GENE_6886.nex = sub1/train/GENE_6886.nex: ;
+  charset GENE_6893.nex = sub1/train/GENE_6893.nex: ;
+  charset GENE_6909.nex = sub1/train/GENE_6909.nex: ;
+  charset GENE_6913.nex = sub1/train/GENE_6913.nex: ;
+  charset GENE_6914.nex = sub1/train/GENE_6914.nex: ;
+  charset GENE_6924.nex = sub1/train/GENE_6924.nex: ;
+  charset GENE_6946.nex = sub1/train/GENE_6946.nex: ;
+  charset GENE_6947.nex = sub1/train/GENE_6947.nex: ;
+  charset GENE_6954.nex = sub1/train/GENE_6954.nex: ;
+  charset GENE_6955.nex = sub1/train/GENE_6955.nex: ;
+  charset GENE_6958.nex = sub1/train/GENE_6958.nex: ;
+  charset GENE_6961.nex = sub1/train/GENE_6961.nex: ;
+  charset GENE_6962.nex = sub1/train/GENE_6962.nex: ;
+  charset GENE_6968.nex = sub1/train/GENE_6968.nex: ;
+  charset GENE_6969.nex = sub1/train/GENE_6969.nex: ;
+  charset GENE_6975.nex = sub1/train/GENE_6975.nex: ;
+  charset GENE_6978.nex = sub1/train/GENE_6978.nex: ;
+  charset GENE_6979.nex = sub1/train/GENE_6979.nex: ;
+  charset GENE_6983.nex = sub1/train/GENE_6983.nex: ;
+  charset GENE_6992.nex = sub1/train/GENE_6992.nex: ;
+  charset GENE_6995.nex = sub1/train/GENE_6995.nex: ;
+  charset GENE_7013.nex = sub1/train/GENE_7013.nex: ;
+  charset GENE_7021.nex = sub1/train/GENE_7021.nex: ;
+  charset GENE_7024.nex = sub1/train/GENE_7024.nex: ;
+  charset GENE_7025.nex = sub1/train/GENE_7025.nex: ;
+  charset GENE_7028.nex = sub1/train/GENE_7028.nex: ;
+  charset GENE_7029.nex = sub1/train/GENE_7029.nex: ;
+  charset GENE_7032.nex = sub1/train/GENE_7032.nex: ;
+  charset GENE_7067.nex = sub1/train/GENE_7067.nex: ;
+  charset GENE_7120.nex = sub1/train/GENE_7120.nex: ;
+  charset GENE_7128.nex = sub1/train/GENE_7128.nex: ;
+  charset GENE_7135.nex = sub1/train/GENE_7135.nex: ;
+  charset GENE_7136.nex = sub1/train/GENE_7136.nex: ;
+  charset GENE_7141.nex = sub1/train/GENE_7141.nex: ;
+  charset GENE_7174.nex = sub1/train/GENE_7174.nex: ;
+  charset GENE_7194.nex = sub1/train/GENE_7194.nex: ;
+  charset GENE_7237.nex = sub1/train/GENE_7237.nex: ;
+  charset GENE_7241.nex = sub1/train/GENE_7241.nex: ;
+  charset GENE_7248.nex = sub1/train/GENE_7248.nex: ;
+  charset GENE_7249.nex = sub1/train/GENE_7249.nex: ;
+  charset GENE_7273.nex = sub1/train/GENE_7273.nex: ;
+  charset GENE_7279.nex = sub1/train/GENE_7279.nex: ;
+  charset GENE_7296.nex = sub1/train/GENE_7296.nex: ;
+  charset GENE_7313.nex = sub1/train/GENE_7313.nex: ;
+  charset GENE_7324.nex = sub1/train/GENE_7324.nex: ;
+  charset GENE_7325.nex = sub1/train/GENE_7325.nex: ;
+  charset GENE_7331.nex = sub1/train/GENE_7331.nex: ;
+  charset GENE_7333.nex = sub1/train/GENE_7333.nex: ;
+  charset GENE_7361.nex = sub1/train/GENE_7361.nex: ;
+  charset GENE_7363.nex = sub1/train/GENE_7363.nex: ;
+  charset GENE_7367.nex = sub1/train/GENE_7367.nex: ;
+  charset GENE_7371.nex = sub1/train/GENE_7371.nex: ;
+  charset GENE_7572.nex = sub1/train/GENE_7572.nex: ;
+  charset GENE_7577.nex = sub1/train/GENE_7577.nex: ;
+  charset GENE_7601.nex = sub1/train/GENE_7601.nex: ;
+  charset GENE_7602.nex = sub1/train/GENE_7602.nex: ;
+  charset GENE_7628.nex = sub1/train/GENE_7628.nex: ;
+  charset GENE_7653.nex = sub1/train/GENE_7653.nex: ;
+  charpartition mymodels =
+    LG+I+G4: GENE_4471.nex,
+    JTT+I+G4: GENE_4519.nex,
+    LG+I+G4: GENE_4527.nex,
+    JTT+I+G4: GENE_4603.nex,
+    JTT+I+R4: GENE_4691.nex,
+    JTT+I+G4: GENE_4724.nex,
+    JTT+R4: GENE_4744.nex,
+    JTT+I+R4: GENE_4757.nex,
+    JTT+F+G4: GENE_4793.nex,
+    JTT+I+G4: GENE_4796.nex,
+    LG+I+G4: GENE_4806.nex,
+    JTT+R4: GENE_4815.nex,
+    JTT+I+G4: GENE_4848.nex,
+    JTT+I+G4: GENE_4889.nex,
+    JTT+G4: GENE_4890.nex,
+    LG+I+R4: GENE_4893.nex,
+    JTT+I+R4: GENE_4904.nex,
+    JTT+I+G4: GENE_4936.nex,
+    LG+I+R4: GENE_4942.nex,
+    JTT+I+G4: GENE_4950.nex,
+    JTT+I+R4: GENE_4951.nex,
+    LG+I+R4: GENE_4954.nex,
+    JTT+R4: GENE_4976.nex,
+    JTT+I+G4: GENE_4989.nex,
+    JTT+I+G4: GENE_4992.nex,
+    LG+I+R4: GENE_5018.nex,
+    JTT+F+I+G4: GENE_5032.nex,
+    LG+I+R4: GENE_5034.nex,
+    JTT+R4: GENE_5038.nex,
+    LG+G4: GENE_5064.nex,
+    LG+I+G4: GENE_5090.nex,
+    LG+R4: GENE_5104.nex,
+    JTT+I+R4: GENE_5111.nex,
+    JTT+G4: GENE_5116.nex,
+    JTT+G4: GENE_5123.nex,
+    JTT+I+R4: GENE_5131.nex,
+    LG+G4: GENE_5138.nex,
+    JTT+I+G4: GENE_5162.nex,
+    LG+I+G4: GENE_5163.nex,
+    LG+I+R4: GENE_5168.nex,
+    JTT+F+I+R4: GENE_5188.nex,
+    LG+I+G4: GENE_5200.nex,
+    WAG+I+G4: GENE_5206.nex,
+    LG+I+G4: GENE_5220.nex,
+    JTT+I+G4: GENE_5257.nex,
+    JTT+I+G4: GENE_5271.nex,
+    JTT+I+G4: GENE_5273.nex,
+    LG+I+R4: GENE_5280.nex,
+    LG+I+G4: GENE_5296.nex,
+    LG+I+G4: GENE_5299.nex,
+    JTT+I+R4: GENE_5304.nex,
+    JTT+I+G4: GENE_5318.nex,
+    JTT+I+G4: GENE_5326.nex,
+    JTT+I+R4: GENE_5333.nex,
+    LG+I+R4: GENE_5335.nex,
+    JTT+I+R4: GENE_5339.nex,
+    LG+I+G4: GENE_5347.nex,
+    JTT+I+G4: GENE_5348.nex,
+    JTT+R4: GENE_5351.nex,
+    JTT+R4: GENE_5353.nex,
+    JTT+I+G4: GENE_5354.nex,
+    JTT+I+R4: GENE_5355.nex,
+    JTT+G4: GENE_5357.nex,
+    LG+I+R4: GENE_5398.nex,
+    LG+R4: GENE_5406.nex,
+    LG+F+I+G4: GENE_5421.nex,
+    JTT+I+G4: GENE_5422.nex,
+    JTT+I+G4: GENE_5426.nex,
+    JTT+G4: GENE_5427.nex,
+    JTT+I+G4: GENE_5430.nex,
+    LG+I+R4: GENE_5434.nex,
+    LG+I+R4: GENE_5449.nex,
+    JTT+I+R4: GENE_5454.nex,
+    LG+I+R4: GENE_5460.nex,
+    JTT+F+I+R4: GENE_5463.nex,
+    JTT+I+G4: GENE_5469.nex,
+    JTT+I+G4: GENE_5477.nex,
+    LG+I+R4: GENE_5502.nex,
+    LG+I+R4: GENE_5513.nex,
+    JTT+I+R4: GENE_5528.nex,
+    JTT+G4: GENE_5531.nex,
+    LG+I+R4: GENE_5551.nex,
+    JTT+I+G4: GENE_5554.nex,
+    WAG+I+G4: GENE_5562.nex,
+    JTT+I+R4: GENE_5594.nex,
+    JTT+F+I+R4: GENE_5596.nex,
+    LG+F+I+R4: GENE_5599.nex,
+    JTT+I+G4: GENE_5614.nex,
+    JTT+I+G4: GENE_5620.nex,
+    JTT+I+G4: GENE_5634.nex,
+    JTT+I+G4: GENE_5639.nex,
+    JTT+G4: GENE_5642.nex,
+    JTT+I+R4: GENE_5644.nex,
+    JTT+I+G4: GENE_5656.nex,
+    JTT+I+R3: GENE_5660.nex,
+    JTT+I+G4: GENE_5664.nex,
+    JTT+I+G4: GENE_5670.nex,
+    JTT+R4: GENE_5699.nex,
+    LG+I+G4: GENE_5702.nex,
+    JTT+I+G4: GENE_5703.nex,
+    JTT+I+G4: GENE_5716.nex,
+    JTT+I+G4: GENE_5721.nex,
+    JTT+I+G4: GENE_5733.nex,
+    JTT+R4: GENE_5753.nex,
+    JTT+I+R4: GENE_5761.nex,
+    LG+R4: GENE_5770.nex,
+    JTT+I+G4: GENE_5791.nex,
+    JTT+G4: GENE_5802.nex,
+    JTT+I+G4: GENE_5812.nex,
+    JTT+I+G4: GENE_5815.nex,
+    JTT+I+R4: GENE_5816.nex,
+    JTT+I+G4: GENE_5818.nex,
+    LG+I+G4: GENE_5821.nex,
+    JTT+I+G4: GENE_5822.nex,
+    JTT+I+R4: GENE_5840.nex,
+    JTT+I+R4: GENE_5841.nex,
+    JTT+I+G4: GENE_5842.nex,
+    JTT+I+G4: GENE_5843.nex,
+    JTT+I+R4: GENE_5849.nex,
+    LG+G4: GENE_5853.nex,
+    LG+I+G4: GENE_5857.nex,
+    JTT+F+R4: GENE_5858.nex,
+    JTT+F+I+G4: GENE_5863.nex,
+    JTT+I+G4: GENE_5865.nex,
+    LG+R4: GENE_5866.nex,
+    LG+F+G4: GENE_5870.nex,
+    JTT+F+R4: GENE_5892.nex,
+    JTT+I+G4: GENE_5893.nex,
+    JTT+I+G4: GENE_5894.nex,
+    JTT+F+G4: GENE_5899.nex,
+    LG+I+G4: GENE_5910.nex,
+    JTT+I+G4: GENE_5913.nex,
+    JTT+G4: GENE_5915.nex,
+    JTT+I+G4: GENE_5916.nex,
+    JTT+I+G4: GENE_5919.nex,
+    JTT+F+I+G4: GENE_5921.nex,
+    JTT+I+R4: GENE_5922.nex,
+    LG+I+G4: GENE_5926.nex,
+    JTT+I+R4: GENE_5933.nex,
+    JTT+I+G4: GENE_5936.nex,
+    JTT+F+G4: GENE_5940.nex,
+    LG+G4: GENE_5941.nex,
+    JTT+I+G4: GENE_5942.nex,
+    LG+R4: GENE_5943.nex,
+    LG+R4: GENE_5945.nex,
+    LG+G4: GENE_5949.nex,
+    JTT+I+G4: GENE_5958.nex,
+    JTT+I+G4: GENE_5960.nex,
+    LG+G4: GENE_5968.nex,
+    LG+R4: GENE_5974.nex,
+    JTT+I+G4: GENE_5977.nex,
+    LG+I+R4: GENE_5980.nex,
+    LG+I+G4: GENE_5981.nex,
+    JTT+G4: GENE_5990.nex,
+    JTT+I+G4: GENE_5992.nex,
+    JTT+I+G4: GENE_6000.nex,
+    JTT+R4: GENE_6003.nex,
+    LG+F+I+R4: GENE_6004.nex,
+    JTT+F+I+G4: GENE_6016.nex,
+    LG+I+R4: GENE_6026.nex,
+    JTT+I+R4: GENE_6029.nex,
+    JTT+I+G4: GENE_6034.nex,
+    LG+F+G4: GENE_6035.nex,
+    JTT+I+R4: GENE_6036.nex,
+    LG+I+G4: GENE_6038.nex,
+    JTT+I+R4: GENE_6041.nex,
+    JTT+G4: GENE_6048.nex,
+    LG+R4: GENE_6050.nex,
+    LG+I+G4: GENE_6051.nex,
+    JTT+I+G4: GENE_6056.nex,
+    JTT+I+G4: GENE_6064.nex,
+    JTT+I+G4: GENE_6065.nex,
+    JTT+I+G4: GENE_6068.nex,
+    JTT+I+G4: GENE_6072.nex,
+    JTT+I+G4: GENE_6110.nex,
+    JTT+I+R4: GENE_6114.nex,
+    JTT+G4: GENE_6119.nex,
+    JTT+F+I+R4: GENE_6128.nex,
+    LG+I+G4: GENE_6130.nex,
+    LG+I+G4: GENE_6139.nex,
+    JTT+I+G4: GENE_6148.nex,
+    JTT+R4: GENE_6150.nex,
+    LG+I+G4: GENE_6164.nex,
+    JTT+G4: GENE_6175.nex,
+    LG+I+G4: GENE_6176.nex,
+    JTT+I+G4: GENE_6183.nex,
+    LG+R4: GENE_6198.nex,
+    JTT+I+G4: GENE_6221.nex,
+    JTT+I+G4: GENE_6226.nex,
+    JTT+I+R4: GENE_6237.nex,
+    JTT+F+I+G4: GENE_6238.nex,
+    JTT+R4: GENE_6258.nex,
+    JTT+R4: GENE_6264.nex,
+    LG+R4: GENE_6265.nex,
+    JTT+I+G4: GENE_6270.nex,
+    JTT+I+G4: GENE_6274.nex,
+    JTT+R4: GENE_6282.nex,
+    LG+I+G4: GENE_6284.nex,
+    JTT+I+G4: GENE_6295.nex,
+    LG+I+G4: GENE_6298.nex,
+    LG+I+G4: GENE_6299.nex,
+    LG+G4: GENE_6303.nex,
+    JTT+I+R4: GENE_6318.nex,
+    JTT+I+R4: GENE_6320.nex,
+    LG+I+G4: GENE_6363.nex,
+    JTT+F+I+R4: GENE_6366.nex,
+    LG+R4: GENE_6373.nex,
+    JTT+G4: GENE_6378.nex,
+    JTT+G4: GENE_6379.nex,
+    JTT+F+G4: GENE_6383.nex,
+    JTT+I+R4: GENE_6384.nex,
+    LG+G4: GENE_6387.nex,
+    LG+I+G4: GENE_6389.nex,
+    JTT+I+G4: GENE_6393.nex,
+    JTT+I+G4: GENE_6398.nex,
+    LG+F+I+G4: GENE_6401.nex,
+    JTT+F+G4: GENE_6405.nex,
+    JTT+R4: GENE_6406.nex,
+    JTT+G4: GENE_6407.nex,
+    JTT+I+G4: GENE_6412.nex,
+    JTT+I+G4: GENE_6420.nex,
+    LG: GENE_6430.nex,
+    LG+I+G4: GENE_6432.nex,
+    JTT+I+G4: GENE_6435.nex,
+    JTT+I+G4: GENE_6439.nex,
+    JTT+R4: GENE_6445.nex,
+    JTT+I+G4: GENE_6447.nex,
+    JTT+F+I+G4: GENE_6448.nex,
+    JTT+G4: GENE_6449.nex,
+    LG+I+R4: GENE_6450.nex,
+    JTT+I+G4: GENE_6451.nex,
+    LG+I+G4: GENE_6454.nex,
+    LG+I+R4: GENE_6458.nex,
+    JTT+I+R4: GENE_6460.nex,
+    LG+I+G4: GENE_6462.nex,
+    JTT+I+R4: GENE_6466.nex,
+    JTT+I+G4: GENE_6469.nex,
+    JTT+F+I+G4: GENE_6481.nex,
+    LG+I+G4: GENE_6483.nex,
+    JTT+I+R4: GENE_6487.nex,
+    JTT+I+R4: GENE_6488.nex,
+    JTT+G4: GENE_6492.nex,
+    LG+F+I+R4: GENE_6494.nex,
+    JTT+F+I+G4: GENE_6496.nex,
+    LG+F+G4: GENE_6498.nex,
+    JTT+I+G4: GENE_6499.nex,
+    JTT+I+R4: GENE_6500.nex,
+    JTT+I+R4: GENE_6506.nex,
+    JTT+I+G4: GENE_6507.nex,
+    JTT+I+R4: GENE_6508.nex,
+    JTT+I+G4: GENE_6514.nex,
+    JTT+I+G4: GENE_6526.nex,
+    JTT+I+G4: GENE_6527.nex,
+    JTT+I+G4: GENE_6528.nex,
+    LG+I+G4: GENE_6531.nex,
+    JTT+I+G4: GENE_6532.nex,
+    LG+I+R4: GENE_6533.nex,
+    LG+R4: GENE_6538.nex,
+    JTT+I+G4: GENE_6540.nex,
+    JTT+F+I+R4: GENE_6544.nex,
+    JTT+G4: GENE_6548.nex,
+    JTT+I+G4: GENE_6552.nex,
+    JTT+I+G4: GENE_6557.nex,
+    JTT+I+G4: GENE_6563.nex,
+    JTT+I+G4: GENE_6565.nex,
+    JTT+I+G4: GENE_6570.nex,
+    LG+I+G4: GENE_6572.nex,
+    JTT+I+G4: GENE_6601.nex,
+    JTT+I+G4: GENE_6620.nex,
+    JTT+G4: GENE_6628.nex,
+    JTT+I+R4: GENE_6631.nex,
+    LG+F+I+G4: GENE_6636.nex,
+    JTT+I+G4: GENE_6639.nex,
+    JTT+G4: GENE_6649.nex,
+    LG+G4: GENE_6652.nex,
+    JTT+R4: GENE_6660.nex,
+    JTT+I+R4: GENE_6667.nex,
+    JTT+F+I+G4: GENE_6678.nex,
+    JTT+I+G4: GENE_6679.nex,
+    JTT+I+G4: GENE_6682.nex,
+    LG+I+R4: GENE_6685.nex,
+    JTT+I+G4: GENE_6689.nex,
+    LG+G4: GENE_6705.nex,
+    JTT+I+G4: GENE_6713.nex,
+    LG+I+G4: GENE_6717.nex,
+    JTT+I+G4: GENE_6732.nex,
+    JTT+G4: GENE_6733.nex,
+    JTT+G4: GENE_6738.nex,
+    LG+I+G4: GENE_6746.nex,
+    JTT+F+I+G4: GENE_6779.nex,
+    JTT+I+G4: GENE_6780.nex,
+    JTT+R4: GENE_6782.nex,
+    JTT+G4: GENE_6785.nex,
+    JTT+R4: GENE_6787.nex,
+    JTT+I+G4: GENE_6791.nex,
+    JTT+I+G4: GENE_6792.nex,
+    JTT+I+R4: GENE_6797.nex,
+    JTT+I+G4: GENE_6809.nex,
+    JTT+I+R4: GENE_6825.nex,
+    JTT+I+G4: GENE_6833.nex,
+    JTT+I+R4: GENE_6848.nex,
+    JTT+G4: GENE_6854.nex,
+    LG+I+R4: GENE_6859.nex,
+    JTT+F+I+G4: GENE_6860.nex,
+    JTT+F+R4: GENE_6863.nex,
+    LG+I+R4: GENE_6864.nex,
+    LG+I+R4: GENE_6865.nex,
+    JTT+R4: GENE_6870.nex,
+    JTT+I+G4: GENE_6876.nex,
+    JTT+I+G4: GENE_6882.nex,
+    LG+I+R4: GENE_6883.nex,
+    LG+I: GENE_6886.nex,
+    JTT+I+G4: GENE_6893.nex,
+    LG+I+G4: GENE_6909.nex,
+    JTT+I+R4: GENE_6913.nex,
+    JTT+I+G4: GENE_6914.nex,
+    LG+I+G4: GENE_6924.nex,
+    LG+I+G4: GENE_6946.nex,
+    JTT+I+G4: GENE_6947.nex,
+    JTT+I+G4: GENE_6954.nex,
+    JTT+F+I+G4: GENE_6955.nex,
+    JTT+I+G4: GENE_6958.nex,
+    JTT+I+G4: GENE_6961.nex,
+    JTT+I+G4: GENE_6962.nex,
+    LG+F+I+R4: GENE_6968.nex,
+    JTT+G4: GENE_6969.nex,
+    JTT+F+I+G4: GENE_6975.nex,
+    LG+I+G4: GENE_6978.nex,
+    JTT+G4: GENE_6979.nex,
+    JTT+G4: GENE_6983.nex,
+    JTT+I+R2: GENE_6992.nex,
+    JTT+I+G4: GENE_6995.nex,
+    JTT+R4: GENE_7013.nex,
+    JTT+F+I+G4: GENE_7021.nex,
+    JTT+I+G4: GENE_7024.nex,
+    JTT+F+I+G4: GENE_7025.nex,
+    JTT+I+G4: GENE_7028.nex,
+    LG+I+R4: GENE_7029.nex,
+    JTT+I+G4: GENE_7032.nex,
+    LG+I+G4: GENE_7067.nex,
+    JTT+R4: GENE_7120.nex,
+    JTT+I+R4: GENE_7128.nex,
+    JTT+F+I+G4: GENE_7135.nex,
+    LG+R4: GENE_7136.nex,
+    JTT+I+G4: GENE_7141.nex,
+    JTT+I+G4: GENE_7174.nex,
+    JTT+G4: GENE_7194.nex,
+    JTT+R4: GENE_7237.nex,
+    JTT+F+I+G4: GENE_7241.nex,
+    JTT+I+G4: GENE_7248.nex,
+    JTT+G4: GENE_7249.nex,
+    LG+I+G4: GENE_7273.nex,
+    JTT+I+G4: GENE_7279.nex,
+    JTT+I+G4: GENE_7296.nex,
+    JTT+R4: GENE_7313.nex,
+    JTT+I+G4: GENE_7324.nex,
+    LG+G4: GENE_7325.nex,
+    JTT+I+G4: GENE_7331.nex,
+    JTT+I+G4: GENE_7333.nex,
+    JTT+R4: GENE_7361.nex,
+    JTT+I+G4: GENE_7363.nex,
+    LG+I+G4: GENE_7367.nex,
+    JTT+G4: GENE_7371.nex,
+    JTT+I+G4: GENE_7572.nex,
+    JTT+I+G4: GENE_7577.nex,
+    JTT+G4: GENE_7601.nex,
+    JTT+I+R4: GENE_7602.nex,
+    JTT+I+R4: GENE_7628.nex,
+    JTT+G4: GENE_7653.nex;
+end;
