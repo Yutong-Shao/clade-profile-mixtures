@@ -5,6 +5,9 @@
 
 data/processed_data
 data/output
+data/result2csv
+data/result2testing
+data/new_model
 process/process.R
 process/Q
 process/ComplexHeatmap.Rmd
@@ -13,3 +16,4 @@ data/example_outputs
 1st version
 2nd version
 server_output1
+data/subsample/sub1_output/Q.plantF2

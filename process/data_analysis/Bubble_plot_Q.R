@@ -111,11 +111,6 @@ ggplot(df, aes(x = Var2, y = Var1, shape = factor(sign(RelativeDiff)), color = a
   theme(axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 0.5)) +
   scale_y_discrete(limits = c(rev(levels(df$Var1)), 'A'))
 
-# Plot three: The Chord Diagram
-library(circlize)
-chordDiagram(as.matrix(diff_matrix))
-
-
 
 # Step 4: Compare Q.plant and Q.plantF8 for the element-wise difference
 compare_matrices <- function(mat1, mat2) {
