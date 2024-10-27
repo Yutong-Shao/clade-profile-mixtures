@@ -10,7 +10,7 @@ Date：Oct 27th
 > This record will include an analysis based on the results of the mixture model obtained from the full training set. For information on the full training set and output, see `data/subsample`。\
 > For details on the method and dataset, please refer to Record 1 and Record 2.
 
-All plotting code can be found in `process/data_analyse`.
+All plotting code can be found in `process/data_analysis`.
 
 ## 1. Analysis of Frequency Vectors
 

@@ -160,7 +160,7 @@ Using the test data, compare the performance of the estimated Q.plantFX with Q.p
 
 ### Future Research:
 
-(a) Test whether the new models fit better to the data*
+(a) Test whether the new models fit better to the data
 
 Test the goodness of fit for the new models using the following command:
 
