@@ -9,9 +9,9 @@ This repository contains all datasets, results, and code documentation for the a
 
     | File name        | Seqs        | Sites         | Loci          | Training      | Testing       |
     |-------------|-------------|---------------|---------------|---------------|---------------|
-    | [data](https://github.com/Yutong-Shao/clade-profile-mixtures/tree/main/data)       | 100        | 155575        | 410           | 369           | 41            |
-    | [data](https://github.com/Yutong-Shao/clade-profile-mixtures/tree/main/data/example_1st)       | 10        | 5177        | 10           | 10           | --            |
-    | [data](https://github.com/Yutong-Shao/clade-profile-mixtures/tree/main/data/example_2nd)       | 20        | 11340        |25           | 25           | --            |
+    | [subsample](https://github.com/Yutong-Shao/clade-profile-mixtures/tree/main/data)       | 100        | 155575        | 410           | 369           | 41            |
+    | [example_1st](https://github.com/Yutong-Shao/clade-profile-mixtures/tree/main/data/example_1st)       | 10        | 5177        | 10           | 10           | --            |
+    | [example_2nd](https://github.com/Yutong-Shao/clade-profile-mixtures/tree/main/data/example_2nd)       | 20        | 11340        |25           | 25           | --            |
 
 - See [process/sample_selection](https://github.com/Yutong-Shao/clade-profile-mixtures/tree/main/process/sample_selection) for the code process used to filter species from the 1KP database.
 
