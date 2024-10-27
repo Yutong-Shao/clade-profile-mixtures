@@ -73,7 +73,7 @@ ggplot(model_summary, aes(x = Model, y = count, fill = Metric)) +
     plot.title = element_blank()
   ) +
   labs(y = "Count") +
-  scale_y_continuous(limits = c(0, 25), breaks = seq(0, 25, by = 5), expand = c(0, 0)) + # Set y-axis range from 0 to 25, with breaks every 5 units
+  scale_y_continuous(limits = c(0, 50), breaks = seq(0, 50, by = 5), expand = c(0, 0)) + # Set y-axis range from 0 to 25, with breaks every 5 units
   scale_x_discrete(limits = c("MF", "Q.plantF1", "MF(Q.plant)+F2", "Q.plantF2","MF(JTT)+C10", "MF(Q.plant)+C10", "Q.plantF10")) + # Set x-axis category order
   scale_fill_manual(values = c("#059554", "#65BA94", "#ABDCAF", "#D3D79B")) +
   guides(fill = guide_legend(title = NULL))

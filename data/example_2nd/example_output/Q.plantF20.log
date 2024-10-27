@@ -1,0 +1,819 @@
+IQ-TREE multicore version 2.3.6.5.ml for Linux x86 64-bit built Sep 11 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: ./iqtree2 -T 30 -S example_output/Q1F1.best_model.nex -te example_output/Q1F1.treefile --model-joint MIX{GTR20+F20} --init-exchange GTRPMIX -mdef example_output/Q.plantF10.GTRPMIX.nex --prefix example_output/Q.plantF20
+Seed:    659622 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Sep 16 10:33:37 2024
+Kernel:  AVX+FMA - 30 threads (256 CPU cores detected)
+
+Reading partition model file example_output/Q1F1.best_model.nex ...
+
+Loading 25 partitions...
+Reading alignment file example_genes/GENE_4471.nex ... Nexus format detected
+WARNING: 3 sites contain only gaps or ambiguous characters.
+Alignment has 12 sequences with 493 columns, 413 distinct patterns
+200 parsimony-informative, 138 singleton sites, 155 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 7.62939e-05 secs using 82.58% CPU
+   1  PSJT         65.52%    passed     45.82%
+   2  ZLQE          5.48%    failed      0.07%
+   3  BGXB         26.77%    passed     81.79%
+   4  RGKI         46.45%    passed     23.00%
+   5  WOHL         37.93%    passed     32.60%
+   6  JMTE          5.88%    passed     77.04%
+   7  DZPJ          4.26%    passed     30.17%
+   8  FOYQ         55.58%    passed     67.35%
+   9  HERT         38.13%    passed     96.33%
+  10  COCP         59.03%    passed     78.13%
+  11  Micpu_v3.0    2.43%    failed      0.05%
+  12  WOBD          2.43%    passed     29.95%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        29.16%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4519.nex ... Nexus format detected
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 8 sequences with 817 columns, 633 distinct patterns
+173 parsimony-informative, 388 singleton sites, 255 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.8019e-05 secs using 83.3% CPU
+   1  RGKI         20.07%    passed     96.77%
+   2  WOHL         52.14%    passed     86.00%
+   3  HYZL          2.20%    passed     65.55%
+   4  FOYQ         43.21%    failed      0.36%
+   5  HERT         54.35%    passed     91.18%
+   6  Micpu_v3.0   16.28%    failed      0.02%
+   7  WOBD          2.33%    passed     51.46%
+   8  NFXV          3.18%    passed     74.02%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        24.22%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4527.nex ... Nexus format detected
+Alignment has 13 sequences with 444 columns, 358 distinct patterns
+188 parsimony-informative, 104 singleton sites, 152 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 6.96331e-05 secs using 89.04% CPU
+   1  SGTW         10.59%    passed     97.74%
+   2  PSJT         40.09%    passed     84.87%
+   3  ZLQE         39.19%    passed     52.82%
+   4  BGXB          1.80%    passed     99.79%
+   5  RGKI          2.93%    passed     99.83%
+   6  WOHL         46.85%    passed     95.77%
+   7  JMTE          4.28%    passed     43.64%
+   8  HYZL          0.45%    passed     99.47%
+   9  DZPJ          3.83%    passed     75.60%
+  10  HERT          1.35%    passed     96.87%
+  11  Micpu_v3.0    3.60%    passed     50.34%
+  12  WOBD          3.15%    passed     99.41%
+  13  NFXV         39.19%    passed     97.35%
+****  TOTAL        15.18%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4603.nex ... Nexus format detected
+Alignment has 8 sequences with 836 columns, 779 distinct patterns
+182 parsimony-informative, 521 singleton sites, 133 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 8.31783e-05 secs using 91.37% CPU
+   1  PSJT          4.19%    passed     16.32%
+   2  ZLQE         64.83%    failed      0.00%
+   3  WOHL          5.74%    passed     50.43%
+   4  HYZL          4.67%    passed     38.68%
+   5  FOYQ         58.73%    failed      0.00%
+   6  HERT         30.62%    failed      3.17%
+   7  Micpu_v3.0   22.25%    failed      0.00%
+   8  WOBD          5.74%    passed     33.59%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        24.60%  4 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4691.nex ... Nexus format detected
+WARNING: 8 sites contain only gaps or ambiguous characters.
+Alignment has 13 sequences with 233 columns, 209 distinct patterns
+108 parsimony-informative, 91 singleton sites, 34 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.87356e-05 secs using 90.36% CPU
+   1  SGTW   20.60%    passed     99.92%
+   2  PSJT   21.03%    passed    100.00%
+   3  ZLQE   24.89%    passed     88.64%
+   4  BGXB   32.62%    passed     99.73%
+   5  RGKI   32.62%    passed     99.67%
+   6  JMTE   40.34%    passed     62.02%
+   7  HYZL    4.29%    passed     99.78%
+   8  DZPJ   21.89%    passed     93.40%
+   9  FOYQ   23.61%    passed     97.59%
+  10  HERT   32.62%    passed     99.64%
+  11  COCP   11.59%    passed     98.50%
+  12  WOBD    4.29%    passed     96.37%
+  13  NFXV    4.29%    passed     86.99%
+****  TOTAL   21.13%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4724.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 12 sequences with 279 columns, 225 distinct patterns
+122 parsimony-informative, 70 singleton sites, 87 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.05088e-05 secs using 91.34% CPU
+   1  PSJT         13.26%    passed     98.91%
+   2  BGXB         30.11%    passed     78.41%
+   3  RGKI         30.11%    passed     91.78%
+   4  JMTE         17.56%    passed     79.31%
+   5  HYZL         10.39%    passed     89.30%
+   6  DZPJ         13.98%    passed     75.00%
+   7  FOYQ         12.90%    passed      7.90%
+   8  HERT         19.35%    passed     91.32%
+   9  COCP         15.41%    passed     99.47%
+  10  Micpu_v3.0   13.62%    passed     84.74%
+  11  WOBD          5.73%    passed     75.10%
+  12  NFXV          8.96%    passed     96.76%
+****  TOTAL        15.95%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4744.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 8 sequences with 547 columns, 445 distinct patterns
+128 parsimony-informative, 240 singleton sites, 179 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.28408e-05 secs using 91.03% CPU
+   1  PSJT         55.76%    passed     93.07%
+   2  RGKI          5.48%    passed     99.87%
+   3  WOHL          2.93%    passed     99.75%
+   4  HYZL         35.28%    passed     78.77%
+   5  HERT          5.30%    passed     96.57%
+   6  COCP         56.12%    passed     62.45%
+   7  Micpu_v3.0   65.27%    failed      0.00%
+   8  WOBD          2.01%    passed     99.75%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        28.52%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4757.nex ... Nexus format detected
+WARNING: 11 sites contain only gaps or ambiguous characters.
+Alignment has 13 sequences with 239 columns, 172 distinct patterns
+78 parsimony-informative, 70 singleton sites, 91 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.87641e-05 secs using 92.28% CPU
+   1  SGTW         10.88%    passed     99.99%
+   2  PSJT         11.72%    passed    100.00%
+   3  BGXB         16.32%    passed     99.94%
+   4  RGKI         16.32%    passed    100.00%
+   5  JMTE         13.39%    passed     98.49%
+   6  HYZL          8.37%    passed     99.82%
+   7  DZPJ         12.13%    passed     97.30%
+   8  FOYQ         11.72%    passed     99.62%
+   9  HERT         16.74%    passed    100.00%
+  10  COCP         14.23%    passed     99.81%
+  11  Micpu_v3.0   12.97%    passed     89.22%
+  12  WOBD         11.72%    passed    100.00%
+  13  NFXV          8.37%    passed     98.17%
+****  TOTAL        12.68%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4793.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 907 columns, 866 distinct patterns
+328 parsimony-informative, 452 singleton sites, 126 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000144709 secs using 94.67% CPU
+   1  SGTW         13.12%    passed     84.10%
+   2  PSJT         43.66%    passed     91.23%
+   3  BGXB         63.95%    passed     91.77%
+   4  RGKI         57.11%    passed     26.64%
+   5  WOHL         14.00%    passed     90.98%
+   6  JMTE         66.59%    failed      0.00%
+   7  HYZL         20.51%    passed     65.03%
+   8  HERT          5.07%    passed     68.12%
+   9  Micpu_v3.0   20.51%    failed      0.06%
+  10  WOBD         11.47%    passed     54.61%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        31.60%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_4796.nex ... Nexus format detected
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 13 sequences with 382 columns, 352 distinct patterns
+196 parsimony-informative, 116 singleton sites, 70 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.32432e-05 secs using 92.5% CPU
+   1  SGTW         40.58%    passed     92.89%
+   2  PSJT          7.85%    passed     99.66%
+   3  BGXB         14.92%    passed     94.66%
+   4  RGKI         37.17%    passed     41.95%
+   5  JMTE         27.49%    failed      0.86%
+   6  HYZL          8.12%    passed     88.98%
+   7  DZPJ         18.85%    failed      0.29%
+   8  FOYQ         33.51%    passed     68.88%
+   9  HERT         15.97%    passed     99.98%
+  10  COCP         10.21%    passed     98.76%
+  11  Micpu_v3.0   19.63%    passed     26.54%
+  12  WOBD          8.12%    passed     88.77%
+  13  NFXV         49.21%    passed     99.62%
+****  TOTAL        22.43%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_5328.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 342 columns, 318 distinct patterns
+137 parsimony-informative, 137 singleton sites, 68 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.96767e-05 secs using 94.61% CPU
+   1  SGTW         25.15%    passed     79.32%
+   2  PSJT         14.04%    passed     87.12%
+   3  BGXB         25.73%    passed     46.21%
+   4  RGKI          5.85%    passed     95.88%
+   5  WOHL         10.82%    passed     98.22%
+   6  HYZL         10.23%    passed     95.56%
+   7  COCP         58.48%    passed     70.28%
+   8  Micpu_v3.0   11.11%    failed      0.01%
+   9  WOBD         36.55%    passed     80.20%
+  10  NFXV         12.28%    passed     99.23%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        21.02%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_5333.nex ... Nexus format detected
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 4 sequences with 1258 columns, 803 distinct patterns
+31 parsimony-informative, 820 singleton sites, 407 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 2.18414e-05 secs using 86.99% CPU
+   1  WOHL         16.61%    failed      0.18%
+   2  HERT         66.06%    passed     90.54%
+   3  Micpu_v3.0   17.57%    failed      0.00%
+   4  WOBD          3.42%    failed      0.41%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        25.91%  3 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_5335.nex ... Nexus format detected
+Alignment has 15 sequences with 452 columns, 404 distinct patterns
+236 parsimony-informative, 114 singleton sites, 102 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 8.06339e-05 secs using 94.25% CPU
+   1  SGTW          0.44%    passed     99.88%
+   2  PSJT          0.88%    passed     98.11%
+   3  ZLQE          0.66%    passed     99.45%
+   4  BGXB         38.05%    passed     92.41%
+   5  RGKI          1.11%    passed     99.99%
+   6  WOHL          0.00%    passed     99.93%
+   7  JMTE          1.33%    passed     68.08%
+   8  HYZL          0.22%    passed     99.52%
+   9  DZPJ          0.66%    passed     26.10%
+  10  FOYQ         27.88%    passed     99.00%
+  11  HERT         50.66%    passed     97.93%
+  12  COCP         61.06%    passed     68.26%
+  13  Micpu_v3.0    0.44%    passed     97.87%
+  14  WOBD          0.00%    passed     99.62%
+  15  NFXV         50.88%    passed     53.26%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        15.62%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_5339.nex ... Nexus format detected
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 13 sequences with 637 columns, 620 distinct patterns
+361 parsimony-informative, 204 singleton sites, 72 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000139158 secs using 87.67% CPU
+   1  SGTW          8.16%    passed     87.09%
+   2  PSJT         31.71%    passed     24.24%
+   3  ZLQE         30.46%    failed      4.58%
+   4  BGXB         56.36%    passed     57.06%
+   5  RGKI         45.37%    passed     72.54%
+   6  WOHL         12.40%    passed     62.98%
+   7  JMTE         50.86%    passed     44.58%
+   8  HYZL          7.69%    passed     70.24%
+   9  FOYQ         64.68%    passed     25.43%
+  10  HERT         25.90%    passed     65.25%
+  11  COCP         60.60%    passed     34.54%
+  12  Micpu_v3.0    8.16%    failed      0.02%
+  13  WOBD         11.15%    passed     73.90%
+WARNING: 4 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        31.81%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_5343.nex ... Nexus format detected
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 14 sequences with 274 columns, 233 distinct patterns
+103 parsimony-informative, 72 singleton sites, 99 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 6.78487e-05 secs using 95.8% CPU
+   1  SGTW         32.48%    passed     94.23%
+   2  PSJT         38.69%    passed     97.79%
+   3  ZLQE          9.85%    passed     87.47%
+   4  BGXB         12.41%    passed     99.77%
+   5  RGKI         25.18%    passed     87.03%
+   6  WOHL          9.85%    passed     99.84%
+   7  HYZL         12.04%    passed     99.99%
+   8  DZPJ         13.87%    passed     36.49%
+   9  FOYQ         40.15%    passed     54.66%
+  10  HERT         10.58%    passed     98.56%
+  11  COCP         25.91%    passed     79.86%
+  12  Micpu_v3.0   12.77%    passed     65.63%
+  13  WOBD          8.03%    passed     99.18%
+  14  NFXV          8.03%    passed     99.70%
+****  TOTAL        18.56%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_6978.nex ... Nexus format detected
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 12 sequences with 306 columns, 272 distinct patterns
+150 parsimony-informative, 64 singleton sites, 92 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.94035e-05 secs using 94.27% CPU
+   1  ZLQE          8.17%    passed     55.73%
+   2  BGXB          6.86%    passed     99.96%
+   3  RGKI          6.86%    passed     98.83%
+   4  WOHL         35.62%    passed     99.27%
+   5  JMTE          4.58%    passed     50.45%
+   6  DZPJ         21.24%    passed     51.23%
+   7  FOYQ          5.23%    passed     46.09%
+   8  HERT         40.20%    passed     84.06%
+   9  COCP         14.71%    passed     99.63%
+  10  Micpu_v3.0   12.42%    passed     76.06%
+  11  WOBD          5.56%    passed     80.81%
+  12  NFXV         20.92%    passed     97.78%
+****  TOTAL        15.20%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_6979.nex ... Nexus format detected
+Alignment has 12 sequences with 304 columns, 274 distinct patterns
+123 parsimony-informative, 93 singleton sites, 88 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 6.58184e-05 secs using 95.72% CPU
+   1  SGTW          1.32%    passed     65.25%
+   2  PSJT          0.99%    passed     99.97%
+   3  BGXB          2.96%    passed     99.96%
+   4  RGKI         43.75%    passed     53.35%
+   5  WOHL          1.32%    passed     99.73%
+   6  HYZL         18.75%    passed     99.40%
+   7  DZPJ          7.89%    failed      0.71%
+   8  HERT         28.29%    passed    100.00%
+   9  COCP         35.53%    passed     93.95%
+  10  Micpu_v3.0   48.03%    passed      5.69%
+  11  WOBD          1.32%    passed     99.72%
+  12  NFXV         22.04%    passed     99.90%
+****  TOTAL        17.68%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_6983.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 11 sequences with 256 columns, 251 distinct patterns
+133 parsimony-informative, 91 singleton sites, 32 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.53168e-05 secs using 95.81% CPU
+   1  SGTW         26.17%    passed     69.32%
+   2  PSJT         18.36%    passed     90.78%
+   3  BGXB         33.20%    passed     97.79%
+   4  RGKI         24.61%    passed     98.20%
+   5  WOHL         17.58%    passed     99.80%
+   6  HYZL         10.94%    passed     71.44%
+   7  FOYQ         64.06%    passed     51.19%
+   8  HERT         31.25%    passed     95.19%
+   9  COCP         32.03%    passed     79.95%
+  10  Micpu_v3.0   24.61%    failed      0.03%
+  11  NFXV         12.50%    passed     84.24%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        26.85%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_6989.nex ... Nexus format detected
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 6 sequences with 325 columns, 297 distinct patterns
+45 parsimony-informative, 203 singleton sites, 77 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 2.96459e-05 secs using 94.45% CPU
+   1  ZLQE         58.46%    passed      9.74%
+   2  WOHL          7.38%    passed     16.19%
+   3  HYZL         46.15%    passed     60.68%
+   4  FOYQ          6.77%    passed     92.69%
+   5  Micpu_v3.0   17.23%    failed      0.00%
+   6  WOBD         25.54%    passed     12.28%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        26.92%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_6992.nex ... Nexus format detected
+Alignment has 11 sequences with 169 columns, 138 distinct patterns
+42 parsimony-informative, 64 singleton sites, 63 constant sites
+      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.77223e-05 secs using 92.78% CPU
+   1  SGTW    0.59%    passed    100.00%
+   2  PSJT    0.00%    passed    100.00%
+   3  BGXB    0.00%    passed    100.00%
+   4  RGKI    0.00%    passed    100.00%
+   5  HYZL    0.00%    passed    100.00%
+   6  DZPJ    0.00%    passed     40.34%
+   7  FOYQ    2.37%    passed     12.09%
+   8  HERT    0.59%    passed    100.00%
+   9  COCP   23.67%    passed     99.76%
+  10  WOBD    0.00%    passed     99.99%
+  11  NFXV   28.40%    passed     99.76%
+****  TOTAL    5.06%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_6995.nex ... Nexus format detected
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 13 sequences with 346 columns, 319 distinct patterns
+154 parsimony-informative, 120 singleton sites, 72 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 8.20495e-05 secs using 96.28% CPU
+   1  SGTW         44.22%    passed     91.59%
+   2  PSJT         48.84%    passed     62.83%
+   3  ZLQE         30.06%    passed     37.36%
+   4  BGXB         10.69%    passed     98.40%
+   5  RGKI         11.27%    passed     75.98%
+   6  WOHL         10.40%    passed     20.96%
+   7  HYZL         10.12%    passed     73.62%
+   8  DZPJ         33.53%    passed     76.16%
+   9  FOYQ         36.99%    passed     43.85%
+  10  HERT         21.97%    passed     36.45%
+  11  COCP         25.43%    passed     99.88%
+  12  Micpu_v3.0   35.26%    passed     83.64%
+  13  WOBD         11.85%    passed     93.18%
+****  TOTAL        25.43%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_7013.nex ... Nexus format detected
+WARNING: 11 sites contain only gaps or ambiguous characters.
+Alignment has 12 sequences with 296 columns, 261 distinct patterns
+139 parsimony-informative, 92 singleton sites, 65 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 7.11456e-05 secs using 95.58% CPU
+   1  PSJT         20.61%    passed     95.55%
+   2  ZLQE         30.41%    passed     86.63%
+   3  BGXB         31.08%    passed     84.18%
+   4  RGKI         30.74%    passed     96.21%
+   5  WOHL          9.12%    passed     94.00%
+   6  HYZL          7.43%    passed     99.06%
+   7  DZPJ         30.41%    passed     71.64%
+   8  FOYQ         30.41%    passed     96.96%
+   9  HERT         31.08%    passed     98.58%
+  10  Micpu_v3.0   31.76%    passed     87.05%
+  11  WOBD          8.78%    passed     85.50%
+  12  NFXV          8.11%    passed     85.30%
+****  TOTAL        22.49%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_7021.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 13 sequences with 401 columns, 387 distinct patterns
+193 parsimony-informative, 138 singleton sites, 70 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000105932 secs using 95.34% CPU
+   1  SGTW         40.40%    passed     62.26%
+   2  PSJT         12.72%    passed     94.28%
+   3  ZLQE         39.90%    passed     54.77%
+   4  BGXB         24.19%    passed     99.60%
+   5  RGKI         22.69%    passed     99.89%
+   6  WOHL         11.97%    passed     93.00%
+   7  HYZL          4.49%    passed     72.05%
+   8  DZPJ         66.33%    passed      8.07%
+   9  FOYQ         52.12%    passed     82.45%
+  10  HERT         63.84%    passed     85.55%
+  11  COCP         48.63%    passed     88.90%
+  12  Micpu_v3.0   39.65%    passed     58.16%
+  13  WOBD          4.99%    passed     88.10%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        33.22%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_7024.nex ... Nexus format detected
+WARNING: 24 sites contain only gaps or ambiguous characters.
+Alignment has 9 sequences with 188 columns, 140 distinct patterns
+44 parsimony-informative, 61 singleton sites, 83 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.25726e-05 secs using 93.96% CPU
+   1  SGTW         40.43%    passed     98.11%
+   2  PSJT         28.72%    passed     67.10%
+   3  RGKI         47.34%    passed     81.08%
+   4  HYZL         25.53%    passed     93.22%
+   5  DZPJ         63.30%    passed      9.33%
+   6  FOYQ         66.49%    passed     16.78%
+   7  COCP         48.40%    passed     99.81%
+   8  Micpu_v3.0   42.55%    passed     61.15%
+   9  NFXV         40.96%    passed     99.03%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        44.86%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading alignment file example_genes/GENE_7025.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 11 sequences with 247 columns, 242 distinct patterns
+145 parsimony-informative, 73 singleton sites, 29 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.675e-05 secs using 95.24% CPU
+   1  SGTW         18.22%    passed     80.55%
+   2  PSJT         13.77%    passed     97.41%
+   3  BGXB         14.98%    passed     79.33%
+   4  RGKI         17.00%    passed     90.74%
+   5  WOHL          6.48%    passed     87.62%
+   6  JMTE         23.08%    passed     60.94%
+   7  HYZL         40.89%    passed     11.49%
+   8  HERT         14.98%    passed     64.96%
+   9  Micpu_v3.0   17.81%    failed      3.86%
+  10  WOBD          3.24%    passed     88.44%
+  11  NFXV          9.72%    passed     89.79%
+****  TOTAL        16.38%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	AA	12	493	200	155	LG+G4{0.685196}	GENE_4471.nex
+2	AA	8	817	173	256	LG+G4{0.644451}	GENE_4519.nex
+3	AA	13	444	188	152	LG+G4{0.605526}	GENE_4527.nex
+4	AA	8	836	182	133	JTT+G4{1.00094}	GENE_4603.nex
+5	AA	13	233	108	34	WAG+R2{0.760474,0.417947,0.239526,2.84797}	GENE_4691.nex
+6	AA	12	279	122	87	WAG+I{0.211599}+G4{1.578}	GENE_4724.nex
+7	AA	8	547	128	179	JTT+G4{1.30665}	GENE_4744.nex
+8	AA	13	239	78	91	LG+G4{0.50561}	GENE_4757.nex
+9	AA	10	907	328	127	JTT+G4{1.09741}	GENE_4793.nex
+10	AA	13	382	196	70	LG+G4{0.679883}	GENE_4796.nex
+11	AA	10	342	137	68	JTT+F+G4{0.782644}	GENE_5328.nex
+12	AA	4	1258	31	407	LG+F+G4{1.39413}	GENE_5333.nex
+13	AA	15	452	236	102	LG+G4{0.981831}	GENE_5335.nex
+14	AA	13	637	361	72	LG+G4{1.3353}	GENE_5339.nex
+15	AA	14	274	103	99	LG+G4{0.45899}	GENE_5343.nex
+16	AA	12	306	150	92	LG+G4{0.827221}	GENE_6978.nex
+17	AA	12	304	123	88	LG+G4{0.691958}	GENE_6979.nex
+18	AA	11	256	133	32	JTT+G4{1.04602}	GENE_6983.nex
+19	AA	6	325	45	77	WAG+G4{1.3369}	GENE_6989.nex
+20	AA	11	169	42	63	LG+G4{1.01208}	GENE_6992.nex
+21	AA	13	346	154	72	JTT+I{0.123413}+G4{1.06648}	GENE_6995.nex
+22	AA	12	296	139	65	LG+G4{1.01142}	GENE_7013.nex
+23	AA	13	401	193	70	LG+G4{0.941017}	GENE_7021.nex
+24	AA	9	188	44	83	WAG+G4{1.95688}	GENE_7024.nex
+25	AA	11	247	145	29	JTT+R2{0.290918,0.212934,0.709082,1.32291}	GENE_7025.nex
+Linked 15 total sequences
+The number of threads is changed to: 25
+WARNING: States(s) W rarely appear in partition GENE_6992.nex and may cause numerical problems
+Reading model definition file example_output/Q.plantF10.GTRPMIX.nex ... 87 models and 214 frequency vectors loaded
+Reading input tree file example_output/Q1F1.treefile ...
+Linking MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} model across 25 partitions
+Mean state frequencies: 0.08962711 0.06238259 0.03276898 0.05892279 0.01783903 0.03442266 0.06654609 0.06846951 0.02426607 0.04510701 0.09923248 0.05328154 0.02136921 0.03799974 0.04809769 0.07845017 0.04637365 0.01290148 0.02839438 0.07354780
+
+NOTE: 1254 MB RAM (1 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 23 / LogL: -3008.120
+Partition GENE_7025.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 19 / LogL: -3876.933
+Partition GENE_7024.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -1658.968
+Partition GENE_6992.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -1386.707
+Partition GENE_6989.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 9 / LogL: -3096.160
+Partition GENE_5333.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 5 / LogL: -8617.370
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -2750.702
+Partition GENE_7013.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3947.613
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -4846.539
+Partition GENE_5335.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 27 / LogL: -6682.225
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5579.917
+Partition GENE_6978.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -4079.296
+Partition GENE_6979.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3565.913
+Partition GENE_6983.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -3899.534
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5830.811
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 21 / LogL: -3657.875
+Partition GENE_7021.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5759.347
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -6057.168
+Partition GENE_6995.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 23 / LogL: -5365.314
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -8235.774
+Partition GENE_5328.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4442.729
+Partition GENE_5343.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 25 / LogL: -3342.150
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -9573.766
+Partition GENE_5339.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -9937.426
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -11616.632
+1. Log-likelihood: -130814.990
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (588 free parameters)
+Restart estimation at the boundary... 
+1. Log-likelihood: -130742.607
+Partition GENE_6992.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -1387.506
+Partition GENE_7025.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 19 / LogL: -3878.067
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 23 / LogL: -3011.039
+Partition GENE_6989.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 9 / LogL: -3091.620
+Partition GENE_7024.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -1655.446
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -2749.304
+Partition GENE_5333.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 5 / LogL: -8612.623
+Partition GENE_7021.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5752.369
+Partition GENE_6983.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -3898.698
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 21 / LogL: -3654.189
+Partition GENE_6978.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -4076.046
+Partition GENE_5343.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 25 / LogL: -3342.070
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -6046.256
+Partition GENE_5328.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4433.474
+Partition GENE_7013.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3952.448
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5570.847
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -8232.156
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -4854.536
+Partition GENE_6979.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3563.741
+Partition GENE_6995.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 23 / LogL: -5365.704
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5823.698
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -9562.727
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -11617.027
+Partition GENE_5339.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -9928.349
+Partition GENE_5335.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 27 / LogL: -6682.379
+2. Log-likelihood: -130742.319
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (588 free parameters)
+Restart estimation at the boundary... 
+2. Log-likelihood: -130710.817
+Partition GENE_7024.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -1656.655
+Partition GENE_6992.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -1388.142
+Partition GENE_7013.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3958.078
+Partition GENE_6989.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 9 / LogL: -3089.573
+Partition GENE_7025.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 19 / LogL: -3868.532
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 23 / LogL: -3008.921
+Partition GENE_5328.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4439.263
+Partition GENE_6983.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -3894.634
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 21 / LogL: -3651.240
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -2749.684
+Partition GENE_6995.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 23 / LogL: -5366.859
+Partition GENE_5333.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 5 / LogL: -8607.986
+Partition GENE_6979.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3562.489
+Partition GENE_5343.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 25 / LogL: -3339.126
+Partition GENE_7021.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5756.061
+Partition GENE_6978.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -4071.038
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5566.752
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -6036.182
+Partition GENE_5335.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 27 / LogL: -6679.787
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -4863.025
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -9567.073
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -11628.753
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5817.104
+Partition GENE_5339.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -9911.506
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -8231.118
+3. Log-likelihood: -130709.581
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (588 free parameters)
+Restart estimation at the boundary... 
+3. Log-likelihood: -130556.137
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 23 / LogL: -2998.839
+Partition GENE_7024.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -1653.829
+Partition GENE_7025.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 19 / LogL: -3874.757
+Partition GENE_5333.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 5 / LogL: -8626.691
+Partition GENE_6992.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -1391.671
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -2737.493
+Partition GENE_6989.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 9 / LogL: -3090.984
+Partition GENE_6983.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -3886.736
+Partition GENE_6978.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -4048.434
+Partition GENE_7013.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3939.183
+Partition GENE_5343.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 25 / LogL: -3330.670
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 21 / LogL: -3643.359
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -8231.677
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5545.498
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -4847.849
+Partition GENE_6995.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 23 / LogL: -5354.289
+Partition GENE_5335.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 27 / LogL: -6662.810
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5820.915
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -9578.694
+Partition GENE_6979.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3553.302
+Partition GENE_5328.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4436.231
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -6036.329
+Partition GENE_7021.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5746.333
+Partition GENE_5339.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -9912.970
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -11598.036
+4. Log-likelihood: -130547.580
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (588 free parameters)
+Restart estimation at the boundary... 
+4. Log-likelihood: -130423.277
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 23 / LogL: -2992.761
+Partition GENE_7025.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 19 / LogL: -3860.738
+Partition GENE_7024.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -1656.288
+Partition GENE_6992.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -1385.293
+Partition GENE_6989.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 9 / LogL: -3093.194
+Partition GENE_5333.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 5 / LogL: -8604.928
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 21 / LogL: -3632.986
+Partition GENE_6979.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3550.334
+Partition GENE_6995.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 23 / LogL: -5345.538
+Partition GENE_6978.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -4048.523
+Partition GENE_6983.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -3885.084
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -2742.405
+Partition GENE_7013.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3941.668
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -4855.087
+Partition GENE_5335.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 27 / LogL: -6657.028
+Partition GENE_5343.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 25 / LogL: -3324.424
+Partition GENE_5328.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4444.103
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5548.334
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -6012.435
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -9569.102
+Partition GENE_7021.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5751.561
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5809.351
+Partition GENE_5339.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -9881.407
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -8219.620
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -11609.154
+5. Log-likelihood: -130421.346
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (588 free parameters)
+Restart estimation at the boundary... 
+5. Log-likelihood: -130289.693
+Partition GENE_6992.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -1387.947
+Partition GENE_7025.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 19 / LogL: -3868.259
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 23 / LogL: -2991.779
+Partition GENE_6989.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 9 / LogL: -3087.802
+Partition GENE_7024.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -1648.864
+Partition GENE_7013.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3934.957
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -2730.031
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -4847.433
+Partition GENE_6978.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -4040.609
+Partition GENE_6979.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3547.158
+Partition GENE_5333.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 5 / LogL: -8611.297
+Partition GENE_5335.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 27 / LogL: -6645.962
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -6014.151
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 21 / LogL: -3629.736
+Partition GENE_6995.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 23 / LogL: -5345.027
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5525.549
+Partition GENE_7021.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5741.059
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5803.774
+Partition GENE_6983.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -3881.558
+Partition GENE_5343.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 25 / LogL: -3324.345
+Partition GENE_5328.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4429.848
+Partition GENE_5339.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -9876.279
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -8219.845
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -9565.268
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -11588.231
+6. Log-likelihood: -130286.766
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (588 free parameters)
+Restart estimation at the boundary... 
+6. Log-likelihood: -130204.997
+Partition GENE_6992.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -1383.388
+Partition GENE_7025.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 19 / LogL: -3852.430
+Partition GENE_6989.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 9 / LogL: -3087.873
+Partition GENE_7024.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -1654.342
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -2732.143
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 21 / LogL: -3625.259
+Partition GENE_6978.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -4033.842
+Partition GENE_5333.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 5 / LogL: -8601.580
+Partition GENE_6983.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -3880.331
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 23 / LogL: -2987.704
+Partition GENE_6979.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3546.422
+Partition GENE_5343.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 25 / LogL: -3323.945
+Partition GENE_5328.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4434.237
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -4853.218
+Partition GENE_7013.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3934.930
+Partition GENE_6995.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 23 / LogL: -5335.982
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5528.903
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -8208.173
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5795.898
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -5994.195
+Partition GENE_7021.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5740.090
+Partition GENE_5335.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 27 / LogL: -6642.855
+Partition GENE_5339.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -9865.106
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -9564.789
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -11594.564
+7. Log-likelihood: -130202.199
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (588 free parameters)
+Restart estimation at the boundary... 
+7. Log-likelihood: -130122.328
+Partition GENE_7024.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -1650.325
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 23 / LogL: -2988.205
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -2719.687
+Partition GENE_6989.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 9 / LogL: -3086.192
+Partition GENE_6992.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -1385.370
+Partition GENE_7025.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 19 / LogL: -3858.918
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 21 / LogL: -3625.938
+Partition GENE_5333.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 5 / LogL: -8615.113
+Partition GENE_5343.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 25 / LogL: -3322.592
+Partition GENE_7013.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3933.398
+Partition GENE_6983.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -3879.278
+Partition GENE_6979.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3545.217
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -4842.108
+Partition GENE_5328.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4425.629
+Partition GENE_6978.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -4026.824
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5795.689
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -9566.103
+Partition GENE_6995.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 23 / LogL: -5336.754
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -8210.632
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5512.780
+Partition GENE_7021.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5729.756
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -5993.918
+Partition GENE_5339.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -9868.272
+Partition GENE_5335.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 27 / LogL: -6628.077
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -11571.708
+8. Log-likelihood: -130118.482
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (588 free parameters)
+Restart estimation at the boundary... 
+8. Log-likelihood: -130060.586
+Partition GENE_7024.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -1648.497
+Partition GENE_6992.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -1383.064
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 23 / LogL: -2979.056
+Partition GENE_7025.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 19 / LogL: -3848.889
+Partition GENE_6989.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 9 / LogL: -3085.835
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -2723.127
+Partition GENE_5328.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4429.047
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 21 / LogL: -3620.021
+Partition GENE_5333.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 5 / LogL: -8600.416
+Partition GENE_7013.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3933.436
+Partition GENE_5343.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 25 / LogL: -3319.415
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -4849.457
+Partition GENE_7021.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5721.961
+Partition GENE_6983.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -3877.019
+Partition GENE_6978.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -4025.641
+Partition GENE_6979.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3541.527
+Partition GENE_6995.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 23 / LogL: -5333.328
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5522.211
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -8207.596
+Partition GENE_5335.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 27 / LogL: -6633.001
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5796.976
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -5990.273
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -9549.771
+Partition GENE_5339.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -9861.054
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -11579.146
+9. Log-likelihood: -130059.763
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (588 free parameters)
+Restart estimation at the boundary... 
+9. Log-likelihood: -130030.580
+Partition GENE_7024.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 15 / LogL: -1650.472
+Partition GENE_6989.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 9 / LogL: -3085.173
+Partition GENE_4691.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 23 / LogL: -2980.896
+Partition GENE_6992.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -1382.531
+Partition GENE_4757.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -2721.016
+Partition GENE_7025.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+R2 / df: 19 / LogL: -3847.845
+Partition GENE_5333.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 5 / LogL: -8605.266
+Partition GENE_6983.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 19 / LogL: -3874.950
+Partition GENE_4724.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 21 / LogL: -3620.898
+Partition GENE_7013.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3931.247
+Partition GENE_6979.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -3542.743
+Partition GENE_5343.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 25 / LogL: -3319.148
+Partition GENE_6978.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -4026.953
+Partition GENE_4744.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -4844.881
+Partition GENE_5328.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -4425.410
+Partition GENE_6995.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+I+G4 / df: 23 / LogL: -5329.895
+Partition GENE_4471.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 21 / LogL: -5989.194
+Partition GENE_4519.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -8205.682
+Partition GENE_7021.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5722.418
+Partition GENE_4603.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 13 / LogL: -9553.519
+Partition GENE_4527.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5516.600
+Partition GENE_4796.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -5793.352
+Partition GENE_5335.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 27 / LogL: -6630.046
+Partition GENE_5339.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 23 / LogL: -9858.664
+Partition GENE_4793.nex / Model: MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO}+G4 / df: 17 / LogL: -11571.353
+10. Log-likelihood: -130030.152
+Optimizing linked MIX{GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO,GTR20+FO} parameters across all partitions (588 free parameters)
+Restart estimation at the boundary... 
+Restart estimation at the boundary... 
+10. Log-likelihood: -130023.721
+Optimal log-likelihood: -130023.721
+Mixture weights: 0.050 0.051 0.049 0.050 0.051 0.050 0.051 0.050 0.050 0.050 0.049 0.050 0.049 0.049 0.051 0.049 0.050 0.050 0.050 0.050
+Wrote distance file to... 
+Partition information was printed to example_output/Q.plantF20.best_model.nex
+BEST SCORE FOUND : -130023.721
+Total tree length: 198.380
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 1023550.207 sec (284h:19m:10s)
+Total wall-clock time used: 82293.806 sec (22h:51m:33s)
+
+Analysis results written to: 
+  IQ-TREE report:                example_output/Q.plantF20.iqtree
+  Maximum-likelihood tree:       example_output/Q.plantF20.treefile
+  Screen log file:               example_output/Q.plantF20.log
+  GTRPMIX nex file:              example_output/Q.plantF20.GTRPMIX.nex
+
+Date and Time: Tue Sep 17 09:25:11 2024

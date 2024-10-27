@@ -57,18 +57,29 @@ perform_pca <- function(data_matrix) {
   return(pca_result)
 }
 
-# Step 5: PCA result visualization
+# Step 5: PCA result visualization with customized legend
 plot_pca <- function(pca_result, file_names) {
   pca_df <- as.data.frame(pca_result$x)
 
   # Process file names, keeping only the basename
   pca_df$file <- gsub("^.*/|\\.csv$", "", file_names)
 
+  # Define groups based on file names
+  pca_df$group <- "other"  # Default group
+  general_indices <- which(pca_df$file %in% c("LG", "JTT", "WAG"))
+  pca_df$group[general_indices] <- "general"
+
+  Q.otherclade_indices <- which(pca_df$file %in% c("Q.insect", "Q.mammal", "Q.bird", "Q.yeast", "Q.pfam"))
+  pca_df$group[Q.otherclade_indices] <- "Q.other-clade"
+
+  Q.plant_indices <- which(pca_df$file %in% c("Q.plant", "Q.plantF1(1)", "Q.plantF1(2)", "Q.plantF1(3)", "Q.plantF1(4)", "Q.plantF1(5)", "Q.plantF1(6)"))
+  pca_df$group[Q.plant_indices] <- "Q.plant"
+
+  # Define colors for groups
+  colors <- c("Q.other-clade" = "#F5A433", "Q.plant" = "#48ad64", "general" = "#529ac9", "other" = "black")
+
   # Extract variance percentage explained by PCA
   variance_percent <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 2)
-
-  pca_df$color <- ifelse(pca_df$file %in% c("Q.plant", "Q.plantF1", "Q.plantF8", "Q.plantF1_3", "Q.plantF1_4"),
-                         "Q.plant", "other")
 
   # Get the range of X and Y
   x_range <- range(pca_df$PC1)
@@ -79,21 +90,22 @@ plot_pca <- function(pca_result, file_names) {
   y_expand <- y_range[2] - y_range[1]
 
   # Plot the PCA
-  ggplot(pca_df, aes(x = PC1, y = PC2, label = file, color = color)) +
-    #geom_ellipse(aes(x0 = -8, y0 = 6.8, a = 12, b = 7, angle = 1.2 * pi/4), color = "darkgreen", fill = scales::alpha("#A6C69F", 0.05), size = 0.6) +
+  ggplot(pca_df, aes(x = PC1, y = PC2, label = file, color = group)) +
     geom_point(size = 2) +
     geom_text_repel() +  # Use ggrepel to avoid label overlap
     xlim(x_range[1] - x_expand/5, x_range[2] + x_expand/5) +  # Expand X-axis range
     ylim(y_range[1] - y_expand/5, y_range[2] + y_expand/5) +  # Expand Y-axis range
     theme_minimal() +
-    theme(legend.position = "none",
-          plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
-          legend.title = element_text(size = 10),
-          legend.text = element_text(size = 9)) +
-    scale_color_manual(values = c("black", "darkgreen")) +
+    theme(legend.position = "right",
+          legend.title = element_text(size = 10, face = "bold", hjust = 0.5),  # Centered and bold
+          legend.text = element_text(size = 9),
+          legend.box.background = element_rect(colour = "black", size= 0.5),  # Add box around legend
+          plot.title = element_text(size = 12, face = "bold", hjust = 0.5)) +
+    scale_color_manual(values = colors) +
     labs(title = "PCA Plot of Exchangability Matrices",
          x = paste0("PC1 (", variance_percent[1], "%)"),
-         y = paste0("PC2 (", variance_percent[2], "%)"))
+         y = paste0("PC2 (", variance_percent[2], "%)"),
+         color = "Group")  # Set legend title to 'Group'
 }
 
 # Main program

@@ -61,8 +61,8 @@ matrix_list <- read_matrices(folder_path)
 data_matrix <- flatten_matrix(matrix_list)
 
 # Retrieve two matrices Q.plant and Q.plantF1_1
-Q_plant <- data_matrix["Q/Q.plant.csv", ]
-Q_plantF8 <- data_matrix["Q/Q.plantF1.csv", ]
+Q_plant <- data_matrix["Q/Q.plantF1(6).csv", ]
+Q_plantF8 <- data_matrix["Q/Q.plantF10.csv", ]
 
 # Calculate the relative difference between the two matrices (rij1 - rij2) / (rij1 + rij2)
 relative_diff <- (Q_plant - Q_plantF8) / (Q_plant + Q_plantF8)
@@ -88,28 +88,30 @@ df <- na.omit(df)  # Remove NA values
 df$Var1 <- factor(df$Var1, levels = 2:n, labels = amino_acids[2:n])
 df$Var2 <- factor(df$Var2, levels = 1:(n-1), labels = amino_acids[1:(n-1)])
 
-
 # Plot One: The Bubble Chart
 ggplot(df, aes(x = Var2, y = Var1)) +
   geom_point(aes(size = abs(RelativeDiff), fill = factor(sign(RelativeDiff))), shape = 21) +
-  scale_size_continuous(range = c(1, 6), breaks = c(1/3, 2/3, 1), labels = c("1/3", "2/3", "1")) +  # Adjust the bubble size range with 1/3 and 2/3 as benchmarks
-  scale_fill_manual(values = c("black", "white"), labels = c("Q.plant > Q.plantF8", "Q.plantF8 > Q.plant")) +
+  scale_size_continuous(range = c(1, 6), breaks = c(1/3, 2/3, 1), labels = c("1/3", "2/3", "1")) +
+  scale_fill_manual(
+    values = c("black", "grey", "white"),
+    labels = c("Q.plantF1 < Q.plantF10", "Q.plantF1 = Q.plantF10", "Q.plantF1 > Q.plantF10")) +
   labs(x = NULL, y = NULL, fill = "Relative Diff", size = "Relative Size") +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 0.5)) +
+  theme(
+    axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 0.5),
+    axis.text.y = element_text(hjust = 1),
+    legend.position = c(1, 1),
+    legend.justification = c("right", "top"),
+    legend.box.background = element_rect(colour = "black"),
+    legend.title = element_text(face = "bold")
+  ) +
   scale_y_discrete(limits = c(rev(levels(df$Var1)), 'A'))
 
 
-# Plot Two: The Matrix Plot
-library(viridis)
-ggplot(df, aes(x = Var2, y = Var1, shape = factor(sign(RelativeDiff)), color = abs(RelativeDiff))) +
-  geom_point(size = 5) +
-  scale_color_viridis_c(option = "viridis") +
-  scale_shape_manual(values = c(16, 1)) +
-  labs(x = NULL, y = NULL, color = "Relative Diff") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 0.5)) +
-  scale_y_discrete(limits = c(rev(levels(df$Var1)), 'A'))
+
+
+
+
 
 
 # Step 4: Compare Q.plant and Q.plantF8 for the element-wise difference
@@ -133,11 +135,11 @@ compare_matrices <- function(mat1, mat2) {
 }
 
 # Calculate the percentages for Q.plant and Q.plantF8
-percentages <- compare_matrices(Q_plant, Q_plantF8)
+percentages <- compare_matrices(Q_plant, Q_plantF1)
 
 # Create a table to store the results
 comparison_df <- data.frame(
-  Matrix_Comparison = "Q.plant vs Q.plantF8",
+  Matrix_Comparison = "Q.plant vs Q.plantF1",
   `1/3 (Greater 2x)` = percentages[1],
   `2/3 (Greater 5x)` = percentages[2],
   `-1/3 (Less 2x)` = percentages[3],
