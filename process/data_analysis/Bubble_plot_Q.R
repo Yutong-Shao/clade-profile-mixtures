@@ -61,8 +61,8 @@ matrix_list <- read_matrices(folder_path)
 data_matrix <- flatten_matrix(matrix_list)
 
 # Retrieve two matrices Q.plant and Q.plantF1_1
-Q_plant <- data_matrix["Q/Q.plantF1(6).csv", ]
-Q_plantF8 <- data_matrix["Q/Q.plantF10.csv", ]
+Q_plant <- data_matrix["Q/Q.plant.csv", ]
+Q_plantF8 <- data_matrix["Q/Q.plantF1.csv", ]
 
 # Calculate the relative difference between the two matrices (rij1 - rij2) / (rij1 + rij2)
 relative_diff <- (Q_plant - Q_plantF8) / (Q_plant + Q_plantF8)
@@ -94,7 +94,7 @@ ggplot(df, aes(x = Var2, y = Var1)) +
   scale_size_continuous(range = c(1, 6), breaks = c(1/3, 2/3, 1), labels = c("1/3", "2/3", "1")) +
   scale_fill_manual(
     values = c("black", "grey", "white"),
-    labels = c("Q.plantF1 < Q.plantF10", "Q.plantF1 = Q.plantF10", "Q.plantF1 > Q.plantF10")) +
+    labels = c("Q.plantF1 < Q.plantF2", "Q.plantF1 = Q.plantF2", "Q.plantF1 > Q.plantF2")) +
   labs(x = NULL, y = NULL, fill = "Relative Diff", size = "Relative Size") +
   theme_minimal() +
   theme(

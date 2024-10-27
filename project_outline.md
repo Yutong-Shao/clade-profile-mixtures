@@ -1,4 +1,12 @@
 
+<center>
+
+# **BIOL8706 Progress Record 1** 
+
+Date：Aug 12nd
+
+</center>
+
 # 1. The overall aims of my project
 
 ***Project Title: Do profile mixture models better explain the evolution of plant genes?***

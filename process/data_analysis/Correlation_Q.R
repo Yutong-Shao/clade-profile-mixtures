@@ -54,6 +54,7 @@ flatten_matrix <- function(matrix_list) {
 
 # Step 4: Calculate pairwise Pearson correlations between matrices
 calculate_correlations <- function(matrix_list, file_names) {
+
   num_matrices <- length(matrix_list)
   correlation_matrix <- matrix(NA, nrow = num_matrices, ncol = num_matrices)
   colnames(correlation_matrix) <- file_names
@@ -80,7 +81,7 @@ visualize_correlation_matrix <- function(correlation_matrix) {
     geom_text(aes(label = format(Correlation, digits = 4)), color = "black", size = 3) +
     scale_fill_viridis_c(option = "viridis", direction = -1,
                          alpha = 0.9,
-                         guide = guide_colorbar(barheight = unit(12, "cm"),
+                         guide = guide_colorbar(barheight = unit(6, "cm"),
                                                 barwidth = unit(0.3, "cm"))) +
     scale_x_discrete(position = "top", limits = rev(levels(corr_df$Var2))) +
     labs(x = NULL, y = NULL, fill = NULL) +

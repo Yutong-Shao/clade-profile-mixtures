@@ -1,4 +1,12 @@
 
+<center>
+
+# **BIOL8706 Progress Record 2** 
+
+Date：Sep 5th
+
+</center>
+
 # Methods
 
 ## 1. Full Dataset Used
@@ -107,38 +115,38 @@ Subsequently, I estimated Q.plantF1 through Q.plantF8 generation by generation, 
 
 ![Image](process/data_analysis/PCA_Q_F1_8.png)
 
-**Idea:**
+Idea:
 
-**If we consider every profile mixture model from F1 to F8 in the comparison, we might observe that the overall improvement of the Q matrix at each step is not significant (this can also be confirmed in the Pearson correlation figure in section 2.2). However, if we only consider F1 and F8, as shown in the figure below, we can see that the matrix might have some degree of improvement.**
+If we consider every profile mixture model from F1 to F8 in the comparison, we might observe that the overall improvement of the Q matrix at each step is not significant (this can also be confirmed in the Pearson correlation figure in section 2.2). However, if we only consider F1 and F8, as shown in the figure below, we can see that the matrix might have some degree of improvement.
 
-**(Imagine using a larger dataset to train the model and comparing F1 with F10, F20, etc. I would expect to see more improvement in the Q matrix in such cases.)**
+(Imagine using a larger dataset to train the model and comparing F1 with F10, F20, etc. I would expect to see more improvement in the Q matrix in such cases.)
 
 ![Image](process/data_analysis/PCA_Q_F1_8(2).png)
 
-### **2.2 Future Research: Pearson Correlation Coefficient** [Added on September 5]
+### 2.2 Future Research: Pearson Correlation Coefficient
 
-**For the new models obtained, such as Q.plantF1, Q.plantF10, Q.plantF20, etc., calculate their Pearson correlation coefficients with Q.plant from the original QMaker paper. This helps to validate the similarity or differences between them. (Alternatively, the percentage of positions where coefficients are larger or smaller can be compared, which can also be represented in a bubble plot.)**
+For the new models obtained, such as Q.plantF1, Q.plantF10, Q.plantF20, etc., calculate their Pearson correlation coefficients with Q.plant from the original QMaker paper. This helps to validate the similarity or differences between them. (Alternatively, the percentage of positions where coefficients are larger or smaller can be compared, which can also be represented in a bubble plot.)
 
-**The results would be presented in the form of tables or heatmaps.**
+The results would be presented in the form of tables or heatmaps.
 
-**(a) Example of the heatmap:**
+(a) Example of the heatmap:
 
-**As shown in the figure below, it displays the results of Pearson correlation calculations between Q.plantF1-F8, Q.LG, and Q.plant.**
+As shown in the figure below, it displays the results of Pearson correlation calculations between Q.plantF1-F8, Q.LG, and Q.plant.
 
 ![Image](process/data_analysis/Correlation_Q.png)
 
-**(b) Example of the table:**
+(b) Example of the table:
 
 | Matrix Comparison      | Pearson           | 1/3 (Greater 2x) | 2/3 (Greater 5x) | -1/3 (Less 2x) | -2/3 (Less 5x) |
 |------------------------|-------------------|------------------|------------------|----------------|----------------|
 | **Q.plant vs Q.plantF1**| 0.9489            |       34.07%     |       24.65%     |      13.57%     |      2.21%     |
 | **Q.plant vs Q.plantF8**| 0.9563            |       40.72%     |       26.03%     |      9.69%     |      2.21%     |
 
-**The content of this table can be used to supplement the explanation in the bubble plot in section 2.3.**
+The content of this table can be used to supplement the explanation in the bubble plot in section 2.3.
 
-### **2.3 Future Research: The Bubble Plot** [Added on September 5]
+### 2.3 Future Research: The Bubble Plot [Added on September 5]
 
-**Use bubble plots to examine the relative differences in amino acid exchangeability coefficients between different models.**
+Use bubble plots to examine the relative differences in amino acid exchangeability coefficients between different models.
 
 ![Image](process/data_analysis/Bubble_plot_Q.png)
 
@@ -150,23 +158,23 @@ Using the test data, compare the performance of the estimated Q.plantFX with Q.p
 
 - Alternatively, use the BIC criterion to count the number of times they are selected as the best model when constructing trees.
 
-### **Future Research:** [Added on September 5]
+### Future Research:
 
-**(a) Test whether the new models fit better to the data**
+(a) Test whether the new models fit better to the data*
 
-**Test the goodness of fit for the new models using the following command:**
+Test the goodness of fit for the new models using the following command:
 
 ```
 iqtree -S test_genes -m MF -mset JTT,WAG,LG,Q.plant,Q.plantF1,Q.plantF10,Q.plantF20
 ```
 
-**Count how many times different models are selected as the best model at each gene locus in the test dataset.**
+Count how many times different models are selected as the best model at each gene locus in the test dataset.
 
-**(b) Test whether the new models influence the topologies**
+(b) Test whether the new models influence the topologies
 
-**For each gene locus, when the new model is selected as the best model, use it to infer the gene tree and compare it to the gene trees from the original 1KP paper.**
+For each gene locus, when the new model is selected as the best model, use it to infer the gene tree and compare it to the gene trees from the original 1KP paper.
 
-**The comparison method: nRF**
+The comparison method: nRF
 
 ```
 # Construct gene tree
@@ -178,7 +186,7 @@ iqtree -s example.phy -m Q.plantF20
 iqtree -rf tree_set1 tree_set2
 ```
 
-**And then, nRF equals to RF divided by 2(n−3), where n is the number of taxa.**
+And then, nRF equals to RF divided by 2(n−3), where n is the number of taxa.
 
 > [!Note]\
 > **Question :**\
