@@ -1,8 +1,8 @@
-Here is a short description of the `process` folder:
+Here is a short description of the `sample_selection` folder:
 
-## Process
+## Sample Selection
 
-#### <span style="color: lightblue;">Includes custom functions and important intermediate files used in the project process.</span>
+#### <span style="color: lightblue;">Includes custom functions and important intermediate files used for sample selection.</span>
 
 1. `species_classified.R`: Uses the "rgbif" package to provide taxonomic annotations for each species in the dataset.
 
